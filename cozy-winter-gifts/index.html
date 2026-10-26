@@ -190,6 +190,31 @@ footer a{color:#fff}footer p{margin:.35rem 0}footer nav a{margin:0 .45rem;displa
 <p>&copy; 2026 Pykkd</p>
 </footer>
 <script src="../search.js" defer></script>
+<div class="pk-pop" id="pk-pop" hidden role="dialog" aria-modal="true" aria-labelledby="pk-pop-h"><div class="pk-pop-bd" data-close></div>
+<div class="pk-pop-box"><button type="button" class="pk-pop-x" aria-label="Close" data-close>&times;</button>
+<span class="pk-pop-k">The Pykkd weekly</span><h2 id="pk-pop-h">Our best picks, straight to your inbox</h2>
+<p>Hand-picked finds, the best deals we spot, and new guides as they drop. One short email a week. Unsubscribe anytime.</p>
+<div class="ml-embedded" data-form="Wowiy3"></div></div></div>
+<style>.pk-pop{position:fixed;inset:0;z-index:1000;display:flex;align-items:center;justify-content:center;padding:1rem}.pk-pop[hidden]{display:none}.pk-pop-bd{position:absolute;inset:0;background:rgba(10,25,20,.62)}.pk-pop-box{position:relative;background:#fffdf8;border:2px solid #e0b04a;border-radius:16px;max-width:460px;width:100%;max-height:90vh;overflow:auto;padding:1.6rem 1.3rem 1.2rem;box-shadow:0 18px 50px rgba(0,0,0,.35);text-align:center}.pk-pop-box h2{font-family:"Playfair Display",Georgia,"Times New Roman",serif;color:#123c2f;font-size:1.5rem;margin:.3rem 0 .5rem}.pk-pop-box p{color:#5f5850;margin:0 0 .8rem}.pk-pop-k{color:#b8860b;font-weight:700;letter-spacing:.08em;text-transform:uppercase;font-size:.78rem}.pk-pop-x{position:absolute;top:.4rem;right:.5rem;background:none;border:0;font-size:1.8rem;line-height:1;color:#123c2f;cursor:pointer;padding:.2rem .5rem;min-height:44px;min-width:44px}@media(max-width:520px){.pk-pop{align-items:flex-end;padding:0}.pk-pop-box{border-radius:16px 16px 0 0;max-height:85vh}}</style>
+<script>(function(){var K='pk_pop_seen',D='pk_pop_done',W=7*864e5,ls;try{ls=localStorage}catch(_){return}
+if(/\/404(\.html)?$/.test(location.pathname))return;if(ls.getItem(D))return;var t=+ls.getItem(K)||0;if(Date.now()-t<W)return;
+var m=document.getElementById('pk-pop');if(!m)return;var shown=0,last;
+function done(){try{ls.setItem(D,'1')}catch(_){}}
+function close(){m.hidden=true;document.removeEventListener('keydown',esc);if(last)last.focus()}
+function esc(ev){if(ev.key==='Escape')close()}
+function show(){if(shown)return;shown=1;window.removeEventListener('scroll',sc);try{ls.setItem(K,String(Date.now()))}catch(_){}last=document.activeElement;m.hidden=false;document.addEventListener('keydown',esc);m.querySelector('.pk-pop-x').focus()}
+function sc(){var h=document.documentElement;if((h.scrollTop||document.body.scrollTop)/Math.max(1,h.scrollHeight-h.clientHeight)>=.5)show()}
+m.addEventListener('click',function(ev){if(ev.target.hasAttribute('data-close'))close()});
+setTimeout(show,15000);window.addEventListener('scroll',sc,{passive:true});
+document.addEventListener('submit',function(ev){if(ev.target.closest&&ev.target.closest('.ml-embedded'))setTimeout(function(){if(document.querySelector('.ml-embedded .ml-form-successBody:not(.row-hidden)'))done()},2500)},true);
+new MutationObserver(function(){var s=document.querySelectorAll('.ml-embedded .ml-form-successBody');for(var i=0;i<s.length;i++)if(s[i].offsetParent!==null){done();break}}).observe(document.body,{subtree:true,attributes:true,attributeFilter:['style','class']});
+})();</script>
+<!-- MailerLite Universal -->
+<script>
+(function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[]).push(arguments);},l=d.createElement(e),l.async=1,l.src=u,n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})(window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
+ml('account', '2744558');
+</script>
+<!-- End MailerLite Universal -->
 <script data-goatcounter="https://pykkd.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>
