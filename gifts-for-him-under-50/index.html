@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-root="../">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -15,7 +15,13 @@
 <meta name="twitter:card" content="summary_large_image">
 <link rel="canonical" href="https://pykkd.com/gifts-for-him-under-50/">
 <meta name="theme-color" content="#123c2f">
-<style>:root{--pine:#123c2f;--pine2:#1c5a45;--berry:#c8102e;--berry-d:#9e0c24;--gold:#e0b04a;--snow:#fffdf8;--cream:#f7f1e6;--ink:#1d1b19;--muted:#5f5850;--line:#e8decd;--rose:#d6336c;--r:16px;
+<style>.srch{position:relative;flex:1;max-width:340px;margin:0 1rem}.srch input{width:100%;box-sizing:border-box;padding:.5rem .8rem;border-radius:999px;border:1px solid var(--gold);background:#fff;color:var(--ink);font:inherit;font-size:.9rem}
+.srch-r{position:absolute;left:0;right:0;top:calc(100% + 6px);background:#fff;color:var(--ink);list-style:none;margin:0;padding:.3rem;border-radius:12px;box-shadow:0 8px 24px rgba(0,0,0,.2);max-height:70vh;overflow:auto;z-index:20}
+.srch-r li,#search-results li{display:flex;gap:.5rem;align-items:center;border-bottom:1px solid var(--line)}.srch-r li:last-child{border:0}.srch-r a,#search-results a{color:var(--ink);text-decoration:none;padding:.45rem .5rem;flex:1}.srch-r b,#search-results b{display:block;font-size:.9rem}.srch-r small,#search-results small{color:var(--muted);font-size:.75rem}
+.srch-r .az,#search-results .az{flex:none;font-size:.75rem;color:var(--berry-d)}.srch-r .none{padding:.6rem;color:var(--muted)}#search-results{list-style:none;padding:0}
+@media(max-width:700px){.top .in{flex-wrap:wrap}.srch{order:3;flex-basis:100%;max-width:none;margin:.4rem 0 0}}
+
+:root{--pine:#123c2f;--pine2:#1c5a45;--berry:#c8102e;--berry-d:#9e0c24;--gold:#e0b04a;--snow:#fffdf8;--cream:#f7f1e6;--ink:#1d1b19;--muted:#5f5850;--line:#e8decd;--rose:#d6336c;--r:16px;
 --serif:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;--sans:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
 *{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
 body{margin:0;background:var(--snow);color:var(--ink);font:17px/1.6 var(--sans)}
@@ -114,6 +120,7 @@ footer a{color:#fff}footer p{margin:.35rem 0}footer nav a{margin:0 .45rem;displa
 <body>
 <a class="skip" href="#main">Skip to content</a>
 <header class="top"><div class="in"><a class="logo" href="../" aria-label="Pykkd home"><span><b>Pykkd</b><small>Hand-picked finds worth your time</small></span></a>
+<form class="srch" role="search" action="../search/" method="get"><label for="srch-q" class="skip">Search Pykkd</label><input id="srch-q" name="q" type="search" placeholder="Search guides &amp; products" autocomplete="off"><ul class="srch-r" hidden></ul></form>
 <nav class="topnav" aria-label="Site"><a href="../blog/">Blog</a><a href="../about/">About</a></nav></div></header>
 <nav class="catnav" aria-label="Categories"><div class="in"><a class="beauty" href="../category/beauty/">Beauty</a><a class="tech" href="../category/tech/">Tech</a><a class="home-kitchen" href="../category/home-kitchen/">Home &amp; Kitchen</a><a class="for-him on" href="../category/for-him/" aria-current="page">For Him</a><a class="for-her" href="../category/for-her/">For Her</a><a class="kids" href="../category/kids/">Kids</a><a class="budget" href="../category/budget/">Budget</a><a class="big-ticket" href="../category/big-ticket/">Big-Ticket</a></div></nav>
 <p class="disc">As an Amazon Associate I earn from qualifying purchases.</p>
@@ -176,5 +183,6 @@ footer a{color:#fff}footer p{margin:.35rem 0}footer nav a{margin:0 .45rem;displa
 <p>Product availability changes often; check Amazon for current details.</p>
 <p>&copy; 2026 Pykkd</p>
 </footer>
+<script src="../search.js" defer></script>
 </body>
 </html>
