@@ -146,19 +146,22 @@ footer a{color:#fff}footer p{margin:.35rem 0}footer nav a{margin:0 .45rem;displa
 <span class="pk-pop-k">The Pykkd weekly</span><h2 id="pk-pop-h">Our best picks, straight to your inbox</h2>
 <p>Hand-picked finds, the best deals we spot, and new guides as they drop. One short email a week. Unsubscribe anytime.</p>
 <div class="ml-embedded" data-form="Wowiy3"></div></div></div>
-<style>.pk-pop{position:fixed;inset:0;z-index:1000;display:flex;align-items:center;justify-content:center;padding:1rem}.pk-pop[hidden]{display:none}.pk-pop-bd{position:absolute;inset:0;background:rgba(10,25,20,.62)}.pk-pop-box{position:relative;background:#fffdf8;border:2px solid #e0b04a;border-radius:16px;max-width:460px;width:100%;max-height:90vh;overflow:auto;padding:1.6rem 1.3rem 1.2rem;box-shadow:0 18px 50px rgba(0,0,0,.35);text-align:center}.pk-pop-box h2{font-family:"Playfair Display",Georgia,"Times New Roman",serif;color:#123c2f;font-size:1.5rem;margin:.3rem 0 .5rem}.pk-pop-box p{color:#5f5850;margin:0 0 .8rem}.pk-pop-k{color:#b8860b;font-weight:700;letter-spacing:.08em;text-transform:uppercase;font-size:.78rem}.pk-pop-x{position:absolute;top:.4rem;right:.5rem;background:none;border:0;font-size:1.8rem;line-height:1;color:#123c2f;cursor:pointer;padding:.2rem .5rem;min-height:44px;min-width:44px}@media(max-width:520px){.pk-pop{align-items:flex-end;padding:0}.pk-pop-box{border-radius:16px 16px 0 0;max-height:85vh}}</style>
-<script>(function(){var K='pk_pop_seen',D='pk_pop_done',W=7*864e5,ls;try{ls=localStorage}catch(_){return}
-if(/\/404(\.html)?$/.test(location.pathname))return;if(ls.getItem(D))return;var t=+ls.getItem(K)||0;if(Date.now()-t<W)return;
+<style>.pk-pop{position:fixed;inset:0;z-index:1000;display:flex;align-items:center;justify-content:center;padding:1rem}.pk-pop[hidden]{display:none}.pk-pop-bd{position:absolute;inset:0;background:rgba(10,25,20,.62)}.pk-pop-box{position:relative;background:#fffdf8;border:2px solid #e0b04a;border-radius:16px;max-width:460px;width:100%;max-height:90vh;overflow:auto;padding:1.6rem 1.3rem 1.2rem;box-shadow:0 18px 50px rgba(0,0,0,.35);text-align:center}.pk-pop-box h2{font-family:"Playfair Display",Georgia,"Times New Roman",serif;color:#123c2f;font-size:1.5rem;margin:.3rem 0 .5rem}.pk-pop-box p{color:#5f5850;margin:0 0 .8rem}.pk-pop-k{color:#b8860b;font-weight:700;letter-spacing:.08em;text-transform:uppercase;font-size:.78rem}.pk-pop-x{position:absolute;top:.4rem;right:.5rem;background:none;border:0;font-size:1.8rem;line-height:1;color:#123c2f;cursor:pointer;padding:.2rem .5rem;min-height:44px;min-width:44px}.pk-open{display:inline-block;font:inherit;font-weight:700;font-size:1rem;background:var(--gold,#e0b04a);color:#1d1b19;border:0;border-radius:999px;padding:.75rem 1.4rem;min-height:48px;margin:.2rem 0 .9rem;cursor:pointer;box-shadow:0 2px 0 rgba(0,0,0,.18)}.pk-open:hover{background:#cf9d33}.signup button.pk-open{cursor:pointer;min-height:48px;border-radius:999px}@media(max-width:520px){.pk-pop{align-items:flex-end;padding:0}.pk-pop-box{border-radius:16px 16px 0 0;max-height:85vh}}</style>
+<script>(function(){var K='pk_pop_seen',D='pk_pop_done',W=7*864e5,ls=null;try{ls=localStorage}catch(_){}
 var m=document.getElementById('pk-pop');if(!m)return;var shown=0,last;
 function done(){try{ls.setItem(D,'1')}catch(_){}}
 function close(){m.hidden=true;document.removeEventListener('keydown',esc);if(last)last.focus()}
 function esc(ev){if(ev.key==='Escape')close()}
-function show(){if(shown)return;shown=1;window.removeEventListener('scroll',sc);try{ls.setItem(K,String(Date.now()))}catch(_){}last=document.activeElement;m.hidden=false;document.addEventListener('keydown',esc);m.querySelector('.pk-pop-x').focus()}
+function open(){window.removeEventListener('scroll',sc);try{ls.setItem(K,String(Date.now()))}catch(_){}if(!m.hidden)return;last=document.activeElement;m.hidden=false;document.addEventListener('keydown',esc);m.querySelector('.pk-pop-x').focus()}
+function show(){if(shown)return;shown=1;open()}
 function sc(){var h=document.documentElement;if((h.scrollTop||document.body.scrollTop)/Math.max(1,h.scrollHeight-h.clientHeight)>=.5)show()}
+window.pkOpenSignup=function(){shown=1;open()};
+document.addEventListener('click',function(ev){var b=ev.target.closest&&ev.target.closest('[data-pk-open]');if(b){ev.preventDefault();window.pkOpenSignup()}});
 m.addEventListener('click',function(ev){if(ev.target.hasAttribute('data-close'))close()});
-setTimeout(show,15000);window.addEventListener('scroll',sc,{passive:true});
 document.addEventListener('submit',function(ev){if(ev.target.closest&&ev.target.closest('.ml-embedded'))setTimeout(function(){if(document.querySelector('.ml-embedded .ml-form-successBody:not(.row-hidden)'))done()},2500)},true);
 new MutationObserver(function(){var s=document.querySelectorAll('.ml-embedded .ml-form-successBody');for(var i=0;i<s.length;i++)if(s[i].offsetParent!==null){done();break}}).observe(document.body,{subtree:true,attributes:true,attributeFilter:['style','class']});
+if(/\/404(\.html)?$/.test(location.pathname)||!ls)return;if(ls.getItem(D))return;var t=+ls.getItem(K)||0;if(Date.now()-t<W)return;
+setTimeout(show,15000);window.addEventListener('scroll',sc,{passive:true});
 })();</script>
 <!-- MailerLite Universal -->
 <script>
