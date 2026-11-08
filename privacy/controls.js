@@ -23,7 +23,7 @@
   document.body.appendChild(box);
   function show() {
     lastFocus = document.activeElement; box.hidden = false;
-    box.querySelector('#pk-gpc-note').textContent = gpc() ? 'Global Privacy Control is on. Analytics and affiliate navigation are blocked.' : '';
+    box.querySelector('#pk-gpc-note').textContent = gpc() ? 'Global Privacy Control is on. Optional analytics is blocked. Outbound destinations manage their own privacy choices.' : '';
     box.querySelector('[data-choice="yes"]').disabled = gpc();
     box.querySelector('[data-choice="no"]').focus();
   }
@@ -72,31 +72,5 @@
       else if (!ev.shiftKey && document.activeElement === end) { ev.preventDefault(); first.focus(); }
     }
   });
-  function affiliate(a) {
-    if (!a || !(a.href || a.dataset.pkAffiliateHref)) return false;
-    var u = new URL(a.href || a.dataset.pkAffiliateHref);
-    return /(^|\.)amazon\.[a-z.]+$/.test(u.hostname) && u.searchParams.has('tag') ||
-      /(^|\.)(linksynergy\.com|rakutenadvertising\.com)$/.test(u.hostname) ||
-      /(^|\.)(amzn\.to|rstyle\.me|go\.skimresources\.com)$/.test(u.hostname) ||
-      (a.rel || '').split(/\s+/).indexOf('sponsored') !== -1;
-  }
-  if (gpc()) document.querySelectorAll('a[href]').forEach(function (a) {
-    if (affiliate(a)) {
-      a.dataset.pkAffiliateHref = a.href; a.removeAttribute('href');
-      a.setAttribute('role', 'link'); a.setAttribute('aria-disabled', 'true'); a.tabIndex = 0;
-    }
-  });
-  function beforeAffiliate(ev) {
-    var a = ev.target.closest('a[href],a[data-pk-affiliate-href]'); if (!affiliate(a)) return;
-    if (gpc()) {
-      ev.preventDefault(); ev.stopImmediatePropagation();
-      window.alert('Global Privacy Control is on, so this affiliate visit is blocked. You can find this product independently at the retailer.'); return;
-    }
-    if (!window.confirm('This is an affiliate link. The retailer or network will receive referral and connection information and may use tracking cookies to attribute purchases. Continue to the retailer?')) {
-      ev.preventDefault(); ev.stopImmediatePropagation();
-    }
-  }
-  document.addEventListener('click', beforeAffiliate, true);
-  document.addEventListener('auxclick', beforeAffiliate, true);
-  document.addEventListener('keydown', function (ev) { if (gpc() && ev.key === 'Enter') beforeAffiliate(ev); }, true);
+  // Ordinary outbound links navigate directly; privacy choices govern on-site tracking.
 }());

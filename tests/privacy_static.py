@@ -15,6 +15,8 @@ for p in pages:
         assert not any(x in tag for x in ['fonts.googleapis.com','fonts.gstatic.com','gc.zgo.at','assets.mailerlite.com']), (p,tag)
     assert 'pk_pop_seen' not in text or p == root/'disclosure/index.html', p
     assert 'As an Amazon Associate I earn from qualifying purchases.' in text, p
+    if '<p class="disc">' in text:
+        assert '<p class="disc">As an Amazon Associate I earn from qualifying purchases.</p>' in text, p
     for href in re.findall(r'(?:href|src)="([^"#]+)"',text):
         url=urlparse(href.replace('&amp;','&'))
         if url.scheme or url.netloc: continue
@@ -24,3 +26,9 @@ for p in pages:
         count+=1
 assert "We don't run accounts, comment forms, newsletters" not in (root/'disclosure/index.html').read_text()
 print(f'PASS: {len(pages)} pages, {count} internal asset/link targets, no automatic vendor scripts/fonts')
+
+controls=(root/'privacy/controls.js').read_text()
+assert 'window.confirm' not in controls
+assert "removeAttribute('href')" not in controls
+assert 'Amazon (paid link)' in (root/'search.js').read_text()
+print('PASS: direct links retain hrefs, no confirmation, top disclosure retained, search disclosure present')
