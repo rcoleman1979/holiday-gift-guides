@@ -1,0 +1,13 @@
+# Privacy integration
+
+The source generator lives on the box at `/workspace/gift-guides-site/build_site.py`; this repository is its published static output. The generator now calls `privacy_build.apply_privacy(OUT, HERE / "static" / "privacy")` after every build, before checks. Its privacy module is the same source as `tools/apply_privacy.py` here; the policy, signup copy and browser controls are in `privacy/`. Keep these synchronized with the generator's `privacy_build.py` and `static/privacy/`. These are deliberate post-generation protections, not a one-page patch.
+
+To apply to generated output manually: `python3 tools/apply_privacy.py OUTPUT`. It is idempotent and adds a no-JavaScript newsletter route. Never reintroduce universal MailerLite or unconditional analytics tags. The newsletter CTA opens the existing verified provider-hosted form only after an explicit notice; we do not run vendor scripts on Pykkd. The provider still controls its own page and emails. New merchant/network tracking needs a new review, not automatic enablement.
+
+Tests:
+- `python3 tests/privacy_static.py OUTPUT` (standard library).
+- `PLAYWRIGHT_MODULE=/path/to/playwright BASE_URL=http://127.0.0.1:8765 node tests/privacy.cjs` against a local server (default Chrome executable `/usr/bin/google-chrome`). Tests read the hosted newsletter form but never submit it. Stubbed analytics prevents test visits entering production statistics.
+
+Analytics default off; choice expires after 180 days. GPC overrides earlier analytics allowance and disables affiliate destinations without stripping tracking identifiers. On ordinary visits affiliate clicks ask before opening; declining prevents navigation. Right-click/copy/JavaScript-disabled external navigation is a browser capability outside that click confirmation; the policy explains external referrals. No third-party code executes merely by reading the site. Newsletter opening is not subscription; the provider's form requires submission and currently has double opt-in enabled.
+
+No merchant applications were sent, and these technical changes are not a legal certification. Before certifying advertiser terms, verify actual provider/account retention, email engagement settings, applicable legal requirements and any future network/merchant integration. Newegg tax declarations and Sharper Image offer/contract discrepancies remain separate issues.

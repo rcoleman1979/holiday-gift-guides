@@ -1,0 +1,13 @@
+--- a/build_site.py
++++ b/build_site.py
+@@ -1064,6 +1064,10 @@
+         (OUT / "sitemap.xml").write_text('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+             + "".join(f"<url><loc>{e(url(p))}</loc><lastmod>{lm}</lastmod></url>\n" for p, lm in sitemap) + "</urlset>\n")
+ 
++    # Privacy post-pass is required for every generated page, including future posts.
++    from privacy_build import apply_privacy
++    apply_privacy(OUT, HERE / "static" / "privacy")
++
+     # Safety check: no static prices on any page (budget phrases like "Under $50" are allowed).
+     for f in OUT.rglob("*.html"):
+         txt = re.sub(r"<[^>]+>", " ", f.read_text())
