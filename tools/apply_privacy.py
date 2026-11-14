@@ -3,6 +3,13 @@ from pathlib import Path
 import re
 import shutil
 
+# Official GoatCounter tag plus a DNT/GPC skip. Same snippet as build_site.GC_TAG.
+GC_TAG = (
+    "<script>window.goatcounter=Object.assign(window.goatcounter||{},"
+    "{no_onload:(navigator.doNotTrack==='1'||navigator.globalPrivacyControl===true)});</script>\n"
+    '<script data-goatcounter="https://pykkd.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>\n'
+)
+
 
 def apply_privacy(out, assets=None):
     out = Path(out)
@@ -16,17 +23,19 @@ def apply_privacy(out, assets=None):
     for path in pages:
         text = path.read_text()
         # Strip legacy automatic third-party integrations and newsletter prompt logic.
+        # Keep the cookieless GoatCounter tag so visits are counted by default.
         text = re.sub(r'<link\b[^>]*(?:fonts\.googleapis\.com|fonts\.gstatic\.com)[^>]*>', '', text)
-        text = re.sub(r'<script\b[^>]*>.*?</script>', lambda m: '' if any(k in m[0] for k in ('goatcounter', 'assets.mailerlite.com', "pk_pop_seen")) else m[0], text, flags=re.S)
+        text = re.sub(r'<script\b[^>]*>.*?</script>', lambda m: '' if any(k in m[0] for k in ('assets.mailerlite.com', "pk_pop_seen")) else m[0], text, flags=re.S)
         text = re.sub(r'<!-- (?:End )?MailerLite Universal -->', '', text)
         text = re.sub(r'<div class="ml-embedded"[^>]*></div>', lambda _: signup, text)
         text = re.sub(r'<form class="pk-newsletter-form".*?</form>\s*', lambda _: signup, text, flags=re.S)
         if path == out / 'disclosure' / 'index.html':
             text = re.sub(r'(<div class="prose">).*?(</div>\s*</main>)', lambda m: m[1] + '\n' + policy + m[2], text, count=1, flags=re.S)
         text = re.sub(r'<!-- Pykkd privacy -->.*?<!-- /Pykkd privacy -->\s*', '', text, flags=re.S)
-        text = re.sub(r'<button type="button" data-pk-settings>Privacy settings</button>\s*(?=</nav>)', '', text)
-        text = re.sub(r'(<nav aria-label="Footer">.*?)(</nav>)', r'\1<button type="button" data-pk-settings>Privacy settings</button>\2', text, count=1, flags=re.S)
-        text = text.replace('</body>', '<!-- Pykkd privacy -->\n<link rel="stylesheet" href="/privacy/controls.css">\n<script src="/privacy/controls.js" defer></script>\n<noscript><p>Analytics is off. <a href="/newsletter/">Newsletter signup</a>. Affiliate links may use referral tracking after you follow them. <a href="/disclosure/">Privacy details</a>.</p></noscript>\n<!-- /Pykkd privacy -->\n</body>')
+        text = re.sub(r'<button type="button" data-pk-settings>Privacy settings</button>\s*', '', text)
+        if 'data-goatcounter="https://pykkd.goatcounter.com/count"' not in text:
+            text = text.replace('</body>', GC_TAG + '</body>')
+        text = text.replace('</body>', '<!-- Pykkd privacy -->\n<link rel="stylesheet" href="/privacy/controls.css">\n<script src="/privacy/controls.js" defer></script>\n<noscript><p><a href="/newsletter/">Newsletter signup</a>. Affiliate links may use referral tracking after you follow them. <a href="/disclosure/">Privacy details</a>.</p></noscript>\n<!-- /Pykkd privacy -->\n</body>')
         path.write_text(text)
     dest = out / 'privacy'
     dest.mkdir(exist_ok=True)

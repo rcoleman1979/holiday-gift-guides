@@ -5,20 +5,20 @@ const BASE=process.env.BASE_URL||'http://127.0.0.1:8765';
 (async()=>{
  const browser=await chromium.launch({executablePath:'/usr/bin/google-chrome',headless:true,args:['--no-sandbox']});
  let count=0;
- for(const state of ['unset','declined','gpc']){
+ for(const state of ['unset','gpc','dnt']){
   const context=await browser.newContext();let intercepted=[],dialogs=[];
   await context.addInitScript(state=>{
    if(state==='gpc')Object.defineProperty(navigator,'globalPrivacyControl',{get:()=>true});
-   if(state==='declined')localStorage.setItem('pk_privacy_v1',JSON.stringify({version:1,analytics:false,at:Date.now()}));
+   if(state==='dnt')Object.defineProperty(navigator,'doNotTrack',{get:()=>'1'});
   },state);
   await context.route(url=>/(^|\.)amazon\.[a-z.]+$/.test(url.hostname),r=>{
    if(r.request().isNavigationRequest())intercepted.push(r.request().url());return r.fulfill({status:200,contentType:'text/html',body:'<!doctype html><title>Intercepted test navigation</title><p>No request was sent to Amazon.</p>'});
   });
   context.on('page',p=>p.on('dialog',async d=>{dialogs.push(d.type());await d.dismiss()}));
   const page=await context.newPage();let vendorRequests=[];
-  page.on('request',r=>{if(/goatcounter|mailerlite|fonts.googleapis|fonts.gstatic/.test(r.url()))vendorRequests.push(r.url())});
+  page.on('request',r=>{if(/gc\.zgo\.at|goatcounter|mailerlite|fonts.googleapis|fonts.gstatic/.test(r.url()))vendorRequests.push(r.url())});
   async function open(path){
-   await page.goto(BASE+path);if(await page.locator('#pk-privacy').isVisible())await page.locator('[data-choice=close]').click();
+   await page.goto(BASE+path);
    if(await page.locator('.disc').count())assert.equal(await page.locator('.disc').textContent(),'As an Amazon Associate and Best Buy Creator, Pykkd earns from qualifying purchases.');
   }
   async function follow(link,kind='click'){
@@ -37,8 +37,8 @@ const BASE=process.env.BASE_URL||'http://127.0.0.1:8765';
   await open('/');await page.locator('#srch-q').fill('MagSlider');
   const header=page.locator('.srch-r a.az').first();await header.waitFor();assert.equal(await header.textContent(),'Amazon (paid link)');await follow(header);
   await open('/search/?q=MagSlider');const result=page.locator('#search-results a.az').first();await result.waitFor();assert.equal(await result.textContent(),'Amazon (paid link)');await follow(result);
-  assert.deepEqual(vendorRequests,[],'No on-site optional vendor requests before an analytics choice');
+  assert.ok(vendorRequests.every(u=>/gc\.zgo\.at|goatcounter/.test(u)),'Only GoatCounter may load on-site; no MailerLite or Google Fonts: '+vendorRequests);
   await context.close();
  }
- await browser.close();console.log('PASS: '+count+' intercepted one-click Amazon navigation cases (homepage, blog, guide, dynamic header search and search page; unset, declined, GPC; mouse and keyboard; offline fallback blocks any un-routed outbound request). Zero dialogs or real Amazon requests.');
+ await browser.close();console.log('PASS: '+count+' intercepted one-click Amazon navigation cases (homepage, blog, guide, dynamic header search and search page; unset, GPC, DNT; mouse and keyboard; offline fallback blocks any un-routed outbound request). Zero dialogs or real Amazon requests.');
 })().catch(e=>{console.error(e);process.exit(1)});
