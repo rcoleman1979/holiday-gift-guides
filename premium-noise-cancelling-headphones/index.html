@@ -62,10 +62,15 @@ h1{font-size:2rem;margin:.5rem 0 .5rem}
 .card h2,.card h3{font-size:1.12rem;margin:0;color:var(--ink);font-family:var(--sans);font-weight:700;line-height:1.3}
 .card p{margin:.3rem 0 .2rem;color:#423c36;font-size:.98rem}
 .card>*{grid-column:2}.card>.ic{grid-column:1;grid-row:1/span 2}.card .btn{grid-column:1/-1;margin-top:.6rem;align-self:end}
+.card .btns{grid-column:1/-1;margin-top:.6rem;align-self:end;display:flex;flex-wrap:wrap;gap:.55rem}
+.card .btns .btn{grid-column:auto;margin-top:0;flex:1 1 12rem}
 .btn{display:flex;align-items:center;justify-content:center;gap:.4rem;background:var(--berry);color:#fff;text-decoration:none;font-weight:700;font-size:1.05rem;padding:.85rem 1rem;border-radius:12px;min-height:50px}
 .btn:after{content:"\2192"}.btn:hover,.btn:focus{background:var(--berry-d)}
 .btn.gold{background:var(--gold);color:var(--ink)}.btn.gold:hover{background:#cf9d33}
 .btn.line{background:transparent;border:2px solid var(--berry);color:var(--berry)}.hero .btn.line{border-color:var(--cream);color:var(--cream)}.btn.line:after{content:none}
+.btn.bestbuy{background:#0046be;color:#fff;box-shadow:inset 0 -3px 0 #ffce00}
+.btn.bestbuy:hover,.btn.bestbuy:focus{background:#003399}
+a.bb-also{font-size:.9em;font-weight:700;color:#0046be;white-space:nowrap}
 .note{font-size:.85rem;color:var(--muted);text-align:center}
 .sec{margin:2rem 0}.sec>h2,.more>h2{font-size:1.5rem;margin:0 0 .8rem}.sec h2 a{color:inherit;text-decoration:none}
 .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:.8rem;list-style:none;padding:0;margin:0}
@@ -129,7 +134,7 @@ footer a{color:#fc3a27}footer a:hover{color:#f3ebe2}footer p{margin:.35rem 0}foo
 <form class="srch" role="search" action="../search/" method="get"><label for="srch-q" class="skip">Search Pykkd</label><input id="srch-q" name="q" type="search" placeholder="Search guides &amp; products" autocomplete="off"><ul class="srch-r" hidden></ul></form>
 <nav class="topnav" aria-label="Site"><a href="../all-guides/">All guides</a><a href="../blog/">Blog</a><a href="../about/">About</a></nav></div></header>
 <nav class="catnav" aria-label="Categories"><div class="in"><a class="beauty" href="../category/beauty/">Beauty</a><a class="tech on" href="../category/tech/" aria-current="page">Tech</a><a class="home-kitchen" href="../category/home-kitchen/">Home &amp; Kitchen</a><a class="for-him" href="../category/for-him/">For Him</a><a class="for-her" href="../category/for-her/">For Her</a><a class="kids" href="../category/kids/">Kids</a><a class="budget" href="../category/budget/">Budget</a><a class="big-ticket" href="../category/big-ticket/">Big-Ticket</a></div></nav>
-<p class="disc">As an Amazon Associate I earn from qualifying purchases.</p>
+<p class="disc">As an Amazon Associate and Best Buy Creator, Pykkd earns from qualifying purchases.</p>
 <div id="main"><main>
 <nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="../">Home</a></li><li><a href="../category/tech/">Tech</a></li><li aria-current="page">Premium Noise-Cancelling Headphones</li></ol></nav>
 <header class="ghead"><span class="kicker">Tech gift guide</span><h1>Premium Noise-Cancelling Headphones</h1><p>The gift they&#x27;ll use every single day. These are the best over-ear noise-cancelling headphones for commuters, travelers, music lovers and work-from-home pros.</p><span class="ic" aria-hidden="true">🎧</span></header>
@@ -139,7 +144,7 @@ footer a{color:#fc3a27}footer a:hover{color:#f3ebe2}footer p{margin:.35rem 0}foo
 <li class="card"><span class="ic" aria-hidden="true"><svg class="pi" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 15v-3a8 8 0 0 1 16 0v3"/><rect x="3" y="14" width="4" height="6" rx="1.5"/><rect x="17" y="14" width="4" height="6" rx="1.5"/></svg></span>
 <h2>Sony WH-1000XM6 Headphones</h2>
 <p>Sony&#x27;s flagship headphones with class-leading noise cancelling and clear call quality. A dream gift for frequent flyers and commuters.</p>
-<a class="btn" href="https://www.amazon.com/dp/B0F3PQHWTZ?tag=killagorillab-20" rel="nofollow sponsored noopener" target="_blank" aria-label="View Sony WH-1000XM6 Headphones on Amazon (opens in new tab)">View on Amazon</a>
+<div class="btns"><a class="btn" href="https://www.amazon.com/dp/B0F3PQHWTZ?tag=killagorillab-20" rel="nofollow sponsored noopener" target="_blank" aria-label="View Sony WH-1000XM6 Headphones on Amazon (opens in new tab)">View on Amazon</a><a class="btn bestbuy" href="https://bestbuycreators.7tiv.net/yZ1NMB" rel="nofollow sponsored noopener" target="_blank" aria-label="Buy Sony WH-1000XM6 Headphones at Best Buy (opens in new tab)">Buy at Best Buy</a></div>
 </li>
 <li class="card"><span class="ic" aria-hidden="true"><svg class="pi" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 15v-3a8 8 0 0 1 16 0v3"/><rect x="3" y="14" width="4" height="6" rx="1.5"/><rect x="17" y="14" width="4" height="6" rx="1.5"/></svg></span>
 <h2>Bose QC Ultra Headphones (2nd Gen)</h2>
@@ -149,17 +154,17 @@ footer a{color:#fc3a27}footer a:hover{color:#f3ebe2}footer p{margin:.35rem 0}foo
 <li class="card"><span class="ic" aria-hidden="true"><svg class="pi" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 15v-3a8 8 0 0 1 16 0v3"/><rect x="3" y="14" width="4" height="6" rx="1.5"/><rect x="17" y="14" width="4" height="6" rx="1.5"/></svg></span>
 <h2>Apple AirPods Max 2</h2>
 <p>Apple&#x27;s premium over-ear headphones with seamless iPhone and Mac pairing. A luxe gift for anyone in the Apple ecosystem.</p>
-<a class="btn" href="https://www.amazon.com/dp/B0GSS4SGZR?tag=killagorillab-20" rel="nofollow sponsored noopener" target="_blank" aria-label="View Apple AirPods Max 2 on Amazon (opens in new tab)">View on Amazon</a>
+<div class="btns"><a class="btn" href="https://www.amazon.com/dp/B0GSS4SGZR?tag=killagorillab-20" rel="nofollow sponsored noopener" target="_blank" aria-label="View Apple AirPods Max 2 on Amazon (opens in new tab)">View on Amazon</a><a class="btn bestbuy" href="https://bestbuycreators.7tiv.net/YVazeK" rel="nofollow sponsored noopener" target="_blank" aria-label="Buy Apple AirPods Max 2 at Best Buy (opens in new tab)">Buy at Best Buy</a></div>
 </li>
 <li class="card"><span class="ic" aria-hidden="true"><svg class="pi" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 15v-3a8 8 0 0 1 16 0v3"/><rect x="3" y="14" width="4" height="6" rx="1.5"/><rect x="17" y="14" width="4" height="6" rx="1.5"/></svg></span>
 <h2>Sennheiser Momentum 5 Wireless</h2>
 <p>Sennheiser&#x27;s audiophile-grade sound in a sleek wireless design with noise cancelling. Perfect for the music lover who cares about detail.</p>
-<a class="btn" href="https://www.amazon.com/dp/B0H1Y91MCQ?tag=killagorillab-20" rel="nofollow sponsored noopener" target="_blank" aria-label="View Sennheiser Momentum 5 Wireless on Amazon (opens in new tab)">View on Amazon</a>
+<div class="btns"><a class="btn" href="https://www.amazon.com/dp/B0H1Y91MCQ?tag=killagorillab-20" rel="nofollow sponsored noopener" target="_blank" aria-label="View Sennheiser Momentum 5 Wireless on Amazon (opens in new tab)">View on Amazon</a><a class="btn bestbuy" href="https://bestbuycreators.7tiv.net/MKLeOY" rel="nofollow sponsored noopener" target="_blank" aria-label="Buy Sennheiser Momentum 5 Wireless at Best Buy (opens in new tab)">Buy at Best Buy</a></div>
 </li>
 <li class="card"><span class="ic" aria-hidden="true"><svg class="pi" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 15v-3a8 8 0 0 1 16 0v3"/><rect x="3" y="14" width="4" height="6" rx="1.5"/><rect x="17" y="14" width="4" height="6" rx="1.5"/></svg></span>
 <h2>Sennheiser Momentum 4 Wireless</h2>
 <p>Rich, detailed Sennheiser sound and famously long battery life. A great premium option for long trips.</p>
-<a class="btn" href="https://www.amazon.com/dp/B0B6GHW1SX?tag=killagorillab-20" rel="nofollow sponsored noopener" target="_blank" aria-label="View Sennheiser Momentum 4 Wireless on Amazon (opens in new tab)">View on Amazon</a>
+<div class="btns"><a class="btn" href="https://www.amazon.com/dp/B0B6GHW1SX?tag=killagorillab-20" rel="nofollow sponsored noopener" target="_blank" aria-label="View Sennheiser Momentum 4 Wireless on Amazon (opens in new tab)">View on Amazon</a><a class="btn bestbuy" href="https://bestbuycreators.7tiv.net/KBN5bv" rel="nofollow sponsored noopener" target="_blank" aria-label="Buy Sennheiser Momentum 4 Wireless at Best Buy (opens in new tab)">Buy at Best Buy</a></div>
 </li>
 <li class="card"><span class="ic" aria-hidden="true"><svg class="pi" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 15v-3a8 8 0 0 1 16 0v3"/><rect x="3" y="14" width="4" height="6" rx="1.5"/><rect x="17" y="14" width="4" height="6" rx="1.5"/></svg></span>
 <h2>Bose QuietComfort Headphones</h2>
@@ -181,8 +186,8 @@ footer a{color:#fc3a27}footer a:hover{color:#f3ebe2}footer p{margin:.35rem 0}foo
 </main></div>
 <footer>
 <nav aria-label="Footer"><a href="../">Home</a><a href="../blog/">Blog</a><a href="../about/">About</a><a href="../disclosure/">Disclosure &amp; Privacy</a><button type="button" data-pk-settings>Privacy settings</button></nav>
-<p>As an Amazon Associate I earn from qualifying purchases.</p>
-<p>Product availability changes often; check Amazon for current details.</p>
+<p>As an Amazon Associate and Best Buy Creator, Pykkd earns from qualifying purchases.</p>
+<p>Product availability changes often; check Amazon or Best Buy for current details.</p>
 <p>&copy; 2026 Pykkd</p>
 </footer>
 <script src="../search.js" defer></script>

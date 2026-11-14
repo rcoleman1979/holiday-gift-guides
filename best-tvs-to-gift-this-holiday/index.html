@@ -62,10 +62,15 @@ h1{font-size:2rem;margin:.5rem 0 .5rem}
 .card h2,.card h3{font-size:1.12rem;margin:0;color:var(--ink);font-family:var(--sans);font-weight:700;line-height:1.3}
 .card p{margin:.3rem 0 .2rem;color:#423c36;font-size:.98rem}
 .card>*{grid-column:2}.card>.ic{grid-column:1;grid-row:1/span 2}.card .btn{grid-column:1/-1;margin-top:.6rem;align-self:end}
+.card .btns{grid-column:1/-1;margin-top:.6rem;align-self:end;display:flex;flex-wrap:wrap;gap:.55rem}
+.card .btns .btn{grid-column:auto;margin-top:0;flex:1 1 12rem}
 .btn{display:flex;align-items:center;justify-content:center;gap:.4rem;background:var(--berry);color:#fff;text-decoration:none;font-weight:700;font-size:1.05rem;padding:.85rem 1rem;border-radius:12px;min-height:50px}
 .btn:after{content:"\2192"}.btn:hover,.btn:focus{background:var(--berry-d)}
 .btn.gold{background:var(--gold);color:var(--ink)}.btn.gold:hover{background:#cf9d33}
 .btn.line{background:transparent;border:2px solid var(--berry);color:var(--berry)}.hero .btn.line{border-color:var(--cream);color:var(--cream)}.btn.line:after{content:none}
+.btn.bestbuy{background:#0046be;color:#fff;box-shadow:inset 0 -3px 0 #ffce00}
+.btn.bestbuy:hover,.btn.bestbuy:focus{background:#003399}
+a.bb-also{font-size:.9em;font-weight:700;color:#0046be;white-space:nowrap}
 .note{font-size:.85rem;color:var(--muted);text-align:center}
 .sec{margin:2rem 0}.sec>h2,.more>h2{font-size:1.5rem;margin:0 0 .8rem}.sec h2 a{color:inherit;text-decoration:none}
 .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:.8rem;list-style:none;padding:0;margin:0}
@@ -129,7 +134,7 @@ footer a{color:#fc3a27}footer a:hover{color:#f3ebe2}footer p{margin:.35rem 0}foo
 <form class="srch" role="search" action="../search/" method="get"><label for="srch-q" class="skip">Search Pykkd</label><input id="srch-q" name="q" type="search" placeholder="Search guides &amp; products" autocomplete="off"><ul class="srch-r" hidden></ul></form>
 <nav class="topnav" aria-label="Site"><a href="../all-guides/">All guides</a><a href="../blog/">Blog</a><a href="../about/">About</a></nav></div></header>
 <nav class="catnav" aria-label="Categories"><div class="in"><a class="beauty" href="../category/beauty/">Beauty</a><a class="tech" href="../category/tech/">Tech</a><a class="home-kitchen" href="../category/home-kitchen/">Home &amp; Kitchen</a><a class="for-him" href="../category/for-him/">For Him</a><a class="for-her" href="../category/for-her/">For Her</a><a class="kids" href="../category/kids/">Kids</a><a class="budget" href="../category/budget/">Budget</a><a class="big-ticket on" href="../category/big-ticket/" aria-current="page">Big-Ticket</a></div></nav>
-<p class="disc">As an Amazon Associate I earn from qualifying purchases.</p>
+<p class="disc">As an Amazon Associate and Best Buy Creator, Pykkd earns from qualifying purchases.</p>
 <div id="main"><main>
 <nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="../">Home</a></li><li><a href="../category/big-ticket/">Big-Ticket</a></li><li aria-current="page">Best TVs to Gift This Holiday</li></ol></nav>
 <header class="ghead"><span class="kicker">Big-Ticket gift guide</span><h1>Best TVs to Gift This Holiday</h1><p>Upgrading the family TV this Christmas? These are our favorite 4K TVs for movie nights, sports and gaming, from stunning OLEDs to bright, great-value Mini-LEDs.</p><span class="ic" aria-hidden="true">💎</span></header>
@@ -139,7 +144,7 @@ footer a{color:#fc3a27}footer a:hover{color:#f3ebe2}footer p{margin:.35rem 0}foo
 <li class="card"><span class="ic" aria-hidden="true"><svg class="pi" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg></span>
 <h2>LG 65&quot; C5 OLED evo 4K Smart TV</h2>
 <p>LG&#x27;s C-series OLED delivers perfect blacks and rich color, plus excellent gaming features. It&#x27;s a favorite all-rounder for movies and sports.</p>
-<a class="btn" href="https://www.amazon.com/dp/B0DYQM4BDB?tag=killagorillab-20" rel="nofollow sponsored noopener" target="_blank" aria-label="View LG 65&quot; C5 OLED evo 4K Smart TV on Amazon (opens in new tab)">View on Amazon</a>
+<div class="btns"><a class="btn" href="https://www.amazon.com/dp/B0DYQM4BDB?tag=killagorillab-20" rel="nofollow sponsored noopener" target="_blank" aria-label="View LG 65&quot; C5 OLED evo 4K Smart TV on Amazon (opens in new tab)">View on Amazon</a><a class="btn bestbuy" href="https://bestbuycreators.7tiv.net/4aNV9L" rel="nofollow sponsored noopener" target="_blank" aria-label="Buy LG 65&quot; C5 OLED evo 4K Smart TV at Best Buy (opens in new tab)">Buy at Best Buy</a></div>
 </li>
 <li class="card"><span class="ic" aria-hidden="true"><svg class="pi" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg></span>
 <h2>Samsung 65&quot; S90F OLED 4K Smart TV</h2>
@@ -154,7 +159,7 @@ footer a{color:#fc3a27}footer a:hover{color:#f3ebe2}footer p{margin:.35rem 0}foo
 <li class="card"><span class="ic" aria-hidden="true"><svg class="pi" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg></span>
 <h2>Hisense 65&quot; U8 Mini-LED 4K TV</h2>
 <p>A bright Mini-LED TV that stays punchy even in sunny living rooms. It&#x27;s a great choice for game days and HDR movies.</p>
-<a class="btn" href="https://www.amazon.com/dp/B0F1DV217B?tag=killagorillab-20" rel="nofollow sponsored noopener" target="_blank" aria-label="View Hisense 65&quot; U8 Mini-LED 4K TV on Amazon (opens in new tab)">View on Amazon</a>
+<div class="btns"><a class="btn" href="https://www.amazon.com/dp/B0F1DV217B?tag=killagorillab-20" rel="nofollow sponsored noopener" target="_blank" aria-label="View Hisense 65&quot; U8 Mini-LED 4K TV on Amazon (opens in new tab)">View on Amazon</a><a class="btn bestbuy" href="https://bestbuycreators.7tiv.net/dyzdB3" rel="nofollow sponsored noopener" target="_blank" aria-label="Buy Hisense 65&quot; U8 Mini-LED 4K TV at Best Buy (opens in new tab)">Buy at Best Buy</a></div>
 </li>
 <li class="card"><span class="ic" aria-hidden="true"><svg class="pi" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg></span>
 <h2>TCL 65&quot; QM7L QD-Mini LED 4K TV</h2>
@@ -169,7 +174,7 @@ footer a{color:#fc3a27}footer a:hover{color:#f3ebe2}footer p{margin:.35rem 0}foo
 <li class="card"><span class="ic" aria-hidden="true"><svg class="pi" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg></span>
 <h2>TCL 65&quot; QM6K QLED Mini LED TV</h2>
 <p>A budget-friendly QLED Mini LED that punches above its class on brightness and contrast. It&#x27;s ideal for a bedroom, dorm or first big TV.</p>
-<a class="btn" href="https://www.amazon.com/dp/B0DSRSTJ54?tag=killagorillab-20" rel="nofollow sponsored noopener" target="_blank" aria-label="View TCL 65&quot; QM6K QLED Mini LED TV on Amazon (opens in new tab)">View on Amazon</a>
+<div class="btns"><a class="btn" href="https://www.amazon.com/dp/B0DSRSTJ54?tag=killagorillab-20" rel="nofollow sponsored noopener" target="_blank" aria-label="View TCL 65&quot; QM6K QLED Mini LED TV on Amazon (opens in new tab)">View on Amazon</a><a class="btn bestbuy" href="https://bestbuycreators.7tiv.net/NGqaLP" rel="nofollow sponsored noopener" target="_blank" aria-label="Buy TCL 65&quot; QM6K QLED Mini LED TV at Best Buy (opens in new tab)">Buy at Best Buy</a></div>
 </li>
 </ol>
 <p class="note">Tap any button to see today's price and reviews on Amazon. Filed under: <a href="../category/big-ticket/">Big-Ticket</a> · <a href="../category/tech/">Tech</a></p>
@@ -186,8 +191,8 @@ footer a{color:#fc3a27}footer a:hover{color:#f3ebe2}footer p{margin:.35rem 0}foo
 </main></div>
 <footer>
 <nav aria-label="Footer"><a href="../">Home</a><a href="../blog/">Blog</a><a href="../about/">About</a><a href="../disclosure/">Disclosure &amp; Privacy</a><button type="button" data-pk-settings>Privacy settings</button></nav>
-<p>As an Amazon Associate I earn from qualifying purchases.</p>
-<p>Product availability changes often; check Amazon for current details.</p>
+<p>As an Amazon Associate and Best Buy Creator, Pykkd earns from qualifying purchases.</p>
+<p>Product availability changes often; check Amazon or Best Buy for current details.</p>
 <p>&copy; 2026 Pykkd</p>
 </footer>
 <script src="../search.js" defer></script>

@@ -62,10 +62,15 @@ h1{font-size:2rem;margin:.5rem 0 .5rem}
 .card h2,.card h3{font-size:1.12rem;margin:0;color:var(--ink);font-family:var(--sans);font-weight:700;line-height:1.3}
 .card p{margin:.3rem 0 .2rem;color:#423c36;font-size:.98rem}
 .card>*{grid-column:2}.card>.ic{grid-column:1;grid-row:1/span 2}.card .btn{grid-column:1/-1;margin-top:.6rem;align-self:end}
+.card .btns{grid-column:1/-1;margin-top:.6rem;align-self:end;display:flex;flex-wrap:wrap;gap:.55rem}
+.card .btns .btn{grid-column:auto;margin-top:0;flex:1 1 12rem}
 .btn{display:flex;align-items:center;justify-content:center;gap:.4rem;background:var(--berry);color:#fff;text-decoration:none;font-weight:700;font-size:1.05rem;padding:.85rem 1rem;border-radius:12px;min-height:50px}
 .btn:after{content:"\2192"}.btn:hover,.btn:focus{background:var(--berry-d)}
 .btn.gold{background:var(--gold);color:var(--ink)}.btn.gold:hover{background:#cf9d33}
 .btn.line{background:transparent;border:2px solid var(--berry);color:var(--berry)}.hero .btn.line{border-color:var(--cream);color:var(--cream)}.btn.line:after{content:none}
+.btn.bestbuy{background:#0046be;color:#fff;box-shadow:inset 0 -3px 0 #ffce00}
+.btn.bestbuy:hover,.btn.bestbuy:focus{background:#003399}
+a.bb-also{font-size:.9em;font-weight:700;color:#0046be;white-space:nowrap}
 .note{font-size:.85rem;color:var(--muted);text-align:center}
 .sec{margin:2rem 0}.sec>h2,.more>h2{font-size:1.5rem;margin:0 0 .8rem}.sec h2 a{color:inherit;text-decoration:none}
 .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:.8rem;list-style:none;padding:0;margin:0}
@@ -129,7 +134,7 @@ footer a{color:#fc3a27}footer a:hover{color:#f3ebe2}footer p{margin:.35rem 0}foo
 <form class="srch" role="search" action="../search/" method="get"><label for="srch-q" class="skip">Search Pykkd</label><input id="srch-q" name="q" type="search" placeholder="Search guides &amp; products" autocomplete="off"><ul class="srch-r" hidden></ul></form>
 <nav class="topnav" aria-label="Site"><a href="../all-guides/">All guides</a><a href="../blog/">Blog</a><a href="../about/">About</a></nav></div></header>
 <nav class="catnav" aria-label="Categories"><div class="in"><a class="beauty" href="../category/beauty/">Beauty</a><a class="tech on" href="../category/tech/" aria-current="page">Tech</a><a class="home-kitchen" href="../category/home-kitchen/">Home &amp; Kitchen</a><a class="for-him" href="../category/for-him/">For Him</a><a class="for-her" href="../category/for-her/">For Her</a><a class="kids" href="../category/kids/">Kids</a><a class="budget" href="../category/budget/">Budget</a><a class="big-ticket" href="../category/big-ticket/">Big-Ticket</a></div></nav>
-<p class="disc">As an Amazon Associate I earn from qualifying purchases.</p>
+<p class="disc">As an Amazon Associate and Best Buy Creator, Pykkd earns from qualifying purchases.</p>
 <div id="main"><main>
 <nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="../">Home</a></li><li><a href="../category/tech/">Tech</a></li><li aria-current="page">Top 10 Gaming &amp; Streaming Setup Upgrades: Stream Deck+, HyperX, Logitech, Insta360 &amp; Govee</li></ol></nav>
 <header class="ghead"><span class="kicker">Tech gift guide</span><h1>Top 10 Gaming &amp; Streaming Setup Upgrades: Stream Deck+, HyperX, Logitech, Insta360 &amp; Govee</h1><p>The upgrades that make a gaming and streaming setup look, sound and feel better, led by three pieces of gear I actually use on my own desk. The Elgato Stream Deck + leads the list, joined by the HyperX Cloud III headset and the Logitech G305 wireless mouse, then the Insta360 Link 2 AI webcam and the HyperX QuadCast 2 S mic (newer versions of the Insta360 Link and QuadCast S I own), plus the Elgato 4K X capture card, the Keychron K2 HE keyboard, Govee gaming light bars, a Govee G1 monitor backlight and an under-desk cable tray to keep it all clean. Splurge-worthy centerpieces and easy, affordable wins for PC gamers, console players and streamers.</p><span class="ic" aria-hidden="true">🎧</span></header>
@@ -139,27 +144,27 @@ footer a{color:#fc3a27}footer a:hover{color:#f3ebe2}footer p{margin:.35rem 0}foo
 <li class="card"><span class="ic" aria-hidden="true"><svg class="pi" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 8h12a4 4 0 0 1 4 4l-1 5a2 2 0 0 1-3.5 1L15 16H9l-2.5 2A2 2 0 0 1 3 17l-1-5a4 4 0 0 1 4-4z"/><path d="M7 11v3M5.5 12.5h3M15 12h.01M17 14h.01"/></svg></span>
 <h2>Elgato Stream Deck + Audio Mixer</h2>
 <p>The control center of my own setup: I use the Stream Deck + to launch games, mix game, chat and music volumes on the dials, and fire off scenes and shortcuts with one tap. The touch strip and four dials make live audio tweaks way faster than alt-tabbing.</p>
-<a class="btn" href="https://www.amazon.com/dp/B0BJL8SJ59?tag=killagorillab-20" rel="nofollow sponsored noopener" target="_blank" aria-label="View Elgato Stream Deck + Audio Mixer on Amazon (opens in new tab)">View on Amazon</a>
+<div class="btns"><a class="btn" href="https://www.amazon.com/dp/B0BJL8SJ59?tag=killagorillab-20" rel="nofollow sponsored noopener" target="_blank" aria-label="View Elgato Stream Deck + Audio Mixer on Amazon (opens in new tab)">View on Amazon</a><a class="btn bestbuy" href="https://bestbuycreators.7tiv.net/L0NkvL" rel="nofollow sponsored noopener" target="_blank" aria-label="Buy Elgato Stream Deck + Audio Mixer at Best Buy (opens in new tab)">Buy at Best Buy</a></div>
 </li>
 <li class="card"><span class="ic" aria-hidden="true"><svg class="pi" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 15v-3a8 8 0 0 1 16 0v3"/><rect x="3" y="14" width="4" height="6" rx="1.5"/><rect x="17" y="14" width="4" height="6" rx="1.5"/></svg></span>
 <h2>HyperX Cloud III Gaming Headset</h2>
 <p>The headset I game in every day: the HyperX Cloud III sounds great for the price, the spatial audio helps pinpoint footsteps in FPS games, and the memory foam stays comfy through long sessions.</p>
-<a class="btn" href="https://www.amazon.com/dp/B0C3BSZ56D?tag=killagorillab-20" rel="nofollow sponsored noopener" target="_blank" aria-label="View HyperX Cloud III Gaming Headset on Amazon (opens in new tab)">View on Amazon</a>
+<div class="btns"><a class="btn" href="https://www.amazon.com/dp/B0C3BSZ56D?tag=killagorillab-20" rel="nofollow sponsored noopener" target="_blank" aria-label="View HyperX Cloud III Gaming Headset on Amazon (opens in new tab)">View on Amazon</a><a class="btn bestbuy" href="https://bestbuycreators.7tiv.net/xJGdxd" rel="nofollow sponsored noopener" target="_blank" aria-label="Buy HyperX Cloud III Gaming Headset at Best Buy (opens in new tab)">Buy at Best Buy</a></div>
 </li>
 <li class="card"><span class="ic" aria-hidden="true"><svg class="pi" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="7" y="3" width="10" height="18" rx="5"/><path d="M12 3v6"/></svg></span>
 <h2>Logitech G305 LIGHTSPEED Wireless Gaming Mouse</h2>
 <p>The wireless mouse on my own desk: the G305 is light, connects lag-free over LIGHTSPEED and runs a long time on a single AA battery. An easy upgrade from any wired office mouse for PC gaming.</p>
-<a class="btn" href="https://www.amazon.com/dp/B07CMS5Q6P?tag=killagorillab-20" rel="nofollow sponsored noopener" target="_blank" aria-label="View Logitech G305 LIGHTSPEED Wireless Gaming Mouse on Amazon (opens in new tab)">View on Amazon</a>
+<div class="btns"><a class="btn" href="https://www.amazon.com/dp/B07CMS5Q6P?tag=killagorillab-20" rel="nofollow sponsored noopener" target="_blank" aria-label="View Logitech G305 LIGHTSPEED Wireless Gaming Mouse on Amazon (opens in new tab)">View on Amazon</a><a class="btn bestbuy" href="https://bestbuycreators.7tiv.net/0GNaqY" rel="nofollow sponsored noopener" target="_blank" aria-label="Buy Logitech G305 LIGHTSPEED Wireless Gaming Mouse at Best Buy (opens in new tab)">Buy at Best Buy</a></div>
 </li>
 <li class="card"><span class="ic" aria-hidden="true"><svg class="pi" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h4l2-3h6l2 3h4v12H3z"/><circle cx="12" cy="13.5" r="3.5"/></svg></span>
 <h2>Insta360 Link 2 4K AI Webcam</h2>
 <p>The newer version of the original Insta360 Link webcam I own: a 4K gimbal camera with AI tracking that follows you around the frame, plus HDR and gesture controls. It makes facecam and video calls look far sharper than a basic webcam.</p>
-<a class="btn" href="https://www.amazon.com/dp/B0DDTH3HX8?tag=killagorillab-20" rel="nofollow sponsored noopener" target="_blank" aria-label="View Insta360 Link 2 4K AI Webcam on Amazon (opens in new tab)">View on Amazon</a>
+<div class="btns"><a class="btn" href="https://www.amazon.com/dp/B0DDTH3HX8?tag=killagorillab-20" rel="nofollow sponsored noopener" target="_blank" aria-label="View Insta360 Link 2 4K AI Webcam on Amazon (opens in new tab)">View on Amazon</a><a class="btn bestbuy" href="https://bestbuycreators.7tiv.net/DWNxEo" rel="nofollow sponsored noopener" target="_blank" aria-label="Buy Insta360 Link 2 4K AI Webcam at Best Buy (opens in new tab)">Buy at Best Buy</a></div>
 </li>
 <li class="card"><span class="ic" aria-hidden="true"><svg class="pi" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="2" width="6" height="12" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v4M9 22h6"/></svg></span>
 <h2>HyperX QuadCast 2 S RGB USB Mic</h2>
 <p>The newer version of the HyperX QuadCast S I own. Plug-and-play USB with tap-to-mute, on-board gain and a built-in shock mount, all wrapped in that signature RGB glow.</p>
-<a class="btn" href="https://www.amazon.com/dp/B0DG9X4WHW?tag=killagorillab-20" rel="nofollow sponsored noopener" target="_blank" aria-label="View HyperX QuadCast 2 S RGB USB Mic on Amazon (opens in new tab)">View on Amazon</a>
+<div class="btns"><a class="btn" href="https://www.amazon.com/dp/B0DG9X4WHW?tag=killagorillab-20" rel="nofollow sponsored noopener" target="_blank" aria-label="View HyperX QuadCast 2 S RGB USB Mic on Amazon (opens in new tab)">View on Amazon</a><a class="btn bestbuy" href="https://bestbuycreators.7tiv.net/9VYo10" rel="nofollow sponsored noopener" target="_blank" aria-label="Buy HyperX QuadCast 2 S RGB USB Mic at Best Buy (opens in new tab)">Buy at Best Buy</a></div>
 </li>
 <li class="card"><span class="ic" aria-hidden="true"><svg class="pi" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 2v5M15 2v5"/><path d="M6 7h12v4a6 6 0 0 1-12 0z"/><path d="M12 17v5"/></svg></span>
 <h2>Elgato 4K X Capture Card</h2>
@@ -169,7 +174,7 @@ footer a{color:#fc3a27}footer a:hover{color:#f3ebe2}footer p{margin:.35rem 0}foo
 <li class="card"><span class="ic" aria-hidden="true"><svg class="pi" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="7" width="20" height="10" rx="2"/><path d="M6 10.5h.01M10 10.5h.01M14 10.5h.01M18 10.5h.01M7 14h10"/></svg></span>
 <h2>Keychron K2 HE Hall Effect Keyboard</h2>
 <p>A 75% wireless keyboard with magnetic Hall effect switches and rapid trigger, so keys actuate exactly where you set them. Great for competitive games and comfy enough for everyday typing.</p>
-<a class="btn" href="https://www.amazon.com/dp/B0DCVPGB9N?tag=killagorillab-20" rel="nofollow sponsored noopener" target="_blank" aria-label="View Keychron K2 HE Hall Effect Keyboard on Amazon (opens in new tab)">View on Amazon</a>
+<div class="btns"><a class="btn" href="https://www.amazon.com/dp/B0DCVPGB9N?tag=killagorillab-20" rel="nofollow sponsored noopener" target="_blank" aria-label="View Keychron K2 HE Hall Effect Keyboard on Amazon (opens in new tab)">View on Amazon</a><a class="btn bestbuy" href="https://bestbuycreators.7tiv.net/PzDGLX" rel="nofollow sponsored noopener" target="_blank" aria-label="Buy Keychron K2 HE Hall Effect Keyboard at Best Buy (opens in new tab)">Buy at Best Buy</a></div>
 </li>
 <li class="card"><span class="ic" aria-hidden="true"><svg class="pi" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18h6M10 21h4"/><path d="M12 3a6 6 0 0 0-4 10.5V15h8v-1.5A6 6 0 0 0 12 3z"/></svg></span>
 <h2>Govee RGBIC Gaming Light Bars</h2>
@@ -201,8 +206,8 @@ footer a{color:#fc3a27}footer a:hover{color:#f3ebe2}footer p{margin:.35rem 0}foo
 </main></div>
 <footer>
 <nav aria-label="Footer"><a href="../">Home</a><a href="../blog/">Blog</a><a href="../about/">About</a><a href="../disclosure/">Disclosure &amp; Privacy</a><button type="button" data-pk-settings>Privacy settings</button></nav>
-<p>As an Amazon Associate I earn from qualifying purchases.</p>
-<p>Product availability changes often; check Amazon for current details.</p>
+<p>As an Amazon Associate and Best Buy Creator, Pykkd earns from qualifying purchases.</p>
+<p>Product availability changes often; check Amazon or Best Buy for current details.</p>
 <p>&copy; 2026 Pykkd</p>
 </footer>
 <script src="../search.js" defer></script>

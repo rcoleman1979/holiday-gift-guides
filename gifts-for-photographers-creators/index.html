@@ -62,10 +62,15 @@ h1{font-size:2rem;margin:.5rem 0 .5rem}
 .card h2,.card h3{font-size:1.12rem;margin:0;color:var(--ink);font-family:var(--sans);font-weight:700;line-height:1.3}
 .card p{margin:.3rem 0 .2rem;color:#423c36;font-size:.98rem}
 .card>*{grid-column:2}.card>.ic{grid-column:1;grid-row:1/span 2}.card .btn{grid-column:1/-1;margin-top:.6rem;align-self:end}
+.card .btns{grid-column:1/-1;margin-top:.6rem;align-self:end;display:flex;flex-wrap:wrap;gap:.55rem}
+.card .btns .btn{grid-column:auto;margin-top:0;flex:1 1 12rem}
 .btn{display:flex;align-items:center;justify-content:center;gap:.4rem;background:var(--berry);color:#fff;text-decoration:none;font-weight:700;font-size:1.05rem;padding:.85rem 1rem;border-radius:12px;min-height:50px}
 .btn:after{content:"\2192"}.btn:hover,.btn:focus{background:var(--berry-d)}
 .btn.gold{background:var(--gold);color:var(--ink)}.btn.gold:hover{background:#cf9d33}
 .btn.line{background:transparent;border:2px solid var(--berry);color:var(--berry)}.hero .btn.line{border-color:var(--cream);color:var(--cream)}.btn.line:after{content:none}
+.btn.bestbuy{background:#0046be;color:#fff;box-shadow:inset 0 -3px 0 #ffce00}
+.btn.bestbuy:hover,.btn.bestbuy:focus{background:#003399}
+a.bb-also{font-size:.9em;font-weight:700;color:#0046be;white-space:nowrap}
 .note{font-size:.85rem;color:var(--muted);text-align:center}
 .sec{margin:2rem 0}.sec>h2,.more>h2{font-size:1.5rem;margin:0 0 .8rem}.sec h2 a{color:inherit;text-decoration:none}
 .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:.8rem;list-style:none;padding:0;margin:0}
@@ -129,7 +134,7 @@ footer a{color:#fc3a27}footer a:hover{color:#f3ebe2}footer p{margin:.35rem 0}foo
 <form class="srch" role="search" action="../search/" method="get"><label for="srch-q" class="skip">Search Pykkd</label><input id="srch-q" name="q" type="search" placeholder="Search guides &amp; products" autocomplete="off"><ul class="srch-r" hidden></ul></form>
 <nav class="topnav" aria-label="Site"><a href="../all-guides/">All guides</a><a href="../blog/">Blog</a><a href="../about/">About</a></nav></div></header>
 <nav class="catnav" aria-label="Categories"><div class="in"><a class="beauty" href="../category/beauty/">Beauty</a><a class="tech on" href="../category/tech/" aria-current="page">Tech</a><a class="home-kitchen" href="../category/home-kitchen/">Home &amp; Kitchen</a><a class="for-him" href="../category/for-him/">For Him</a><a class="for-her" href="../category/for-her/">For Her</a><a class="kids" href="../category/kids/">Kids</a><a class="budget" href="../category/budget/">Budget</a><a class="big-ticket" href="../category/big-ticket/">Big-Ticket</a></div></nav>
-<p class="disc">As an Amazon Associate I earn from qualifying purchases.</p>
+<p class="disc">As an Amazon Associate and Best Buy Creator, Pykkd earns from qualifying purchases.</p>
 <div id="main"><main>
 <nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="../">Home</a></li><li><a href="../category/tech/">Tech</a></li><li aria-current="page">Top 10 Gifts for Photographers &amp; Content Creators</li></ol></nav>
 <header class="ghead"><span class="kicker">Tech gift guide</span><h1>Top 10 Gifts for Photographers &amp; Content Creators</h1><p>Cameras, audio, light and support gear for the photographer, vlogger or YouTuber on your list. A Canon EOS R50, Sony ZV-1F, DJI Osmo Pocket 3, Insta360 X5, RØDE Wireless GO mics, an Osmo Mobile 8 gimbal, Elgato Key Light, NEEWER ring light, Amazon Basics tripod and a fast SanDisk SD card.</p><span class="ic" aria-hidden="true">🎧</span></header>
@@ -139,7 +144,7 @@ footer a{color:#fc3a27}footer a:hover{color:#f3ebe2}footer p{margin:.35rem 0}foo
 <li class="card"><span class="ic" aria-hidden="true"><svg class="pi" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h4l2-3h6l2 3h4v12H3z"/><circle cx="12" cy="13.5" r="3.5"/></svg></span>
 <h2>Canon EOS R50 Mirrorless Camera Kit</h2>
 <p>Canon&#x27;s EOS R50 is a compact mirrorless camera with fast autofocus and 4K video. A perfect step up from a phone for new photographers.</p>
-<a class="btn" href="https://www.amazon.com/dp/B0BTTV6CT1?tag=killagorillab-20" rel="nofollow sponsored noopener" target="_blank" aria-label="View Canon EOS R50 Mirrorless Camera Kit on Amazon (opens in new tab)">View on Amazon</a>
+<div class="btns"><a class="btn" href="https://www.amazon.com/dp/B0BTTV6CT1?tag=killagorillab-20" rel="nofollow sponsored noopener" target="_blank" aria-label="View Canon EOS R50 Mirrorless Camera Kit on Amazon (opens in new tab)">View on Amazon</a><a class="btn bestbuy" href="https://bestbuycreators.7tiv.net/aNXdqo" rel="nofollow sponsored noopener" target="_blank" aria-label="Buy Canon EOS R50 Mirrorless Camera Kit at Best Buy (opens in new tab)">Buy at Best Buy</a></div>
 </li>
 <li class="card"><span class="ic" aria-hidden="true"><svg class="pi" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h4l2-3h6l2 3h4v12H3z"/><circle cx="12" cy="13.5" r="3.5"/></svg></span>
 <h2>Sony ZV-1F Vlogging Camera</h2>
@@ -149,22 +154,22 @@ footer a{color:#fc3a27}footer a:hover{color:#f3ebe2}footer p{margin:.35rem 0}foo
 <li class="card"><span class="ic" aria-hidden="true"><svg class="pi" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h4l2-3h6l2 3h4v12H3z"/><circle cx="12" cy="13.5" r="3.5"/></svg></span>
 <h2>DJI Osmo Pocket 3 Vlogging Camera</h2>
 <p>DJI&#x27;s Osmo Pocket 3 pairs a 1-inch sensor with a built-in gimbal for silky-smooth 4K vlogs that fit in a pocket.</p>
-<a class="btn" href="https://www.amazon.com/dp/B0CG19QXWD?tag=killagorillab-20" rel="nofollow sponsored noopener" target="_blank" aria-label="View DJI Osmo Pocket 3 Vlogging Camera on Amazon (opens in new tab)">View on Amazon</a>
+<div class="btns"><a class="btn" href="https://www.amazon.com/dp/B0CG19QXWD?tag=killagorillab-20" rel="nofollow sponsored noopener" target="_blank" aria-label="View DJI Osmo Pocket 3 Vlogging Camera on Amazon (opens in new tab)">View on Amazon</a><a class="btn bestbuy" href="https://bestbuycreators.7tiv.net/AgN69N" rel="nofollow sponsored noopener" target="_blank" aria-label="Buy DJI Osmo Pocket 3 Vlogging Camera at Best Buy (opens in new tab)">Buy at Best Buy</a></div>
 </li>
 <li class="card"><span class="ic" aria-hidden="true"><svg class="pi" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h4l2-3h6l2 3h4v12H3z"/><circle cx="12" cy="13.5" r="3.5"/></svg></span>
 <h2>Insta360 X5 360° Action Camera</h2>
 <p>Insta360 X5 captures everything around you in 8K 360°, so you can reframe the perfect shot later. Waterproof and adventure-ready.</p>
-<a class="btn" href="https://www.amazon.com/dp/B0DZCBYCNY?tag=killagorillab-20" rel="nofollow sponsored noopener" target="_blank" aria-label="View Insta360 X5 360° Action Camera on Amazon (opens in new tab)">View on Amazon</a>
+<div class="btns"><a class="btn" href="https://www.amazon.com/dp/B0DZCBYCNY?tag=killagorillab-20" rel="nofollow sponsored noopener" target="_blank" aria-label="View Insta360 X5 360° Action Camera on Amazon (opens in new tab)">View on Amazon</a><a class="btn bestbuy" href="https://bestbuycreators.7tiv.net/GbN9e9" rel="nofollow sponsored noopener" target="_blank" aria-label="Buy Insta360 X5 360° Action Camera at Best Buy (opens in new tab)">Buy at Best Buy</a></div>
 </li>
 <li class="card"><span class="ic" aria-hidden="true"><svg class="pi" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="2" width="6" height="12" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v4M9 22h6"/></svg></span>
 <h2>RØDE Wireless GO (Gen 3) Mic Kit</h2>
 <p>RØDE&#x27;s Wireless GO (Gen 3) kit with two clip-on transmitters and 32-bit float recording for crisp interviews and vlogs.</p>
-<a class="btn" href="https://www.amazon.com/dp/B0DN1PGH94?tag=killagorillab-20" rel="nofollow sponsored noopener" target="_blank" aria-label="View RØDE Wireless GO (Gen 3) Mic Kit on Amazon (opens in new tab)">View on Amazon</a>
+<div class="btns"><a class="btn" href="https://www.amazon.com/dp/B0DN1PGH94?tag=killagorillab-20" rel="nofollow sponsored noopener" target="_blank" aria-label="View RØDE Wireless GO (Gen 3) Mic Kit on Amazon (opens in new tab)">View on Amazon</a><a class="btn bestbuy" href="https://bestbuycreators.7tiv.net/1GNA0x" rel="nofollow sponsored noopener" target="_blank" aria-label="Buy RØDE Wireless GO (Gen 3) Mic Kit at Best Buy (opens in new tab)">Buy at Best Buy</a></div>
 </li>
 <li class="card"><span class="ic" aria-hidden="true"><svg class="pi" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="2" width="6" height="4" rx="1"/><path d="M12 6v6M12 12l-6 9M12 12l6 9M12 12v9"/></svg></span>
 <h2>DJI Osmo Mobile 8 Phone Gimbal</h2>
 <p>DJI&#x27;s Osmo Mobile 8 gimbal steadies phone footage on three axes with subject tracking for smooth, cinematic clips.</p>
-<a class="btn" href="https://www.amazon.com/dp/B0FJ2L67HJ?tag=killagorillab-20" rel="nofollow sponsored noopener" target="_blank" aria-label="View DJI Osmo Mobile 8 Phone Gimbal on Amazon (opens in new tab)">View on Amazon</a>
+<div class="btns"><a class="btn" href="https://www.amazon.com/dp/B0FJ2L67HJ?tag=killagorillab-20" rel="nofollow sponsored noopener" target="_blank" aria-label="View DJI Osmo Mobile 8 Phone Gimbal on Amazon (opens in new tab)">View on Amazon</a><a class="btn bestbuy" href="https://bestbuycreators.7tiv.net/JkNPG7" rel="nofollow sponsored noopener" target="_blank" aria-label="Buy DJI Osmo Mobile 8 Phone Gimbal at Best Buy (opens in new tab)">Buy at Best Buy</a></div>
 </li>
 <li class="card"><span class="ic" aria-hidden="true"><svg class="pi" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18h6M10 21h4"/><path d="M12 3a6 6 0 0 0-4 10.5V15h8v-1.5A6 6 0 0 0 12 3z"/></svg></span>
 <h2>Elgato Key Light Studio Light</h2>
@@ -174,7 +179,7 @@ footer a{color:#fc3a27}footer a:hover{color:#f3ebe2}footer p{margin:.35rem 0}foo
 <li class="card"><span class="ic" aria-hidden="true"><svg class="pi" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18h6M10 21h4"/><path d="M12 3a6 6 0 0 0-4 10.5V15h8v-1.5A6 6 0 0 0 12 3z"/></svg></span>
 <h2>NEEWER 18&quot; Ring Light Kit</h2>
 <p>A classic NEEWER 18-inch ring light kit with stand for flattering, even light on portraits, makeup tutorials and videos.</p>
-<a class="btn" href="https://www.amazon.com/dp/B01LXDNNBW?tag=killagorillab-20" rel="nofollow sponsored noopener" target="_blank" aria-label="View NEEWER 18&quot; Ring Light Kit on Amazon (opens in new tab)">View on Amazon</a>
+<div class="btns"><a class="btn" href="https://www.amazon.com/dp/B01LXDNNBW?tag=killagorillab-20" rel="nofollow sponsored noopener" target="_blank" aria-label="View NEEWER 18&quot; Ring Light Kit on Amazon (opens in new tab)">View on Amazon</a><a class="btn bestbuy" href="https://bestbuycreators.7tiv.net/gREdj2" rel="nofollow sponsored noopener" target="_blank" aria-label="Buy NEEWER 18&quot; Ring Light Kit at Best Buy (opens in new tab)">Buy at Best Buy</a></div>
 </li>
 <li class="card"><span class="ic" aria-hidden="true"><svg class="pi" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="2" width="6" height="4" rx="1"/><path d="M12 6v6M12 12l-6 9M12 12l6 9M12 12v9"/></svg></span>
 <h2>Amazon Basics 60&quot; Camera Tripod</h2>
@@ -184,7 +189,7 @@ footer a{color:#fc3a27}footer a:hover{color:#f3ebe2}footer p{margin:.35rem 0}foo
 <li class="card"><span class="ic" aria-hidden="true"><svg class="pi" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 2h8l4 4v16H7z"/><path d="M10 6v3M13 6v3M16 7v2"/></svg></span>
 <h2>SanDisk 128GB Extreme PRO SD Card</h2>
 <p>A fast 128GB SanDisk Extreme PRO SD card for 4K video and burst shooting. Every photographer can use another one.</p>
-<a class="btn" href="https://www.amazon.com/dp/B0GDQRNTF3?tag=killagorillab-20" rel="nofollow sponsored noopener" target="_blank" aria-label="View SanDisk 128GB Extreme PRO SD Card on Amazon (opens in new tab)">View on Amazon</a>
+<div class="btns"><a class="btn" href="https://www.amazon.com/dp/B0GDQRNTF3?tag=killagorillab-20" rel="nofollow sponsored noopener" target="_blank" aria-label="View SanDisk 128GB Extreme PRO SD Card on Amazon (opens in new tab)">View on Amazon</a><a class="btn bestbuy" href="https://bestbuycreators.7tiv.net/oN9d1E" rel="nofollow sponsored noopener" target="_blank" aria-label="Buy SanDisk 128GB Extreme PRO SD Card at Best Buy (opens in new tab)">Buy at Best Buy</a></div>
 </li>
 </ol>
 <p class="note">Tap any button to see today's price and reviews on Amazon. Filed under: <a href="../category/tech/">Tech</a> · <a href="../category/big-ticket/">Big-Ticket</a></p>
@@ -201,8 +206,8 @@ footer a{color:#fc3a27}footer a:hover{color:#f3ebe2}footer p{margin:.35rem 0}foo
 </main></div>
 <footer>
 <nav aria-label="Footer"><a href="../">Home</a><a href="../blog/">Blog</a><a href="../about/">About</a><a href="../disclosure/">Disclosure &amp; Privacy</a><button type="button" data-pk-settings>Privacy settings</button></nav>
-<p>As an Amazon Associate I earn from qualifying purchases.</p>
-<p>Product availability changes often; check Amazon for current details.</p>
+<p>As an Amazon Associate and Best Buy Creator, Pykkd earns from qualifying purchases.</p>
+<p>Product availability changes often; check Amazon or Best Buy for current details.</p>
 <p>&copy; 2026 Pykkd</p>
 </footer>
 <script src="../search.js" defer></script>

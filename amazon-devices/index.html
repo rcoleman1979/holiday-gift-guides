@@ -62,10 +62,15 @@ h1{font-size:2rem;margin:.5rem 0 .5rem}
 .card h2,.card h3{font-size:1.12rem;margin:0;color:var(--ink);font-family:var(--sans);font-weight:700;line-height:1.3}
 .card p{margin:.3rem 0 .2rem;color:#423c36;font-size:.98rem}
 .card>*{grid-column:2}.card>.ic{grid-column:1;grid-row:1/span 2}.card .btn{grid-column:1/-1;margin-top:.6rem;align-self:end}
+.card .btns{grid-column:1/-1;margin-top:.6rem;align-self:end;display:flex;flex-wrap:wrap;gap:.55rem}
+.card .btns .btn{grid-column:auto;margin-top:0;flex:1 1 12rem}
 .btn{display:flex;align-items:center;justify-content:center;gap:.4rem;background:var(--berry);color:#fff;text-decoration:none;font-weight:700;font-size:1.05rem;padding:.85rem 1rem;border-radius:12px;min-height:50px}
 .btn:after{content:"\2192"}.btn:hover,.btn:focus{background:var(--berry-d)}
 .btn.gold{background:var(--gold);color:var(--ink)}.btn.gold:hover{background:#cf9d33}
 .btn.line{background:transparent;border:2px solid var(--berry);color:var(--berry)}.hero .btn.line{border-color:var(--cream);color:var(--cream)}.btn.line:after{content:none}
+.btn.bestbuy{background:#0046be;color:#fff;box-shadow:inset 0 -3px 0 #ffce00}
+.btn.bestbuy:hover,.btn.bestbuy:focus{background:#003399}
+a.bb-also{font-size:.9em;font-weight:700;color:#0046be;white-space:nowrap}
 .note{font-size:.85rem;color:var(--muted);text-align:center}
 .sec{margin:2rem 0}.sec>h2,.more>h2{font-size:1.5rem;margin:0 0 .8rem}.sec h2 a{color:inherit;text-decoration:none}
 .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:.8rem;list-style:none;padding:0;margin:0}
@@ -129,7 +134,7 @@ footer a{color:#fc3a27}footer a:hover{color:#f3ebe2}footer p{margin:.35rem 0}foo
 <form class="srch" role="search" action="../search/" method="get"><label for="srch-q" class="skip">Search Pykkd</label><input id="srch-q" name="q" type="search" placeholder="Search guides &amp; products" autocomplete="off"><ul class="srch-r" hidden></ul></form>
 <nav class="topnav" aria-label="Site"><a href="../all-guides/">All guides</a><a href="../blog/">Blog</a><a href="../about/">About</a></nav></div></header>
 <nav class="catnav" aria-label="Categories"><div class="in"><a class="beauty" href="../category/beauty/">Beauty</a><a class="tech on" href="../category/tech/" aria-current="page">Tech</a><a class="home-kitchen" href="../category/home-kitchen/">Home &amp; Kitchen</a><a class="for-him" href="../category/for-him/">For Him</a><a class="for-her" href="../category/for-her/">For Her</a><a class="kids" href="../category/kids/">Kids</a><a class="budget" href="../category/budget/">Budget</a><a class="big-ticket" href="../category/big-ticket/">Big-Ticket</a></div></nav>
-<p class="disc">As an Amazon Associate I earn from qualifying purchases.</p>
+<p class="disc">As an Amazon Associate and Best Buy Creator, Pykkd earns from qualifying purchases.</p>
 <div id="main"><main>
 <nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="../">Home</a></li><li><a href="../category/tech/">Tech</a></li><li aria-current="page">Top 10 Amazon Devices: Ring, Echo, Fire TV, Kindle &amp; Blink</li></ol></nav>
 <header class="ghead"><span class="kicker">Tech gift guide</span><h1>Top 10 Amazon Devices: Ring, Echo, Fire TV, Kindle &amp; Blink</h1><p>Amazon&#x27;s own gadgets make some of the easiest gifts to set up and use every day, and they all work together through Alexa. The Ring Battery Doorbell 2K leads the list, joined by the Fire TV Stick 4K Plus and the hands-free Fire TV Cube for streaming, the Echo Dot Max smart speaker and Echo Show 5 smart display, and the redesigned Kindle for distraction-free reading. For home security there&#x27;s the battery-powered Ring Outdoor Cam 2K and the wire-free Blink Outdoor 2K+ Floodlight Camera, plus an Amazon Ember 40-inch Fire TV for the bedroom or dorm and a Fire HD 8 Kids tablet with a kid-proof case. Some subscriptions, such as Ring Protect, Blink plans and Amazon Kids+, are optional and sold separately, so check each listing on Amazon for current details.</p><span class="ic" aria-hidden="true">🎧</span></header>
@@ -139,22 +144,22 @@ footer a{color:#fc3a27}footer a:hover{color:#f3ebe2}footer p{margin:.35rem 0}foo
 <li class="card"><span class="ic" aria-hidden="true"><svg class="pi" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="7" y="2" width="10" height="20" rx="5"/><circle cx="12" cy="8" r="2"/><circle cx="12" cy="16" r="2"/></svg></span>
 <h2>Ring Battery Doorbell 2K (newest model)</h2>
 <p>The Ring Battery Doorbell 2K shows who&#x27;s at the door in crisp Retinal 2K video with up to 6x Enhanced Zoom, real-time motion alerts and Two-Way Talk. The built-in battery recharges over USB-C, so it&#x27;s an easy install for renters and homeowners alike.</p>
-<a class="btn" href="https://www.amazon.com/dp/B0G2D1R15Q?tag=killagorillab-20" rel="nofollow sponsored noopener" target="_blank" aria-label="View Ring Battery Doorbell 2K (newest model) on Amazon (opens in new tab)">View on Amazon</a>
+<div class="btns"><a class="btn" href="https://www.amazon.com/dp/B0G2D1R15Q?tag=killagorillab-20" rel="nofollow sponsored noopener" target="_blank" aria-label="View Ring Battery Doorbell 2K (newest model) on Amazon (opens in new tab)">View on Amazon</a><a class="btn bestbuy" href="https://bestbuycreators.7tiv.net/7XNg4r" rel="nofollow sponsored noopener" target="_blank" aria-label="Buy Ring Battery Doorbell 2K (newest model) at Best Buy (opens in new tab)">Buy at Best Buy</a></div>
 </li>
 <li class="card"><span class="ic" aria-hidden="true"><svg class="pi" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="9" width="13" height="6" rx="2"/><path d="M16 12h5"/><path d="M7 12h.01"/></svg></span>
 <h2>Amazon Fire TV Stick 4K Plus</h2>
 <p>Amazon&#x27;s Fire TV Stick 4K Plus streams in 4K with Wi-Fi 6 and an Alexa Voice Remote, and AI-powered search helps you find something to watch faster. It plugs into any HDMI TV and turns it into a smart TV in minutes.</p>
-<a class="btn" href="https://www.amazon.com/dp/B0F7Z4QZTT?tag=killagorillab-20" rel="nofollow sponsored noopener" target="_blank" aria-label="View Amazon Fire TV Stick 4K Plus on Amazon (opens in new tab)">View on Amazon</a>
+<div class="btns"><a class="btn" href="https://www.amazon.com/dp/B0F7Z4QZTT?tag=killagorillab-20" rel="nofollow sponsored noopener" target="_blank" aria-label="View Amazon Fire TV Stick 4K Plus on Amazon (opens in new tab)">View on Amazon</a><a class="btn bestbuy" href="https://bestbuycreators.7tiv.net/3kN15k" rel="nofollow sponsored noopener" target="_blank" aria-label="Buy Amazon Fire TV Stick 4K Plus at Best Buy (opens in new tab)">Buy at Best Buy</a></div>
 </li>
 <li class="card"><span class="ic" aria-hidden="true"><svg class="pi" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 10v4a7 3 0 0 0 14 0v-4"/><ellipse cx="12" cy="10" rx="7" ry="2.5"/><path d="M9 10h6"/></svg></span>
 <h2>Amazon Echo Dot Max (newest model)</h2>
 <p>The Echo Dot Max is Amazon&#x27;s room-filling Alexa speaker, with nearly twice the bass of the Echo Dot and sound that adapts to the room. It also has a built-in smart home hub for lights, locks and other Alexa-compatible devices.</p>
-<a class="btn" href="https://www.amazon.com/dp/B0D6SX8VLQ?tag=killagorillab-20" rel="nofollow sponsored noopener" target="_blank" aria-label="View Amazon Echo Dot Max (newest model) on Amazon (opens in new tab)">View on Amazon</a>
+<div class="btns"><a class="btn" href="https://www.amazon.com/dp/B0D6SX8VLQ?tag=killagorillab-20" rel="nofollow sponsored noopener" target="_blank" aria-label="View Amazon Echo Dot Max (newest model) on Amazon (opens in new tab)">View on Amazon</a><a class="btn bestbuy" href="https://bestbuycreators.7tiv.net/1GNA6a" rel="nofollow sponsored noopener" target="_blank" aria-label="Buy Amazon Echo Dot Max (newest model) at Best Buy (opens in new tab)">Buy at Best Buy</a></div>
 </li>
 <li class="card"><span class="ic" aria-hidden="true"><svg class="pi" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M8 6h8M8 9h8M8 12h5"/></svg></span>
 <h2>Amazon Kindle 16GB (newest model)</h2>
 <p>The redesigned Kindle is thinner, lighter and faster, with a 6-inch glare-free display that reads well in bright sun or at night and battery life measured in weeks. No notifications or social feeds, just books.</p>
-<a class="btn" href="https://www.amazon.com/dp/B0FXJ8VZ39?tag=killagorillab-20" rel="nofollow sponsored noopener" target="_blank" aria-label="View Amazon Kindle 16GB (newest model) on Amazon (opens in new tab)">View on Amazon</a>
+<div class="btns"><a class="btn" href="https://www.amazon.com/dp/B0FXJ8VZ39?tag=killagorillab-20" rel="nofollow sponsored noopener" target="_blank" aria-label="View Amazon Kindle 16GB (newest model) on Amazon (opens in new tab)">View on Amazon</a><a class="btn bestbuy" href="https://bestbuycreators.7tiv.net/VO5XJa" rel="nofollow sponsored noopener" target="_blank" aria-label="Buy Amazon Kindle 16GB (newest model) at Best Buy (opens in new tab)">Buy at Best Buy</a></div>
 </li>
 <li class="card"><span class="ic" aria-hidden="true"><svg class="pi" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="14" height="8" rx="4"/><circle cx="8" cy="9" r="2"/><path d="M17 9h3v10M13 13v3h7"/></svg></span>
 <h2>Blink Outdoor 2K+ Floodlight Camera (newest model)</h2>
@@ -169,7 +174,7 @@ footer a{color:#fc3a27}footer a:hover{color:#f3ebe2}footer p{margin:.35rem 0}foo
 <li class="card"><span class="ic" aria-hidden="true"><svg class="pi" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M7 13l3-3 3 3 2-2 3 3"/><path d="M9 21l1-4M15 21l-1-4"/></svg></span>
 <h2>Amazon Echo Show 5 (newest model)</h2>
 <p>The newest Echo Show 5 is a compact smart display for a nightstand, desk or kitchen counter: check the weather, set alarms and timers, play music and see your smart home cameras at a glance with Alexa. Tens of thousands of ratings back it up.</p>
-<a class="btn" href="https://www.amazon.com/dp/B09B2SBHQK?tag=killagorillab-20" rel="nofollow sponsored noopener" target="_blank" aria-label="View Amazon Echo Show 5 (newest model) on Amazon (opens in new tab)">View on Amazon</a>
+<div class="btns"><a class="btn" href="https://www.amazon.com/dp/B09B2SBHQK?tag=killagorillab-20" rel="nofollow sponsored noopener" target="_blank" aria-label="View Amazon Echo Show 5 (newest model) on Amazon (opens in new tab)">View on Amazon</a><a class="btn bestbuy" href="https://bestbuycreators.7tiv.net/vDadXO" rel="nofollow sponsored noopener" target="_blank" aria-label="Buy Amazon Echo Show 5 (newest model) at Best Buy (opens in new tab)">Buy at Best Buy</a></div>
 </li>
 <li class="card"><span class="ic" aria-hidden="true"><svg class="pi" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="14" height="8" rx="4"/><circle cx="8" cy="9" r="2"/><path d="M17 9h3v10M13 13v3h7"/></svg></span>
 <h2>Ring Outdoor Cam 2K (newest model), Battery</h2>
@@ -184,7 +189,7 @@ footer a{color:#fc3a27}footer a:hover{color:#f3ebe2}footer p{margin:.35rem 0}foo
 <li class="card"><span class="ic" aria-hidden="true"><svg class="pi" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="2" width="16" height="20" rx="2"/><path d="M11 18h2"/></svg></span>
 <h2>Amazon Fire HD 8 Kids Tablet (ages 3-7)</h2>
 <p>The Fire HD 8 Kids tablet is a full tablet (not a toy) for ages 3 to 7, with a kid-proof case, a 2-year worry-free guarantee, parental controls and a year of Amazon Kids+ included. Long battery life covers road trips and rainy days.</p>
-<a class="btn" href="https://www.amazon.com/dp/B0D38FT41H?tag=killagorillab-20" rel="nofollow sponsored noopener" target="_blank" aria-label="View Amazon Fire HD 8 Kids Tablet (ages 3-7) on Amazon (opens in new tab)">View on Amazon</a>
+<div class="btns"><a class="btn" href="https://www.amazon.com/dp/B0D38FT41H?tag=killagorillab-20" rel="nofollow sponsored noopener" target="_blank" aria-label="View Amazon Fire HD 8 Kids Tablet (ages 3-7) on Amazon (opens in new tab)">View on Amazon</a><a class="btn bestbuy" href="https://bestbuycreators.7tiv.net/ZVAWoQ" rel="nofollow sponsored noopener" target="_blank" aria-label="Buy Amazon Fire HD 8 Kids Tablet (ages 3-7) at Best Buy (opens in new tab)">Buy at Best Buy</a></div>
 </li>
 </ol>
 <p class="note">Tap any button to see today's price and reviews on Amazon. Filed under: <a href="../category/tech/">Tech</a> · <a href="../category/home-kitchen/">Home &amp; Kitchen</a></p>
@@ -201,8 +206,8 @@ footer a{color:#fc3a27}footer a:hover{color:#f3ebe2}footer p{margin:.35rem 0}foo
 </main></div>
 <footer>
 <nav aria-label="Footer"><a href="../">Home</a><a href="../blog/">Blog</a><a href="../about/">About</a><a href="../disclosure/">Disclosure &amp; Privacy</a><button type="button" data-pk-settings>Privacy settings</button></nav>
-<p>As an Amazon Associate I earn from qualifying purchases.</p>
-<p>Product availability changes often; check Amazon for current details.</p>
+<p>As an Amazon Associate and Best Buy Creator, Pykkd earns from qualifying purchases.</p>
+<p>Product availability changes often; check Amazon or Best Buy for current details.</p>
 <p>&copy; 2026 Pykkd</p>
 </footer>
 <script src="../search.js" defer></script>

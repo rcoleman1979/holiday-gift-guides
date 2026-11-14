@@ -19,7 +19,7 @@ const BASE=process.env.BASE_URL||'http://127.0.0.1:8765';
   page.on('request',r=>{if(/goatcounter|mailerlite|fonts.googleapis|fonts.gstatic/.test(r.url()))vendorRequests.push(r.url())});
   async function open(path){
    await page.goto(BASE+path);if(await page.locator('#pk-privacy').isVisible())await page.locator('[data-choice=close]').click();
-   if(await page.locator('.disc').count())assert.equal(await page.locator('.disc').textContent(),'As an Amazon Associate I earn from qualifying purchases.');
+   if(await page.locator('.disc').count())assert.equal(await page.locator('.disc').textContent(),'As an Amazon Associate and Best Buy Creator, Pykkd earns from qualifying purchases.');
   }
   async function follow(link,kind='click'){
    const expected=await link.getAttribute('href');assert.equal(new URL(expected).hostname,'www.amazon.com');assert.equal(new URL(expected).searchParams.get('tag'),'killagorillab-20');

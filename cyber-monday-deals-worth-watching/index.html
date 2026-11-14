@@ -62,10 +62,15 @@ h1{font-size:2rem;margin:.5rem 0 .5rem}
 .card h2,.card h3{font-size:1.12rem;margin:0;color:var(--ink);font-family:var(--sans);font-weight:700;line-height:1.3}
 .card p{margin:.3rem 0 .2rem;color:#423c36;font-size:.98rem}
 .card>*{grid-column:2}.card>.ic{grid-column:1;grid-row:1/span 2}.card .btn{grid-column:1/-1;margin-top:.6rem;align-self:end}
+.card .btns{grid-column:1/-1;margin-top:.6rem;align-self:end;display:flex;flex-wrap:wrap;gap:.55rem}
+.card .btns .btn{grid-column:auto;margin-top:0;flex:1 1 12rem}
 .btn{display:flex;align-items:center;justify-content:center;gap:.4rem;background:var(--berry);color:#fff;text-decoration:none;font-weight:700;font-size:1.05rem;padding:.85rem 1rem;border-radius:12px;min-height:50px}
 .btn:after{content:"\2192"}.btn:hover,.btn:focus{background:var(--berry-d)}
 .btn.gold{background:var(--gold);color:var(--ink)}.btn.gold:hover{background:#cf9d33}
 .btn.line{background:transparent;border:2px solid var(--berry);color:var(--berry)}.hero .btn.line{border-color:var(--cream);color:var(--cream)}.btn.line:after{content:none}
+.btn.bestbuy{background:#0046be;color:#fff;box-shadow:inset 0 -3px 0 #ffce00}
+.btn.bestbuy:hover,.btn.bestbuy:focus{background:#003399}
+a.bb-also{font-size:.9em;font-weight:700;color:#0046be;white-space:nowrap}
 .note{font-size:.85rem;color:var(--muted);text-align:center}
 .sec{margin:2rem 0}.sec>h2,.more>h2{font-size:1.5rem;margin:0 0 .8rem}.sec h2 a{color:inherit;text-decoration:none}
 .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:.8rem;list-style:none;padding:0;margin:0}
@@ -129,7 +134,7 @@ footer a{color:#fc3a27}footer a:hover{color:#f3ebe2}footer p{margin:.35rem 0}foo
 <form class="srch" role="search" action="../search/" method="get"><label for="srch-q" class="skip">Search Pykkd</label><input id="srch-q" name="q" type="search" placeholder="Search guides &amp; products" autocomplete="off"><ul class="srch-r" hidden></ul></form>
 <nav class="topnav" aria-label="Site"><a href="../all-guides/">All guides</a><a href="../blog/">Blog</a><a href="../about/">About</a></nav></div></header>
 <nav class="catnav" aria-label="Categories"><div class="in"><a class="beauty" href="../category/beauty/">Beauty</a><a class="tech" href="../category/tech/">Tech</a><a class="home-kitchen on" href="../category/home-kitchen/" aria-current="page">Home &amp; Kitchen</a><a class="for-him" href="../category/for-him/">For Him</a><a class="for-her" href="../category/for-her/">For Her</a><a class="kids" href="../category/kids/">Kids</a><a class="budget" href="../category/budget/">Budget</a><a class="big-ticket" href="../category/big-ticket/">Big-Ticket</a></div></nav>
-<p class="disc">As an Amazon Associate I earn from qualifying purchases.</p>
+<p class="disc">As an Amazon Associate and Best Buy Creator, Pykkd earns from qualifying purchases.</p>
 <div id="main"><main>
 <nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="../">Home</a></li><li><a href="../category/home-kitchen/">Home &amp; Kitchen</a></li><li aria-current="page">Top 10 Cyber Monday Deals Worth Watching: Home, Kitchen, Tech, Toys &amp; K-Beauty Under $100</li></ol></nav>
 <header class="ghead"><span class="kicker">Home &amp; Kitchen gift guide</span><h1>Top 10 Cyber Monday Deals Worth Watching: Home, Kitchen, Tech, Toys &amp; K-Beauty Under $100</h1><p>Ten crowd-pleasers worth keeping on your Cyber Monday watch list, every one of them under $100, across home, kitchen, tech, toys and beauty. The LEVOIT Core 300 air purifier leads the list, joined by the Shark WANDVAC handheld vacuum, the Ninja Air Fryer Pro and LEGO Botanicals Woodland Mushrooms, plus a K-beauty pick from medicube, the MAGNA-TILES Classic 32-piece set, the Anker Soundcore 2 speaker, tarte tubing mascara, a STANLEY Quencher tumbler and the Fire TV Stick 4K Select. A mix of bigger-ticket upgrades and easy, affordable gifts, so you&#x27;re ready the moment the deals drop.</p><span class="ic" aria-hidden="true">☕</span></header>
@@ -139,7 +144,7 @@ footer a{color:#fc3a27}footer a:hover{color:#f3ebe2}footer p{margin:.35rem 0}foo
 <li class="card"><span class="ic" aria-hidden="true"><svg class="pi" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="6" width="16" height="14" rx="3"/><path d="M4 10h16M9 3h6"/><circle cx="12" cy="15" r="2"/></svg></span>
 <h2>LEVOIT Core 300 Air Purifier</h2>
 <p>A top seller with over a hundred thousand ratings: a compact, quiet air purifier with a true HEPA filter that helps clear dust, pet hair and odors from bedrooms and living rooms. It has a sleep mode and a small footprint that fits on a nightstand or dresser.</p>
-<a class="btn" href="https://www.amazon.com/dp/B07VVK39F7?tag=killagorillab-20" rel="nofollow sponsored noopener" target="_blank" aria-label="View LEVOIT Core 300 Air Purifier on Amazon (opens in new tab)">View on Amazon</a>
+<div class="btns"><a class="btn" href="https://www.amazon.com/dp/B07VVK39F7?tag=killagorillab-20" rel="nofollow sponsored noopener" target="_blank" aria-label="View LEVOIT Core 300 Air Purifier on Amazon (opens in new tab)">View on Amazon</a><a class="btn bestbuy" href="https://bestbuycreators.7tiv.net/5kNJe9" rel="nofollow sponsored noopener" target="_blank" aria-label="Buy LEVOIT Core 300 Air Purifier at Best Buy (opens in new tab)">Buy at Best Buy</a></div>
 </li>
 <li class="card"><span class="ic" aria-hidden="true"><svg class="pi" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 3l-5 14"/><path d="M6 17h7a2 2 0 0 1 2 2v1H4v-1a2 2 0 0 1 2-2z"/><rect x="14" y="6" width="5" height="6" rx="1.5"/></svg></span>
 <h2>Shark WANDVAC Handheld Vacuum</h2>
@@ -154,7 +159,7 @@ footer a{color:#fc3a27}footer a:hover{color:#f3ebe2}footer p{margin:.35rem 0}foo
 <li class="card"><span class="ic" aria-hidden="true"><svg class="pi" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="9" width="18" height="11" rx="1"/><rect x="6" y="5" width="4" height="4" rx="1"/><rect x="14" y="5" width="4" height="4" rx="1"/></svg></span>
 <h2>LEGO Botanicals Woodland Mushrooms</h2>
 <p>A charming LEGO Botanicals build of woodland mushrooms that becomes a little piece of decor when it&#x27;s done. A relaxing, screen-free project for adult builders and plant lovers who can&#x27;t keep real plants alive.</p>
-<a class="btn" href="https://www.amazon.com/dp/B0G2T2FLDJ?tag=killagorillab-20" rel="nofollow sponsored noopener" target="_blank" aria-label="View LEGO Botanicals Woodland Mushrooms on Amazon (opens in new tab)">View on Amazon</a>
+<div class="btns"><a class="btn" href="https://www.amazon.com/dp/B0G2T2FLDJ?tag=killagorillab-20" rel="nofollow sponsored noopener" target="_blank" aria-label="View LEGO Botanicals Woodland Mushrooms on Amazon (opens in new tab)">View on Amazon</a><a class="btn bestbuy" href="https://bestbuycreators.7tiv.net/enW7oD" rel="nofollow sponsored noopener" target="_blank" aria-label="Buy LEGO Botanicals Woodland Mushrooms at Best Buy (opens in new tab)">Buy at Best Buy</a></div>
 </li>
 <li class="card"><span class="ic" aria-hidden="true"><svg class="pi" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="10" width="14" height="10" rx="2"/><rect x="6" y="6" width="12" height="4" rx="1"/><path d="M9 15h6"/></svg></span>
 <h2>medicube Triple Collagen Cream</h2>
@@ -169,7 +174,7 @@ footer a{color:#fc3a27}footer a:hover{color:#f3ebe2}footer p{margin:.35rem 0}foo
 <li class="card"><span class="ic" aria-hidden="true"><svg class="pi" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="2"/><circle cx="12" cy="14" r="4"/><circle cx="12" cy="6.5" r="1"/></svg></span>
 <h2>Anker Soundcore 2 Bluetooth Speaker</h2>
 <p>Anker&#x27;s Soundcore 2 is a pocketable Bluetooth speaker with big sound for its size, 24-hour playtime and IPX7 waterproofing. Perfect for the shower, the desk or the backyard, and an easy stocking stuffer upgrade.</p>
-<a class="btn" href="https://www.amazon.com/dp/B0FLD69KFF?tag=killagorillab-20" rel="nofollow sponsored noopener" target="_blank" aria-label="View Anker Soundcore 2 Bluetooth Speaker on Amazon (opens in new tab)">View on Amazon</a>
+<div class="btns"><a class="btn" href="https://www.amazon.com/dp/B0FLD69KFF?tag=killagorillab-20" rel="nofollow sponsored noopener" target="_blank" aria-label="View Anker Soundcore 2 Bluetooth Speaker on Amazon (opens in new tab)">View on Amazon</a><a class="btn bestbuy" href="https://bestbuycreators.7tiv.net/aNXdJb" rel="nofollow sponsored noopener" target="_blank" aria-label="Buy Anker Soundcore 2 Bluetooth Speaker at Best Buy (opens in new tab)">Buy at Best Buy</a></div>
 </li>
 <li class="card"><span class="ic" aria-hidden="true"><svg class="pi" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="10" y="11" width="4" height="11" rx="1"/><path d="M12 11V2M10 4h4M10 6.5h4M10 9h4"/></svg></span>
 <h2>tarte Tubing Mascara</h2>
@@ -179,7 +184,7 @@ footer a{color:#fc3a27}footer a:hover{color:#f3ebe2}footer p{margin:.35rem 0}foo
 <li class="card"><span class="ic" aria-hidden="true"><svg class="pi" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 5h10l-1.5 16h-7z"/><path d="M6 5h12M14 5V2"/></svg></span>
 <h2>STANLEY Quencher H2.0 14 oz Tumbler</h2>
 <p>The 14-ounce STANLEY Quencher H2.0 in a pretty Soft Orchid shade keeps drinks cold for hours and fits little hands, car cup holders and desks. A cute, practical gift for kids, teens and anyone who wants a smaller Stanley.</p>
-<a class="btn" href="https://www.amazon.com/dp/B0G774MHKL?tag=killagorillab-20" rel="nofollow sponsored noopener" target="_blank" aria-label="View STANLEY Quencher H2.0 14 oz Tumbler on Amazon (opens in new tab)">View on Amazon</a>
+<div class="btns"><a class="btn" href="https://www.amazon.com/dp/B0G774MHKL?tag=killagorillab-20" rel="nofollow sponsored noopener" target="_blank" aria-label="View STANLEY Quencher H2.0 14 oz Tumbler on Amazon (opens in new tab)">View on Amazon</a><a class="btn bestbuy" href="https://bestbuycreators.7tiv.net/AgN6zx" rel="nofollow sponsored noopener" target="_blank" aria-label="Buy STANLEY Quencher H2.0 14 oz Tumbler at Best Buy (opens in new tab)">Buy at Best Buy</a></div>
 </li>
 <li class="card"><span class="ic" aria-hidden="true"><svg class="pi" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="9" width="13" height="6" rx="2"/><path d="M16 12h5"/><path d="M7 12h.01"/></svg></span>
 <h2>Fire TV Stick 4K Select</h2>
@@ -201,8 +206,8 @@ footer a{color:#fc3a27}footer a:hover{color:#f3ebe2}footer p{margin:.35rem 0}foo
 </main></div>
 <footer>
 <nav aria-label="Footer"><a href="../">Home</a><a href="../blog/">Blog</a><a href="../about/">About</a><a href="../disclosure/">Disclosure &amp; Privacy</a><button type="button" data-pk-settings>Privacy settings</button></nav>
-<p>As an Amazon Associate I earn from qualifying purchases.</p>
-<p>Product availability changes often; check Amazon for current details.</p>
+<p>As an Amazon Associate and Best Buy Creator, Pykkd earns from qualifying purchases.</p>
+<p>Product availability changes often; check Amazon or Best Buy for current details.</p>
 <p>&copy; 2026 Pykkd</p>
 </footer>
 <script src="../search.js" defer></script>

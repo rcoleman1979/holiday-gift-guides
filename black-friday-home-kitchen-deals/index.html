@@ -62,10 +62,15 @@ h1{font-size:2rem;margin:.5rem 0 .5rem}
 .card h2,.card h3{font-size:1.12rem;margin:0;color:var(--ink);font-family:var(--sans);font-weight:700;line-height:1.3}
 .card p{margin:.3rem 0 .2rem;color:#423c36;font-size:.98rem}
 .card>*{grid-column:2}.card>.ic{grid-column:1;grid-row:1/span 2}.card .btn{grid-column:1/-1;margin-top:.6rem;align-self:end}
+.card .btns{grid-column:1/-1;margin-top:.6rem;align-self:end;display:flex;flex-wrap:wrap;gap:.55rem}
+.card .btns .btn{grid-column:auto;margin-top:0;flex:1 1 12rem}
 .btn{display:flex;align-items:center;justify-content:center;gap:.4rem;background:var(--berry);color:#fff;text-decoration:none;font-weight:700;font-size:1.05rem;padding:.85rem 1rem;border-radius:12px;min-height:50px}
 .btn:after{content:"\2192"}.btn:hover,.btn:focus{background:var(--berry-d)}
 .btn.gold{background:var(--gold);color:var(--ink)}.btn.gold:hover{background:#cf9d33}
 .btn.line{background:transparent;border:2px solid var(--berry);color:var(--berry)}.hero .btn.line{border-color:var(--cream);color:var(--cream)}.btn.line:after{content:none}
+.btn.bestbuy{background:#0046be;color:#fff;box-shadow:inset 0 -3px 0 #ffce00}
+.btn.bestbuy:hover,.btn.bestbuy:focus{background:#003399}
+a.bb-also{font-size:.9em;font-weight:700;color:#0046be;white-space:nowrap}
 .note{font-size:.85rem;color:var(--muted);text-align:center}
 .sec{margin:2rem 0}.sec>h2,.more>h2{font-size:1.5rem;margin:0 0 .8rem}.sec h2 a{color:inherit;text-decoration:none}
 .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:.8rem;list-style:none;padding:0;margin:0}
@@ -129,7 +134,7 @@ footer a{color:#fc3a27}footer a:hover{color:#f3ebe2}footer p{margin:.35rem 0}foo
 <form class="srch" role="search" action="../search/" method="get"><label for="srch-q" class="skip">Search Pykkd</label><input id="srch-q" name="q" type="search" placeholder="Search guides &amp; products" autocomplete="off"><ul class="srch-r" hidden></ul></form>
 <nav class="topnav" aria-label="Site"><a href="../all-guides/">All guides</a><a href="../blog/">Blog</a><a href="../about/">About</a></nav></div></header>
 <nav class="catnav" aria-label="Categories"><div class="in"><a class="beauty" href="../category/beauty/">Beauty</a><a class="tech" href="../category/tech/">Tech</a><a class="home-kitchen on" href="../category/home-kitchen/" aria-current="page">Home &amp; Kitchen</a><a class="for-him" href="../category/for-him/">For Him</a><a class="for-her" href="../category/for-her/">For Her</a><a class="kids" href="../category/kids/">Kids</a><a class="budget" href="../category/budget/">Budget</a><a class="big-ticket" href="../category/big-ticket/">Big-Ticket</a></div></nav>
-<p class="disc">As an Amazon Associate I earn from qualifying purchases.</p>
+<p class="disc">As an Amazon Associate and Best Buy Creator, Pykkd earns from qualifying purchases.</p>
 <div id="main"><main>
 <nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="../">Home</a></li><li><a href="../category/home-kitchen/">Home &amp; Kitchen</a></li><li aria-current="page">Top 10 Black Friday Home &amp; Kitchen Deals Worth Watching: Shark, Instant Pot, BISSELL, Ninja &amp; Lodge</li></ol></nav>
 <header class="ghead"><span class="kicker">Home &amp; Kitchen gift guide</span><h1>Top 10 Black Friday Home &amp; Kitchen Deals Worth Watching: Shark, Instant Pot, BISSELL, Ninja &amp; Lodge</h1><p>Ten home and kitchen favorites worth keeping on your Black Friday watch list, from floor care that makes cleaning day easier to the countertop appliances and cookware you&#x27;ll reach for every week. The Shark Navigator Lift-Away upright vacuum leads the list, joined by the Instant Pot Vortex Plus air fryer, the BISSELL CrossWave Pet Pro, a T-fal Signature 12-piece cookware set and the Cuisinart PerfecTemp 14-cup coffee maker, plus a Shark Steam Pocket Mop, the Ninja Nutri-Blender Pro, a Hamilton Beach programmable slow cooker, the Lodge Cast Iron Double Dutch Oven and a LEVOIT top-fill humidifier. Bigger-ticket upgrades and easy, affordable wins, so you&#x27;re ready the moment the deals drop.</p><span class="ic" aria-hidden="true">☕</span></header>
@@ -139,12 +144,12 @@ footer a{color:#fc3a27}footer a:hover{color:#f3ebe2}footer p{margin:.35rem 0}foo
 <li class="card"><span class="ic" aria-hidden="true"><svg class="pi" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 3l-5 14"/><path d="M6 17h7a2 2 0 0 1 2 2v1H4v-1a2 2 0 0 1 2-2z"/><rect x="14" y="6" width="5" height="6" rx="1.5"/></svg></span>
 <h2>Shark Navigator Lift-Away Upright Vacuum</h2>
 <p>The Shark Navigator Lift-Away NV360 is a powerful upright vacuum with a HEPA filter and a pod that lifts off for stairs and furniture. A go-to for carpets and pet hair, with over 55,000 ratings behind it.</p>
-<a class="btn" href="https://www.amazon.com/dp/B00JH98GR4?tag=killagorillab-20" rel="nofollow sponsored noopener" target="_blank" aria-label="View Shark Navigator Lift-Away Upright Vacuum on Amazon (opens in new tab)">View on Amazon</a>
+<div class="btns"><a class="btn" href="https://www.amazon.com/dp/B00JH98GR4?tag=killagorillab-20" rel="nofollow sponsored noopener" target="_blank" aria-label="View Shark Navigator Lift-Away Upright Vacuum on Amazon (opens in new tab)">View on Amazon</a><a class="btn bestbuy" href="https://bestbuycreators.7tiv.net/gREd9O" rel="nofollow sponsored noopener" target="_blank" aria-label="Buy Shark Navigator Lift-Away Upright Vacuum at Best Buy (opens in new tab)">Buy at Best Buy</a></div>
 </li>
 <li class="card"><span class="ic" aria-hidden="true"><svg class="pi" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="6" width="16" height="14" rx="3"/><path d="M4 10h16M9 3h6"/><circle cx="12" cy="15" r="2"/></svg></span>
 <h2>Instant Pot Vortex Plus 6-Qt Air Fryer</h2>
 <p>The Instant Pot Vortex Plus is a 6-quart, 6-in-1 air fryer that air fries, roasts, bakes, broils, reheats and dehydrates, with a sleek stainless steel finish. Crispy weeknight dinners with far less fuss.</p>
-<a class="btn" href="https://www.amazon.com/dp/B07VHFMZHJ?tag=killagorillab-20" rel="nofollow sponsored noopener" target="_blank" aria-label="View Instant Pot Vortex Plus 6-Qt Air Fryer on Amazon (opens in new tab)">View on Amazon</a>
+<div class="btns"><a class="btn" href="https://www.amazon.com/dp/B07VHFMZHJ?tag=killagorillab-20" rel="nofollow sponsored noopener" target="_blank" aria-label="View Instant Pot Vortex Plus 6-Qt Air Fryer on Amazon (opens in new tab)">View on Amazon</a><a class="btn bestbuy" href="https://bestbuycreators.7tiv.net/X4eB64" rel="nofollow sponsored noopener" target="_blank" aria-label="Buy Instant Pot Vortex Plus 6-Qt Air Fryer at Best Buy (opens in new tab)">Buy at Best Buy</a></div>
 </li>
 <li class="card"><span class="ic" aria-hidden="true"><svg class="pi" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 3h6v4H9z"/><path d="M8 7h8l1 14H7z"/><path d="M15 4h3l2 2"/></svg></span>
 <h2>BISSELL CrossWave Pet Pro Wet Dry Vac</h2>
@@ -154,17 +159,17 @@ footer a{color:#fc3a27}footer a:hover{color:#f3ebe2}footer p{margin:.35rem 0}foo
 <li class="card"><span class="ic" aria-hidden="true"><svg class="pi" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="6" width="16" height="14" rx="3"/><path d="M4 10h16M9 3h6"/><circle cx="12" cy="15" r="2"/></svg></span>
 <h2>T-fal Signature 12-Piece Cookware Set</h2>
 <p>T-fal&#x27;s Signature 12-piece nonstick set covers everyday cooking with fry pans, saucepans, a saute pan and a Dutch oven, all oven safe. A smart, affordable kitchen refresh.</p>
-<a class="btn" href="https://www.amazon.com/dp/B001167VIQ?tag=killagorillab-20" rel="nofollow sponsored noopener" target="_blank" aria-label="View T-fal Signature 12-Piece Cookware Set on Amazon (opens in new tab)">View on Amazon</a>
+<div class="btns"><a class="btn" href="https://www.amazon.com/dp/B001167VIQ?tag=killagorillab-20" rel="nofollow sponsored noopener" target="_blank" aria-label="View T-fal Signature 12-Piece Cookware Set on Amazon (opens in new tab)">View on Amazon</a><a class="btn bestbuy" href="https://bestbuycreators.7tiv.net/WOkobG" rel="nofollow sponsored noopener" target="_blank" aria-label="Buy T-fal Signature 12-Piece Cookware Set at Best Buy (opens in new tab)">Buy at Best Buy</a></div>
 </li>
 <li class="card"><span class="ic" aria-hidden="true"><svg class="pi" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h14v4H5z"/><path d="M7 7v14h10V7"/><path d="M10 13h4v3h-4zM9 7v3M15 7v3"/></svg></span>
 <h2>Cuisinart PerfecTemp 14-Cup Coffee Maker</h2>
 <p>The Cuisinart PerfecTemp is a programmable 14-cup drip coffee maker, so a full pot can be ready when you wake up. A dependable pick for busy households and coffee lovers.</p>
-<a class="btn" href="https://www.amazon.com/dp/B00MVWGQX0?tag=killagorillab-20" rel="nofollow sponsored noopener" target="_blank" aria-label="View Cuisinart PerfecTemp 14-Cup Coffee Maker on Amazon (opens in new tab)">View on Amazon</a>
+<div class="btns"><a class="btn" href="https://www.amazon.com/dp/B00MVWGQX0?tag=killagorillab-20" rel="nofollow sponsored noopener" target="_blank" aria-label="View Cuisinart PerfecTemp 14-Cup Coffee Maker on Amazon (opens in new tab)">View on Amazon</a><a class="btn bestbuy" href="https://bestbuycreators.7tiv.net/E0NDke" rel="nofollow sponsored noopener" target="_blank" aria-label="Buy Cuisinart PerfecTemp 14-Cup Coffee Maker at Best Buy (opens in new tab)">Buy at Best Buy</a></div>
 </li>
 <li class="card"><span class="ic" aria-hidden="true"><svg class="pi" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="6" width="16" height="14" rx="3"/><path d="M4 10h16M9 3h6"/><circle cx="12" cy="15" r="2"/></svg></span>
 <h2>Shark Steam Pocket Mop</h2>
 <p>The Shark Steam Pocket Mop cleans sealed hard floors with steam and water only, and comes with two washable double-sided pads. A top-rated, no-chemicals cleaning upgrade.</p>
-<a class="btn" href="https://www.amazon.com/dp/B0028MB3HM?tag=killagorillab-20" rel="nofollow sponsored noopener" target="_blank" aria-label="View Shark Steam Pocket Mop on Amazon (opens in new tab)">View on Amazon</a>
+<div class="btns"><a class="btn" href="https://www.amazon.com/dp/B0028MB3HM?tag=killagorillab-20" rel="nofollow sponsored noopener" target="_blank" aria-label="View Shark Steam Pocket Mop on Amazon (opens in new tab)">View on Amazon</a><a class="btn bestbuy" href="https://bestbuycreators.7tiv.net/n4Qdao" rel="nofollow sponsored noopener" target="_blank" aria-label="Buy Shark Steam Pocket Mop at Best Buy (opens in new tab)">Buy at Best Buy</a></div>
 </li>
 <li class="card"><span class="ic" aria-hidden="true"><svg class="pi" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3h10l-2 10H9z"/><rect x="7" y="13" width="10" height="8" rx="2"/><path d="M12 17h.01"/></svg></span>
 <h2>Ninja Nutri-Blender Pro with Auto-iQ</h2>
@@ -174,7 +179,7 @@ footer a{color:#fc3a27}footer a:hover{color:#f3ebe2}footer p{margin:.35rem 0}foo
 <li class="card"><span class="ic" aria-hidden="true"><svg class="pi" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="6" width="16" height="14" rx="3"/><path d="M4 10h16M9 3h6"/><circle cx="12" cy="15" r="2"/></svg></span>
 <h2>Hamilton Beach 6-Qt Programmable Slow Cooker</h2>
 <p>Hamilton Beach&#x27;s 6-quart Set &amp; Forget slow cooker is programmable and travels well with a clip-tight lid, perfect for potlucks, game days and easy weeknight dinners.</p>
-<a class="btn" href="https://www.amazon.com/dp/B00EZI26GO?tag=killagorillab-20" rel="nofollow sponsored noopener" target="_blank" aria-label="View Hamilton Beach 6-Qt Programmable Slow Cooker on Amazon (opens in new tab)">View on Amazon</a>
+<div class="btns"><a class="btn" href="https://www.amazon.com/dp/B00EZI26GO?tag=killagorillab-20" rel="nofollow sponsored noopener" target="_blank" aria-label="View Hamilton Beach 6-Qt Programmable Slow Cooker on Amazon (opens in new tab)">View on Amazon</a><a class="btn bestbuy" href="https://bestbuycreators.7tiv.net/6kNZvV" rel="nofollow sponsored noopener" target="_blank" aria-label="Buy Hamilton Beach 6-Qt Programmable Slow Cooker at Best Buy (opens in new tab)">Buy at Best Buy</a></div>
 </li>
 <li class="card"><span class="ic" aria-hidden="true"><svg class="pi" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="6" width="16" height="14" rx="3"/><path d="M4 10h16M9 3h6"/><circle cx="12" cy="15" r="2"/></svg></span>
 <h2>Lodge Cast Iron Double Dutch Oven</h2>
@@ -184,7 +189,7 @@ footer a{color:#fc3a27}footer a:hover{color:#f3ebe2}footer p{margin:.35rem 0}foo
 <li class="card"><span class="ic" aria-hidden="true"><svg class="pi" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="6" width="16" height="14" rx="3"/><path d="M4 10h16M9 3h6"/><circle cx="12" cy="15" r="2"/></svg></span>
 <h2>LEVOIT 2.5L Top-Fill Humidifier</h2>
 <p>LEVOIT&#x27;s top-fill humidifier has a 2.5-liter tank for bedrooms and runs quietly, and the top-fill design makes refilling easy. A cozy, affordable upgrade for dry winter air.</p>
-<a class="btn" href="https://www.amazon.com/dp/B0C2C9NHZW?tag=killagorillab-20" rel="nofollow sponsored noopener" target="_blank" aria-label="View LEVOIT 2.5L Top-Fill Humidifier on Amazon (opens in new tab)">View on Amazon</a>
+<div class="btns"><a class="btn" href="https://www.amazon.com/dp/B0C2C9NHZW?tag=killagorillab-20" rel="nofollow sponsored noopener" target="_blank" aria-label="View LEVOIT 2.5L Top-Fill Humidifier on Amazon (opens in new tab)">View on Amazon</a><a class="btn bestbuy" href="https://bestbuycreators.7tiv.net/3kN12X" rel="nofollow sponsored noopener" target="_blank" aria-label="Buy LEVOIT 2.5L Top-Fill Humidifier at Best Buy (opens in new tab)">Buy at Best Buy</a></div>
 </li>
 </ol>
 <p class="note">Tap any button to see today's price and reviews on Amazon. Filed under: <a href="../category/home-kitchen/">Home &amp; Kitchen</a></p>
@@ -201,8 +206,8 @@ footer a{color:#fc3a27}footer a:hover{color:#f3ebe2}footer p{margin:.35rem 0}foo
 </main></div>
 <footer>
 <nav aria-label="Footer"><a href="../">Home</a><a href="../blog/">Blog</a><a href="../about/">About</a><a href="../disclosure/">Disclosure &amp; Privacy</a><button type="button" data-pk-settings>Privacy settings</button></nav>
-<p>As an Amazon Associate I earn from qualifying purchases.</p>
-<p>Product availability changes often; check Amazon for current details.</p>
+<p>As an Amazon Associate and Best Buy Creator, Pykkd earns from qualifying purchases.</p>
+<p>Product availability changes often; check Amazon or Best Buy for current details.</p>
 <p>&copy; 2026 Pykkd</p>
 </footer>
 <script src="../search.js" defer></script>

@@ -62,10 +62,15 @@ h1{font-size:2rem;margin:.5rem 0 .5rem}
 .card h2,.card h3{font-size:1.12rem;margin:0;color:var(--ink);font-family:var(--sans);font-weight:700;line-height:1.3}
 .card p{margin:.3rem 0 .2rem;color:#423c36;font-size:.98rem}
 .card>*{grid-column:2}.card>.ic{grid-column:1;grid-row:1/span 2}.card .btn{grid-column:1/-1;margin-top:.6rem;align-self:end}
+.card .btns{grid-column:1/-1;margin-top:.6rem;align-self:end;display:flex;flex-wrap:wrap;gap:.55rem}
+.card .btns .btn{grid-column:auto;margin-top:0;flex:1 1 12rem}
 .btn{display:flex;align-items:center;justify-content:center;gap:.4rem;background:var(--berry);color:#fff;text-decoration:none;font-weight:700;font-size:1.05rem;padding:.85rem 1rem;border-radius:12px;min-height:50px}
 .btn:after{content:"\2192"}.btn:hover,.btn:focus{background:var(--berry-d)}
 .btn.gold{background:var(--gold);color:var(--ink)}.btn.gold:hover{background:#cf9d33}
 .btn.line{background:transparent;border:2px solid var(--berry);color:var(--berry)}.hero .btn.line{border-color:var(--cream);color:var(--cream)}.btn.line:after{content:none}
+.btn.bestbuy{background:#0046be;color:#fff;box-shadow:inset 0 -3px 0 #ffce00}
+.btn.bestbuy:hover,.btn.bestbuy:focus{background:#003399}
+a.bb-also{font-size:.9em;font-weight:700;color:#0046be;white-space:nowrap}
 .note{font-size:.85rem;color:var(--muted);text-align:center}
 .sec{margin:2rem 0}.sec>h2,.more>h2{font-size:1.5rem;margin:0 0 .8rem}.sec h2 a{color:inherit;text-decoration:none}
 .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:.8rem;list-style:none;padding:0;margin:0}
@@ -129,7 +134,7 @@ footer a{color:#fc3a27}footer a:hover{color:#f3ebe2}footer p{margin:.35rem 0}foo
 <form class="srch" role="search" action="../search/" method="get"><label for="srch-q" class="skip">Search Pykkd</label><input id="srch-q" name="q" type="search" placeholder="Search guides &amp; products" autocomplete="off"><ul class="srch-r" hidden></ul></form>
 <nav class="topnav" aria-label="Site"><a href="../all-guides/">All guides</a><a href="../blog/">Blog</a><a href="../about/">About</a></nav></div></header>
 <nav class="catnav" aria-label="Categories"><div class="in"><a class="beauty" href="../category/beauty/">Beauty</a><a class="tech on" href="../category/tech/" aria-current="page">Tech</a><a class="home-kitchen" href="../category/home-kitchen/">Home &amp; Kitchen</a><a class="for-him" href="../category/for-him/">For Him</a><a class="for-her" href="../category/for-her/">For Her</a><a class="kids" href="../category/kids/">Kids</a><a class="budget" href="../category/budget/">Budget</a><a class="big-ticket" href="../category/big-ticket/">Big-Ticket</a></div></nav>
-<p class="disc">As an Amazon Associate I earn from qualifying purchases.</p>
+<p class="disc">As an Amazon Associate and Best Buy Creator, Pykkd earns from qualifying purchases.</p>
 <div id="main"><main>
 <nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="../">Home</a></li><li><a href="../category/tech/">Tech</a></li><li aria-current="page">Top 10 Gifts for College Students</li></ol></nav>
 <header class="ghead"><span class="kicker">Tech gift guide</span><h1>Top 10 Gifts for College Students</h1><p>Dorm-ready essentials that make campus life easier. AirPods 5, a high-watt power bank, a Stanley tumbler, MagSafe grip, mini fridge, reusable Rocketbook notebook, calculator, Twin XL sheets, desk lamp and Apple Pencil.</p><span class="ic" aria-hidden="true">🎧</span></header>
@@ -139,7 +144,7 @@ footer a{color:#fc3a27}footer a:hover{color:#f3ebe2}footer p{margin:.35rem 0}foo
 <li class="card"><span class="ic" aria-hidden="true"><svg class="pi" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 4a3 3 0 0 0-3 3v1a3 3 0 0 0 3 3v9"/><path d="M16 4a3 3 0 0 1 3 3v1a3 3 0 0 1-3 3v9"/></svg></span>
 <h2>Apple AirPods 5 with ANC</h2>
 <p>Apple&#x27;s latest AirPods with active noise cancellation for lectures, libraries and loud dorm halls.</p>
-<a class="btn" href="https://www.amazon.com/dp/B0HJB69GJL?tag=killagorillab-20" rel="nofollow sponsored noopener" target="_blank" aria-label="View Apple AirPods 5 with ANC on Amazon (opens in new tab)">View on Amazon</a>
+<div class="btns"><a class="btn" href="https://www.amazon.com/dp/B0HJB69GJL?tag=killagorillab-20" rel="nofollow sponsored noopener" target="_blank" aria-label="View Apple AirPods 5 with ANC on Amazon (opens in new tab)">View on Amazon</a><a class="btn bestbuy" href="https://bestbuycreators.7tiv.net/enW76Q" rel="nofollow sponsored noopener" target="_blank" aria-label="Buy Apple AirPods 5 with ANC at Best Buy (opens in new tab)">Buy at Best Buy</a></div>
 </li>
 <li class="card"><span class="ic" aria-hidden="true"><svg class="pi" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="3" width="12" height="18" rx="2"/><path d="M13 7l-3 5h4l-3 5"/></svg></span>
 <h2>Anker 737 Power Bank (140W)</h2>
@@ -149,12 +154,12 @@ footer a{color:#fc3a27}footer a:hover{color:#f3ebe2}footer p{margin:.35rem 0}foo
 <li class="card"><span class="ic" aria-hidden="true"><svg class="pi" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 5h10l-1.5 16h-7z"/><path d="M6 5h12M14 5V2"/></svg></span>
 <h2>Stanley Quencher H2.0 40 oz</h2>
 <p>The viral 40 oz Stanley Quencher that keeps drinks cold through back-to-back classes and fits most cup holders.</p>
-<a class="btn" href="https://www.amazon.com/dp/B0CP9Z1S51?tag=killagorillab-20" rel="nofollow sponsored noopener" target="_blank" aria-label="View Stanley Quencher H2.0 40 oz on Amazon (opens in new tab)">View on Amazon</a>
+<div class="btns"><a class="btn" href="https://www.amazon.com/dp/B0CP9Z1S51?tag=killagorillab-20" rel="nofollow sponsored noopener" target="_blank" aria-label="View Stanley Quencher H2.0 40 oz on Amazon (opens in new tab)">View on Amazon</a><a class="btn bestbuy" href="https://bestbuycreators.7tiv.net/1GNAmz" rel="nofollow sponsored noopener" target="_blank" aria-label="Buy Stanley Quencher H2.0 40 oz at Best Buy (opens in new tab)">Buy at Best Buy</a></div>
 </li>
 <li class="card"><span class="ic" aria-hidden="true"><svg class="pi" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="2"/><path d="M11 18h2"/></svg></span>
 <h2>PopSockets MagSafe Phone Grip</h2>
 <p>A MagSafe PopSockets grip that snaps onto iPhone for one-handed scrolling, selfies and safer drops.</p>
-<a class="btn" href="https://www.amazon.com/dp/B0CDF5M6TW?tag=killagorillab-20" rel="nofollow sponsored noopener" target="_blank" aria-label="View PopSockets MagSafe Phone Grip on Amazon (opens in new tab)">View on Amazon</a>
+<div class="btns"><a class="btn" href="https://www.amazon.com/dp/B0CDF5M6TW?tag=killagorillab-20" rel="nofollow sponsored noopener" target="_blank" aria-label="View PopSockets MagSafe Phone Grip on Amazon (opens in new tab)">View on Amazon</a><a class="btn bestbuy" href="https://bestbuycreators.7tiv.net/JkNPxv" rel="nofollow sponsored noopener" target="_blank" aria-label="Buy PopSockets MagSafe Phone Grip at Best Buy (opens in new tab)">Buy at Best Buy</a></div>
 </li>
 <li class="card"><span class="ic" aria-hidden="true"><svg class="pi" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="2"/><path d="M6 9h12M9 5v2M9 12v3"/></svg></span>
 <h2>Upstreman 3.2 Cu. Ft. Mini Fridge</h2>
@@ -164,7 +169,7 @@ footer a{color:#fc3a27}footer a:hover{color:#f3ebe2}footer p{margin:.35rem 0}foo
 <li class="card"><span class="ic" aria-hidden="true"><svg class="pi" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 5h6a3 3 0 0 1 3 2 3 3 0 0 1 3-2h6v14h-6a3 3 0 0 0-3 2 3 3 0 0 0-3-2H3z"/><path d="M12 7v14"/></svg></span>
 <h2>Rocketbook Core Smart Notebook</h2>
 <p>A reusable smart notebook that scans pages to the cloud and wipes clean. Less paper, more organization.</p>
-<a class="btn" href="https://www.amazon.com/dp/B0DP3J346V?tag=killagorillab-20" rel="nofollow sponsored noopener" target="_blank" aria-label="View Rocketbook Core Smart Notebook on Amazon (opens in new tab)">View on Amazon</a>
+<div class="btns"><a class="btn" href="https://www.amazon.com/dp/B0DP3J346V?tag=killagorillab-20" rel="nofollow sponsored noopener" target="_blank" aria-label="View Rocketbook Core Smart Notebook on Amazon (opens in new tab)">View on Amazon</a><a class="btn bestbuy" href="https://bestbuycreators.7tiv.net/ZVAWZz" rel="nofollow sponsored noopener" target="_blank" aria-label="Buy Rocketbook Core Smart Notebook at Best Buy (opens in new tab)">Buy at Best Buy</a></div>
 </li>
 <li class="card"><span class="ic" aria-hidden="true"><svg class="pi" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M8 5h8v4H8zM8.5 13h.01M12 13h.01M15.5 13h.01M8.5 17h.01M12 17h.01M15.5 17h.01"/></svg></span>
 <h2>Casio fx-991ES Plus 2 Calculator</h2>
@@ -184,7 +189,7 @@ footer a{color:#fc3a27}footer a:hover{color:#f3ebe2}footer p{margin:.35rem 0}foo
 <li class="card"><span class="ic" aria-hidden="true"><svg class="pi" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="2" width="16" height="20" rx="2"/><path d="M11 18h2"/></svg></span>
 <h2>Apple Pencil (USB-C)</h2>
 <p>Apple&#x27;s USB-C Pencil for note-taking and sketching on compatible iPads. Perfect for digital lecture notes.</p>
-<a class="btn" href="https://www.amazon.com/dp/B0CL7J12YK?tag=killagorillab-20" rel="nofollow sponsored noopener" target="_blank" aria-label="View Apple Pencil (USB-C) on Amazon (opens in new tab)">View on Amazon</a>
+<div class="btns"><a class="btn" href="https://www.amazon.com/dp/B0CL7J12YK?tag=killagorillab-20" rel="nofollow sponsored noopener" target="_blank" aria-label="View Apple Pencil (USB-C) on Amazon (opens in new tab)">View on Amazon</a><a class="btn bestbuy" href="https://bestbuycreators.7tiv.net/zzVd7G" rel="nofollow sponsored noopener" target="_blank" aria-label="Buy Apple Pencil (USB-C) at Best Buy (opens in new tab)">Buy at Best Buy</a></div>
 </li>
 </ol>
 <p class="note">Tap any button to see today's price and reviews on Amazon. Filed under: <a href="../category/tech/">Tech</a> · <a href="../category/budget/">Budget</a></p>
@@ -201,8 +206,8 @@ footer a{color:#fc3a27}footer a:hover{color:#f3ebe2}footer p{margin:.35rem 0}foo
 </main></div>
 <footer>
 <nav aria-label="Footer"><a href="../">Home</a><a href="../blog/">Blog</a><a href="../about/">About</a><a href="../disclosure/">Disclosure &amp; Privacy</a><button type="button" data-pk-settings>Privacy settings</button></nav>
-<p>As an Amazon Associate I earn from qualifying purchases.</p>
-<p>Product availability changes often; check Amazon for current details.</p>
+<p>As an Amazon Associate and Best Buy Creator, Pykkd earns from qualifying purchases.</p>
+<p>Product availability changes often; check Amazon or Best Buy for current details.</p>
 <p>&copy; 2026 Pykkd</p>
 </footer>
 <script src="../search.js" defer></script>

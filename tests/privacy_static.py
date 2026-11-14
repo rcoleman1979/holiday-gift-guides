@@ -14,9 +14,9 @@ for p in pages:
     for tag in re.findall(r'<(?:script|link)\b[^>]*>',text):
         assert not any(x in tag for x in ['fonts.googleapis.com','fonts.gstatic.com','gc.zgo.at','assets.mailerlite.com']), (p,tag)
     assert 'pk_pop_seen' not in text or p == root/'disclosure/index.html', p
-    assert 'As an Amazon Associate I earn from qualifying purchases.' in text, p
+    assert 'As an Amazon Associate and Best Buy Creator, Pykkd earns from qualifying purchases.' in text, p
     if '<p class="disc">' in text:
-        assert '<p class="disc">As an Amazon Associate I earn from qualifying purchases.</p>' in text, p
+        assert '<p class="disc">As an Amazon Associate and Best Buy Creator, Pykkd earns from qualifying purchases.</p>' in text, p
     for href in re.findall(r'(?:href|src)="([^"#]+)"',text):
         url=urlparse(href.replace('&amp;','&'))
         if url.scheme or url.netloc: continue

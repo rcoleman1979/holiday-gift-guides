@@ -62,10 +62,15 @@ h1{font-size:2rem;margin:.5rem 0 .5rem}
 .card h2,.card h3{font-size:1.12rem;margin:0;color:var(--ink);font-family:var(--sans);font-weight:700;line-height:1.3}
 .card p{margin:.3rem 0 .2rem;color:#423c36;font-size:.98rem}
 .card>*{grid-column:2}.card>.ic{grid-column:1;grid-row:1/span 2}.card .btn{grid-column:1/-1;margin-top:.6rem;align-self:end}
+.card .btns{grid-column:1/-1;margin-top:.6rem;align-self:end;display:flex;flex-wrap:wrap;gap:.55rem}
+.card .btns .btn{grid-column:auto;margin-top:0;flex:1 1 12rem}
 .btn{display:flex;align-items:center;justify-content:center;gap:.4rem;background:var(--berry);color:#fff;text-decoration:none;font-weight:700;font-size:1.05rem;padding:.85rem 1rem;border-radius:12px;min-height:50px}
 .btn:after{content:"\2192"}.btn:hover,.btn:focus{background:var(--berry-d)}
 .btn.gold{background:var(--gold);color:var(--ink)}.btn.gold:hover{background:#cf9d33}
 .btn.line{background:transparent;border:2px solid var(--berry);color:var(--berry)}.hero .btn.line{border-color:var(--cream);color:var(--cream)}.btn.line:after{content:none}
+.btn.bestbuy{background:#0046be;color:#fff;box-shadow:inset 0 -3px 0 #ffce00}
+.btn.bestbuy:hover,.btn.bestbuy:focus{background:#003399}
+a.bb-also{font-size:.9em;font-weight:700;color:#0046be;white-space:nowrap}
 .note{font-size:.85rem;color:var(--muted);text-align:center}
 .sec{margin:2rem 0}.sec>h2,.more>h2{font-size:1.5rem;margin:0 0 .8rem}.sec h2 a{color:inherit;text-decoration:none}
 .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:.8rem;list-style:none;padding:0;margin:0}
@@ -129,7 +134,7 @@ footer a{color:#fc3a27}footer a:hover{color:#f3ebe2}footer p{margin:.35rem 0}foo
 <form class="srch" role="search" action="../search/" method="get"><label for="srch-q" class="skip">Search Pykkd</label><input id="srch-q" name="q" type="search" placeholder="Search guides &amp; products" autocomplete="off"><ul class="srch-r" hidden></ul></form>
 <nav class="topnav" aria-label="Site"><a href="../all-guides/">All guides</a><a href="../blog/">Blog</a><a href="../about/">About</a></nav></div></header>
 <nav class="catnav" aria-label="Categories"><div class="in"><a class="beauty" href="../category/beauty/">Beauty</a><a class="tech on" href="../category/tech/" aria-current="page">Tech</a><a class="home-kitchen" href="../category/home-kitchen/">Home &amp; Kitchen</a><a class="for-him" href="../category/for-him/">For Him</a><a class="for-her" href="../category/for-her/">For Her</a><a class="kids" href="../category/kids/">Kids</a><a class="budget" href="../category/budget/">Budget</a><a class="big-ticket" href="../category/big-ticket/">Big-Ticket</a></div></nav>
-<p class="disc">As an Amazon Associate I earn from qualifying purchases.</p>
+<p class="disc">As an Amazon Associate and Best Buy Creator, Pykkd earns from qualifying purchases.</p>
 <div id="main"><main>
 <nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="../">Home</a></li><li><a href="../category/tech/">Tech</a></li><li aria-current="page">Top 10 Cool Tech Gadgets</li></ol></nav>
 <header class="ghead"><span class="kicker">Tech gift guide</span><h1>Top 10 Cool Tech Gadgets</h1><p>Fun, genuinely useful tech for the gadget lover on your list: smart glasses, an e-reader, a pocket projector, a GoPro, chargers and a camera bird feeder that turns the backyard into a nature show.</p><span class="ic" aria-hidden="true">🎧</span></header>
@@ -139,12 +144,12 @@ footer a{color:#fc3a27}footer a:hover{color:#f3ebe2}footer p{margin:.35rem 0}foo
 <li class="card"><span class="ic" aria-hidden="true"><svg class="pi" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M8 6h8M8 9h8M8 12h5"/></svg></span>
 <h2>Amazon Kindle 16GB (2024 Model)</h2>
 <p>Amazon&#x27;s lightest Kindle with a glare-free screen, fast page turns and weeks of battery. A perfect gift for any reader.</p>
-<a class="btn" href="https://www.amazon.com/dp/B0CNV9F72P?tag=killagorillab-20" rel="nofollow sponsored noopener" target="_blank" aria-label="View Amazon Kindle 16GB (2024 Model) on Amazon (opens in new tab)">View on Amazon</a>
+<div class="btns"><a class="btn" href="https://www.amazon.com/dp/B0CNV9F72P?tag=killagorillab-20" rel="nofollow sponsored noopener" target="_blank" aria-label="View Amazon Kindle 16GB (2024 Model) on Amazon (opens in new tab)">View on Amazon</a><a class="btn bestbuy" href="https://bestbuycreators.7tiv.net/WOko7J" rel="nofollow sponsored noopener" target="_blank" aria-label="Buy Amazon Kindle 16GB (2024 Model) at Best Buy (opens in new tab)">Buy at Best Buy</a></div>
 </li>
 <li class="card"><span class="ic" aria-hidden="true"><svg class="pi" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="6" cy="14" r="3.5"/><circle cx="18" cy="14" r="3.5"/><path d="M9.5 14h5M2.5 14l1-6M21.5 14l-1-6"/></svg></span>
 <h2>Ray-Ban Meta (Gen 2) Smart Glasses</h2>
 <p>Stylish Wayfarers with a built-in camera, open-ear speakers and Meta AI. They snap photos, play music and take calls hands-free.</p>
-<a class="btn" href="https://www.amazon.com/dp/B0FLYDJHB4?tag=killagorillab-20" rel="nofollow sponsored noopener" target="_blank" aria-label="View Ray-Ban Meta (Gen 2) Smart Glasses on Amazon (opens in new tab)">View on Amazon</a>
+<div class="btns"><a class="btn" href="https://www.amazon.com/dp/B0FLYDJHB4?tag=killagorillab-20" rel="nofollow sponsored noopener" target="_blank" aria-label="View Ray-Ban Meta (Gen 2) Smart Glasses on Amazon (opens in new tab)">View on Amazon</a><a class="btn bestbuy" href="https://bestbuycreators.7tiv.net/0GNaVO" rel="nofollow sponsored noopener" target="_blank" aria-label="Buy Ray-Ban Meta (Gen 2) Smart Glasses at Best Buy (opens in new tab)">Buy at Best Buy</a></div>
 </li>
 <li class="card"><span class="ic" aria-hidden="true"><svg class="pi" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="3" width="12" height="18" rx="2"/><path d="M13 7l-3 5h4l-3 5"/></svg></span>
 <h2>Anker MagGo 10K Magnetic Power Bank</h2>
@@ -154,7 +159,7 @@ footer a{color:#fc3a27}footer a:hover{color:#f3ebe2}footer p{margin:.35rem 0}foo
 <li class="card"><span class="ic" aria-hidden="true"><svg class="pi" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 10v4a7 3 0 0 0 14 0v-4"/><ellipse cx="12" cy="10" rx="7" ry="2.5"/><path d="M9 10h6"/></svg></span>
 <h2>Amazon Echo Dot (Newest Model)</h2>
 <p>A compact smart speaker with Alexa for music, timers, weather and smart home control. An easy, crowd-pleasing gift for any room.</p>
-<a class="btn" href="https://www.amazon.com/dp/B09B8V1LZ3?tag=killagorillab-20" rel="nofollow sponsored noopener" target="_blank" aria-label="View Amazon Echo Dot (Newest Model) on Amazon (opens in new tab)">View on Amazon</a>
+<div class="btns"><a class="btn" href="https://www.amazon.com/dp/B09B8V1LZ3?tag=killagorillab-20" rel="nofollow sponsored noopener" target="_blank" aria-label="View Amazon Echo Dot (Newest Model) on Amazon (opens in new tab)">View on Amazon</a><a class="btn bestbuy" href="https://bestbuycreators.7tiv.net/E0ND7W" rel="nofollow sponsored noopener" target="_blank" aria-label="Buy Amazon Echo Dot (Newest Model) at Best Buy (opens in new tab)">Buy at Best Buy</a></div>
 </li>
 <li class="card"><span class="ic" aria-hidden="true"><svg class="pi" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="8" width="20" height="10" rx="2"/><circle cx="15" cy="13" r="3"/><path d="M5.5 12h3M5.5 15h3"/></svg></span>
 <h2>XGIMI MoGo 2 Pro Mini Projector</h2>
@@ -164,12 +169,12 @@ footer a{color:#fc3a27}footer a:hover{color:#f3ebe2}footer p{margin:.35rem 0}foo
 <li class="card"><span class="ic" aria-hidden="true"><svg class="pi" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 2v5M15 2v5"/><path d="M6 7h12v4a6 6 0 0 1-12 0z"/><path d="M12 17v5"/></svg></span>
 <h2>Amazon Smart Plug</h2>
 <p>Make any lamp or appliance voice-controlled with Alexa, with schedules from the app. A simple first step into smart home tech.</p>
-<a class="btn" href="https://www.amazon.com/dp/B089DR29T6?tag=killagorillab-20" rel="nofollow sponsored noopener" target="_blank" aria-label="View Amazon Smart Plug on Amazon (opens in new tab)">View on Amazon</a>
+<div class="btns"><a class="btn" href="https://www.amazon.com/dp/B089DR29T6?tag=killagorillab-20" rel="nofollow sponsored noopener" target="_blank" aria-label="View Amazon Smart Plug on Amazon (opens in new tab)">View on Amazon</a><a class="btn bestbuy" href="https://bestbuycreators.7tiv.net/n4QdYV" rel="nofollow sponsored noopener" target="_blank" aria-label="Buy Amazon Smart Plug at Best Buy (opens in new tab)">Buy at Best Buy</a></div>
 </li>
 <li class="card"><span class="ic" aria-hidden="true"><svg class="pi" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 3v4M15 3v4"/><rect x="6" y="7" width="12" height="8" rx="2"/><path d="M12 15v3a3 3 0 0 0 3 3h2"/></svg></span>
 <h2>Anker MagGo 3-in-1 Charging Station</h2>
 <p>Charge an iPhone, Apple Watch and AirPods together on one tidy stand. A clean nightstand upgrade for Apple fans.</p>
-<a class="btn" href="https://www.amazon.com/dp/B0DDQ71B9P?tag=killagorillab-20" rel="nofollow sponsored noopener" target="_blank" aria-label="View Anker MagGo 3-in-1 Charging Station on Amazon (opens in new tab)">View on Amazon</a>
+<div class="btns"><a class="btn" href="https://www.amazon.com/dp/B0DDQ71B9P?tag=killagorillab-20" rel="nofollow sponsored noopener" target="_blank" aria-label="View Anker MagGo 3-in-1 Charging Station on Amazon (opens in new tab)">View on Amazon</a><a class="btn bestbuy" href="https://bestbuycreators.7tiv.net/bkodYg" rel="nofollow sponsored noopener" target="_blank" aria-label="Buy Anker MagGo 3-in-1 Charging Station at Best Buy (opens in new tab)">Buy at Best Buy</a></div>
 </li>
 <li class="card"><span class="ic" aria-hidden="true"><svg class="pi" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h4l2-3h6l2 3h4v12H3z"/><circle cx="12" cy="13.5" r="3.5"/></svg></span>
 <h2>GoPro HERO13 Black Power Bundle</h2>
@@ -179,12 +184,12 @@ footer a{color:#fc3a27}footer a:hover{color:#f3ebe2}footer p{margin:.35rem 0}foo
 <li class="card"><span class="ic" aria-hidden="true"><svg class="pi" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18h6M10 21h4"/><path d="M12 3a6 6 0 0 0-4 10.5V15h8v-1.5A6 6 0 0 0 12 3z"/></svg></span>
 <h2>UBeesize 12&quot; Ring Light with Tripod</h2>
 <p>A 12-inch LED ring light with a tall tripod, phone holder and remote for flattering video calls, selfies and content creation.</p>
-<a class="btn" href="https://www.amazon.com/dp/B08L5VKNWR?tag=killagorillab-20" rel="nofollow sponsored noopener" target="_blank" aria-label="View UBeesize 12&quot; Ring Light with Tripod on Amazon (opens in new tab)">View on Amazon</a>
+<div class="btns"><a class="btn" href="https://www.amazon.com/dp/B08L5VKNWR?tag=killagorillab-20" rel="nofollow sponsored noopener" target="_blank" aria-label="View UBeesize 12&quot; Ring Light with Tripod on Amazon (opens in new tab)">View on Amazon</a><a class="btn bestbuy" href="https://bestbuycreators.7tiv.net/6kNZmQ" rel="nofollow sponsored noopener" target="_blank" aria-label="Buy UBeesize 12&quot; Ring Light with Tripod at Best Buy (opens in new tab)">Buy at Best Buy</a></div>
 </li>
 <li class="card"><span class="ic" aria-hidden="true"><svg class="pi" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="6.5" cy="10" r="2"/><circle cx="17.5" cy="10" r="2"/><circle cx="9.5" cy="5.5" r="2"/><circle cx="14.5" cy="5.5" r="2"/><path d="M12 12c-3 0-5 3-5 5a2 2 0 0 0 3 2h4a2 2 0 0 0 3-2c0-2-2-5-5-5z"/></svg></span>
 <h2>Birdbuddy Pro Solar Smart Bird Feeder</h2>
 <p>A solar-powered smart bird feeder that snaps photos and videos of visitors and identifies each species. A delightful gift for nature lovers.</p>
-<a class="btn" href="https://www.amazon.com/dp/B0DHY6B9GY?tag=killagorillab-20" rel="nofollow sponsored noopener" target="_blank" aria-label="View Birdbuddy Pro Solar Smart Bird Feeder on Amazon (opens in new tab)">View on Amazon</a>
+<div class="btns"><a class="btn" href="https://www.amazon.com/dp/B0DHY6B9GY?tag=killagorillab-20" rel="nofollow sponsored noopener" target="_blank" aria-label="View Birdbuddy Pro Solar Smart Bird Feeder on Amazon (opens in new tab)">View on Amazon</a><a class="btn bestbuy" href="https://bestbuycreators.7tiv.net/OYxA7Z" rel="nofollow sponsored noopener" target="_blank" aria-label="Buy Birdbuddy Pro Solar Smart Bird Feeder at Best Buy (opens in new tab)">Buy at Best Buy</a></div>
 </li>
 </ol>
 <p class="note">Tap any button to see today's price and reviews on Amazon. Filed under: <a href="../category/tech/">Tech</a> · <a href="../category/for-him/">For Him</a></p>
@@ -201,8 +206,8 @@ footer a{color:#fc3a27}footer a:hover{color:#f3ebe2}footer p{margin:.35rem 0}foo
 </main></div>
 <footer>
 <nav aria-label="Footer"><a href="../">Home</a><a href="../blog/">Blog</a><a href="../about/">About</a><a href="../disclosure/">Disclosure &amp; Privacy</a><button type="button" data-pk-settings>Privacy settings</button></nav>
-<p>As an Amazon Associate I earn from qualifying purchases.</p>
-<p>Product availability changes often; check Amazon for current details.</p>
+<p>As an Amazon Associate and Best Buy Creator, Pykkd earns from qualifying purchases.</p>
+<p>Product availability changes often; check Amazon or Best Buy for current details.</p>
 <p>&copy; 2026 Pykkd</p>
 </footer>
 <script src="../search.js" defer></script>

@@ -62,10 +62,15 @@ h1{font-size:2rem;margin:.5rem 0 .5rem}
 .card h2,.card h3{font-size:1.12rem;margin:0;color:var(--ink);font-family:var(--sans);font-weight:700;line-height:1.3}
 .card p{margin:.3rem 0 .2rem;color:#423c36;font-size:.98rem}
 .card>*{grid-column:2}.card>.ic{grid-column:1;grid-row:1/span 2}.card .btn{grid-column:1/-1;margin-top:.6rem;align-self:end}
+.card .btns{grid-column:1/-1;margin-top:.6rem;align-self:end;display:flex;flex-wrap:wrap;gap:.55rem}
+.card .btns .btn{grid-column:auto;margin-top:0;flex:1 1 12rem}
 .btn{display:flex;align-items:center;justify-content:center;gap:.4rem;background:var(--berry);color:#fff;text-decoration:none;font-weight:700;font-size:1.05rem;padding:.85rem 1rem;border-radius:12px;min-height:50px}
 .btn:after{content:"\2192"}.btn:hover,.btn:focus{background:var(--berry-d)}
 .btn.gold{background:var(--gold);color:var(--ink)}.btn.gold:hover{background:#cf9d33}
 .btn.line{background:transparent;border:2px solid var(--berry);color:var(--berry)}.hero .btn.line{border-color:var(--cream);color:var(--cream)}.btn.line:after{content:none}
+.btn.bestbuy{background:#0046be;color:#fff;box-shadow:inset 0 -3px 0 #ffce00}
+.btn.bestbuy:hover,.btn.bestbuy:focus{background:#003399}
+a.bb-also{font-size:.9em;font-weight:700;color:#0046be;white-space:nowrap}
 .note{font-size:.85rem;color:var(--muted);text-align:center}
 .sec{margin:2rem 0}.sec>h2,.more>h2{font-size:1.5rem;margin:0 0 .8rem}.sec h2 a{color:inherit;text-decoration:none}
 .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:.8rem;list-style:none;padding:0;margin:0}
@@ -129,7 +134,7 @@ footer a{color:#fc3a27}footer a:hover{color:#f3ebe2}footer p{margin:.35rem 0}foo
 <form class="srch" role="search" action="../search/" method="get"><label for="srch-q" class="skip">Search Pykkd</label><input id="srch-q" name="q" type="search" placeholder="Search guides &amp; products" autocomplete="off"><ul class="srch-r" hidden></ul></form>
 <nav class="topnav" aria-label="Site"><a href="../all-guides/">All guides</a><a href="../blog/">Blog</a><a href="../about/">About</a></nav></div></header>
 <nav class="catnav" aria-label="Categories"><div class="in"><a class="beauty" href="../category/beauty/">Beauty</a><a class="tech" href="../category/tech/">Tech</a><a class="home-kitchen" href="../category/home-kitchen/">Home &amp; Kitchen</a><a class="for-him on" href="../category/for-him/" aria-current="page">For Him</a><a class="for-her" href="../category/for-her/">For Her</a><a class="kids" href="../category/kids/">Kids</a><a class="budget" href="../category/budget/">Budget</a><a class="big-ticket" href="../category/big-ticket/">Big-Ticket</a></div></nav>
-<p class="disc">As an Amazon Associate I earn from qualifying purchases.</p>
+<p class="disc">As an Amazon Associate and Best Buy Creator, Pykkd earns from qualifying purchases.</p>
 <div id="main"><main>
 <nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="../">Home</a></li><li><a href="../category/for-him/">For Him</a></li><li aria-current="page">Top 10 LEGO Sets for Adults: Display-Worthy Building Gifts</li></ol></nav>
 <header class="ghead"><span class="kicker">For Him gift guide</span><h1>Top 10 LEGO Sets for Adults: Display-Worthy Building Gifts</h1><p>LEGO sets for adults that are as relaxing to build as they are fun to show off, from iconic movie models to brick-built art and flowers that never wilt. The LEGO Harry Potter Hogwarts Castle and Grounds leads the list, joined by the LEGO Icons Back to the Future Time Machine, Van Gogh&#x27;s The Starry Night, Hokusai&#x27;s The Great Wave and the Icons Tranquil Garden, plus the Technic Nissan Skyline GT-R, the Star Wars Mandalorian Helmet, a Botanicals Wildflower Bouquet, the Architecture London Skyline and Botanicals Succulents. Splurge-worthy display builds and affordable starter sets for every grown-up builder.</p><span class="ic" aria-hidden="true">👔</span></header>
@@ -139,7 +144,7 @@ footer a{color:#fc3a27}footer a:hover{color:#f3ebe2}footer p{margin:.35rem 0}foo
 <li class="card"><span class="ic" aria-hidden="true"><svg class="pi" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="9" width="18" height="11" rx="1"/><rect x="6" y="5" width="4" height="4" rx="1"/><rect x="14" y="5" width="4" height="4" rx="1"/></svg></span>
 <h2>LEGO Harry Potter Hogwarts Castle &amp; Grounds</h2>
 <p>LEGO&#x27;s Hogwarts Castle and Grounds 76419 is a detailed micro-scale model of the whole castle, from the Great Hall to the Astronomy Tower, built for display on a shelf or desk. A magical, hours-long build for any Harry Potter fan.</p>
-<a class="btn" href="https://www.amazon.com/dp/B0BXQ6NRRN?tag=killagorillab-20" rel="nofollow sponsored noopener" target="_blank" aria-label="View LEGO Harry Potter Hogwarts Castle &amp; Grounds on Amazon (opens in new tab)">View on Amazon</a>
+<div class="btns"><a class="btn" href="https://www.amazon.com/dp/B0BXQ6NRRN?tag=killagorillab-20" rel="nofollow sponsored noopener" target="_blank" aria-label="View LEGO Harry Potter Hogwarts Castle &amp; Grounds on Amazon (opens in new tab)">View on Amazon</a><a class="btn bestbuy" href="https://bestbuycreators.7tiv.net/7XNgAd" rel="nofollow sponsored noopener" target="_blank" aria-label="Buy LEGO Harry Potter Hogwarts Castle &amp; Grounds at Best Buy (opens in new tab)">Buy at Best Buy</a></div>
 </li>
 <li class="card"><span class="ic" aria-hidden="true"><svg class="pi" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="9" width="18" height="11" rx="1"/><rect x="6" y="5" width="4" height="4" rx="1"/><rect x="14" y="5" width="4" height="4" rx="1"/></svg></span>
 <h2>LEGO Icons Back to the Future Time Machine</h2>
@@ -154,7 +159,7 @@ footer a{color:#fc3a27}footer a:hover{color:#f3ebe2}footer p{margin:.35rem 0}foo
 <li class="card"><span class="ic" aria-hidden="true"><svg class="pi" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="9" width="18" height="11" rx="1"/><rect x="6" y="5" width="4" height="4" rx="1"/><rect x="14" y="5" width="4" height="4" rx="1"/></svg></span>
 <h2>LEGO Art Hokusai The Great Wave</h2>
 <p>LEGO Art Hokusai The Great Wave recreates the famous Japanese woodblock print in layered bricks that add real depth, then hangs on the wall like a framed piece. A calm, meditative build and striking decor.</p>
-<a class="btn" href="https://www.amazon.com/dp/B0BBSKBXQ2?tag=killagorillab-20" rel="nofollow sponsored noopener" target="_blank" aria-label="View LEGO Art Hokusai The Great Wave on Amazon (opens in new tab)">View on Amazon</a>
+<div class="btns"><a class="btn" href="https://www.amazon.com/dp/B0BBSKBXQ2?tag=killagorillab-20" rel="nofollow sponsored noopener" target="_blank" aria-label="View LEGO Art Hokusai The Great Wave on Amazon (opens in new tab)">View on Amazon</a><a class="btn bestbuy" href="https://bestbuycreators.7tiv.net/xJGdxR" rel="nofollow sponsored noopener" target="_blank" aria-label="Buy LEGO Art Hokusai The Great Wave at Best Buy (opens in new tab)">Buy at Best Buy</a></div>
 </li>
 <li class="card"><span class="ic" aria-hidden="true"><svg class="pi" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="9" width="18" height="11" rx="1"/><rect x="6" y="5" width="4" height="4" rx="1"/><rect x="14" y="5" width="4" height="4" rx="1"/></svg></span>
 <h2>LEGO Icons Tranquil Garden</h2>
@@ -164,12 +169,12 @@ footer a{color:#fc3a27}footer a:hover{color:#f3ebe2}footer p{margin:.35rem 0}foo
 <li class="card"><span class="ic" aria-hidden="true"><svg class="pi" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="9" width="18" height="11" rx="1"/><rect x="6" y="5" width="4" height="4" rx="1"/><rect x="14" y="5" width="4" height="4" rx="1"/></svg></span>
 <h2>LEGO Technic Nissan Skyline GT-R (R34)</h2>
 <p>The LEGO Technic Nissan Skyline GT-R (R34) from 2 Fast 2 Furious recreates the street-racing legend with a detailed engine bay and that iconic silver-and-blue livery. A must for car lovers and Fast &amp; Furious fans.</p>
-<a class="btn" href="https://www.amazon.com/dp/B0DRW6C13X?tag=killagorillab-20" rel="nofollow sponsored noopener" target="_blank" aria-label="View LEGO Technic Nissan Skyline GT-R (R34) on Amazon (opens in new tab)">View on Amazon</a>
+<div class="btns"><a class="btn" href="https://www.amazon.com/dp/B0DRW6C13X?tag=killagorillab-20" rel="nofollow sponsored noopener" target="_blank" aria-label="View LEGO Technic Nissan Skyline GT-R (R34) on Amazon (opens in new tab)">View on Amazon</a><a class="btn bestbuy" href="https://bestbuycreators.7tiv.net/DWNxEa" rel="nofollow sponsored noopener" target="_blank" aria-label="Buy LEGO Technic Nissan Skyline GT-R (R34) at Best Buy (opens in new tab)">Buy at Best Buy</a></div>
 </li>
 <li class="card"><span class="ic" aria-hidden="true"><svg class="pi" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="9" width="18" height="11" rx="1"/><rect x="6" y="5" width="4" height="4" rx="1"/><rect x="14" y="5" width="4" height="4" rx="1"/></svg></span>
 <h2>LEGO Star Wars Mandalorian Helmet</h2>
 <p>The LEGO Star Wars Mandalorian Helmet 75328 is a brick-built replica of Mando&#x27;s beskar helmet on a display stand with a nameplate. This is the way to gift a Star Wars fan something for the shelf.</p>
-<a class="btn" href="https://www.amazon.com/dp/B09JKZM4CM?tag=killagorillab-20" rel="nofollow sponsored noopener" target="_blank" aria-label="View LEGO Star Wars Mandalorian Helmet on Amazon (opens in new tab)">View on Amazon</a>
+<div class="btns"><a class="btn" href="https://www.amazon.com/dp/B09JKZM4CM?tag=killagorillab-20" rel="nofollow sponsored noopener" target="_blank" aria-label="View LEGO Star Wars Mandalorian Helmet on Amazon (opens in new tab)">View on Amazon</a><a class="btn bestbuy" href="https://bestbuycreators.7tiv.net/QYQ1qx" rel="nofollow sponsored noopener" target="_blank" aria-label="Buy LEGO Star Wars Mandalorian Helmet at Best Buy (opens in new tab)">Buy at Best Buy</a></div>
 </li>
 <li class="card"><span class="ic" aria-hidden="true"><svg class="pi" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="9" width="18" height="11" rx="1"/><rect x="6" y="5" width="4" height="4" rx="1"/><rect x="14" y="5" width="4" height="4" rx="1"/></svg></span>
 <h2>LEGO Botanicals Wildflower Bouquet</h2>
@@ -201,8 +206,8 @@ footer a{color:#fc3a27}footer a:hover{color:#f3ebe2}footer p{margin:.35rem 0}foo
 </main></div>
 <footer>
 <nav aria-label="Footer"><a href="../">Home</a><a href="../blog/">Blog</a><a href="../about/">About</a><a href="../disclosure/">Disclosure &amp; Privacy</a><button type="button" data-pk-settings>Privacy settings</button></nav>
-<p>As an Amazon Associate I earn from qualifying purchases.</p>
-<p>Product availability changes often; check Amazon for current details.</p>
+<p>As an Amazon Associate and Best Buy Creator, Pykkd earns from qualifying purchases.</p>
+<p>Product availability changes often; check Amazon or Best Buy for current details.</p>
 <p>&copy; 2026 Pykkd</p>
 </footer>
 <script src="../search.js" defer></script>

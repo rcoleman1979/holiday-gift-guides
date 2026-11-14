@@ -62,10 +62,15 @@ h1{font-size:2rem;margin:.5rem 0 .5rem}
 .card h2,.card h3{font-size:1.12rem;margin:0;color:var(--ink);font-family:var(--sans);font-weight:700;line-height:1.3}
 .card p{margin:.3rem 0 .2rem;color:#423c36;font-size:.98rem}
 .card>*{grid-column:2}.card>.ic{grid-column:1;grid-row:1/span 2}.card .btn{grid-column:1/-1;margin-top:.6rem;align-self:end}
+.card .btns{grid-column:1/-1;margin-top:.6rem;align-self:end;display:flex;flex-wrap:wrap;gap:.55rem}
+.card .btns .btn{grid-column:auto;margin-top:0;flex:1 1 12rem}
 .btn{display:flex;align-items:center;justify-content:center;gap:.4rem;background:var(--berry);color:#fff;text-decoration:none;font-weight:700;font-size:1.05rem;padding:.85rem 1rem;border-radius:12px;min-height:50px}
 .btn:after{content:"\2192"}.btn:hover,.btn:focus{background:var(--berry-d)}
 .btn.gold{background:var(--gold);color:var(--ink)}.btn.gold:hover{background:#cf9d33}
 .btn.line{background:transparent;border:2px solid var(--berry);color:var(--berry)}.hero .btn.line{border-color:var(--cream);color:var(--cream)}.btn.line:after{content:none}
+.btn.bestbuy{background:#0046be;color:#fff;box-shadow:inset 0 -3px 0 #ffce00}
+.btn.bestbuy:hover,.btn.bestbuy:focus{background:#003399}
+a.bb-also{font-size:.9em;font-weight:700;color:#0046be;white-space:nowrap}
 .note{font-size:.85rem;color:var(--muted);text-align:center}
 .sec{margin:2rem 0}.sec>h2,.more>h2{font-size:1.5rem;margin:0 0 .8rem}.sec h2 a{color:inherit;text-decoration:none}
 .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:.8rem;list-style:none;padding:0;margin:0}
@@ -129,7 +134,7 @@ footer a{color:#fc3a27}footer a:hover{color:#f3ebe2}footer p{margin:.35rem 0}foo
 <form class="srch" role="search" action="../search/" method="get"><label for="srch-q" class="skip">Search Pykkd</label><input id="srch-q" name="q" type="search" placeholder="Search guides &amp; products" autocomplete="off"><ul class="srch-r" hidden></ul></form>
 <nav class="topnav" aria-label="Site"><a href="../all-guides/">All guides</a><a href="../blog/">Blog</a><a href="../about/">About</a></nav></div></header>
 <nav class="catnav" aria-label="Categories"><div class="in"><a class="beauty on" href="../category/beauty/" aria-current="page">Beauty</a><a class="tech" href="../category/tech/">Tech</a><a class="home-kitchen" href="../category/home-kitchen/">Home &amp; Kitchen</a><a class="for-him" href="../category/for-him/">For Him</a><a class="for-her" href="../category/for-her/">For Her</a><a class="kids" href="../category/kids/">Kids</a><a class="budget" href="../category/budget/">Budget</a><a class="big-ticket" href="../category/big-ticket/">Big-Ticket</a></div></nav>
-<p class="disc">As an Amazon Associate I earn from qualifying purchases.</p>
+<p class="disc">As an Amazon Associate and Best Buy Creator, Pykkd earns from qualifying purchases.</p>
 <div id="main"><main>
 <nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="../">Home</a></li><li><a href="../category/beauty/">Beauty</a></li><li aria-current="page">Top 10 Men&#x27;s Grooming Gifts</li></ol></nav>
 <header class="ghead"><span class="kicker">Beauty gift guide</span><h1>Top 10 Men&#x27;s Grooming Gifts</h1><p>Shavers, trimmers and grooming kits he&#x27;ll reach for every morning, from splurge-worthy upgrades to stocking-stuffer favorites. The Braun Series 9 PRO+, Panasonic ARC5, a Bevel beard trimmer, MANSCAPED Lawn Mower 5.0 Ultra, Philips Norelco All-in-One 9000 and OneBlade Pro 360, plus an Art of Shaving sandalwood kit, Every Man Jack beard kit, Dr. Squatch soap and a Harry&#x27;s shave set.</p><span class="ic" aria-hidden="true">💄</span></header>
@@ -139,12 +144,12 @@ footer a{color:#fc3a27}footer a:hover{color:#f3ebe2}footer p{margin:.35rem 0}foo
 <li class="card"><span class="ic" aria-hidden="true"><svg class="pi" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="10" width="8" height="12" rx="3"/><rect x="7" y="3" width="10" height="7" rx="1.5"/><path d="M10 3v7M14 3v7"/></svg></span>
 <h2>Braun Series 9 PRO+ Electric Shaver</h2>
 <p>Braun&#x27;s flagship Series 9 PRO+ foil shaver glides through days of stubble wet or dry, and the 6-in-1 SmartCare center cleans, dries and charges it. The ultimate shave upgrade.</p>
-<a class="btn" href="https://www.amazon.com/dp/B0FGQQ9X2R?tag=killagorillab-20" rel="nofollow sponsored noopener" target="_blank" aria-label="View Braun Series 9 PRO+ Electric Shaver on Amazon (opens in new tab)">View on Amazon</a>
+<div class="btns"><a class="btn" href="https://www.amazon.com/dp/B0FGQQ9X2R?tag=killagorillab-20" rel="nofollow sponsored noopener" target="_blank" aria-label="View Braun Series 9 PRO+ Electric Shaver on Amazon (opens in new tab)">View on Amazon</a><a class="btn bestbuy" href="https://bestbuycreators.7tiv.net/OYxA2r" rel="nofollow sponsored noopener" target="_blank" aria-label="Buy Braun Series 9 PRO+ Electric Shaver at Best Buy (opens in new tab)">Buy at Best Buy</a></div>
 </li>
 <li class="card"><span class="ic" aria-hidden="true"><svg class="pi" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="10" width="8" height="12" rx="3"/><rect x="7" y="3" width="10" height="7" rx="1.5"/><path d="M10 3v7M14 3v7"/></svg></span>
 <h2>Panasonic ARC5 5-Blade Electric Razor</h2>
 <p>Panasonic&#x27;s ARC5 uses five ultra-sharp blades and a fast linear motor for a close, comfortable shave. A long-time favorite with a huge fan base.</p>
-<a class="btn" href="https://www.amazon.com/dp/B00JWP8F3I?tag=killagorillab-20" rel="nofollow sponsored noopener" target="_blank" aria-label="View Panasonic ARC5 5-Blade Electric Razor on Amazon (opens in new tab)">View on Amazon</a>
+<div class="btns"><a class="btn" href="https://www.amazon.com/dp/B00JWP8F3I?tag=killagorillab-20" rel="nofollow sponsored noopener" target="_blank" aria-label="View Panasonic ARC5 5-Blade Electric Razor on Amazon (opens in new tab)">View on Amazon</a><a class="btn bestbuy" href="https://bestbuycreators.7tiv.net/2RNmxa" rel="nofollow sponsored noopener" target="_blank" aria-label="Buy Panasonic ARC5 5-Blade Electric Razor at Best Buy (opens in new tab)">Buy at Best Buy</a></div>
 </li>
 <li class="card"><span class="ic" aria-hidden="true"><svg class="pi" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="10" width="8" height="12" rx="3"/><rect x="7" y="3" width="10" height="7" rx="1.5"/><path d="M10 3v7M14 3v7"/></svg></span>
 <h2>Bevel Cordless Beard Trimmer</h2>
@@ -159,12 +164,12 @@ footer a{color:#fc3a27}footer a:hover{color:#f3ebe2}footer p{margin:.35rem 0}foo
 <li class="card"><span class="ic" aria-hidden="true"><svg class="pi" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="10" width="8" height="12" rx="3"/><rect x="7" y="3" width="10" height="7" rx="1.5"/><path d="M10 3v7M14 3v7"/></svg></span>
 <h2>Philips Norelco All-in-One 9000 Trimmer</h2>
 <p>Philips Norelco&#x27;s All-in-One 9000 handles beard, hair, body and nose trimming with 25 pieces in one steel kit. Everything for his grooming routine in one box.</p>
-<a class="btn" href="https://www.amazon.com/dp/B0G22HZTT9?tag=killagorillab-20" rel="nofollow sponsored noopener" target="_blank" aria-label="View Philips Norelco All-in-One 9000 Trimmer on Amazon (opens in new tab)">View on Amazon</a>
+<div class="btns"><a class="btn" href="https://www.amazon.com/dp/B0G22HZTT9?tag=killagorillab-20" rel="nofollow sponsored noopener" target="_blank" aria-label="View Philips Norelco All-in-One 9000 Trimmer on Amazon (opens in new tab)">View on Amazon</a><a class="btn bestbuy" href="https://bestbuycreators.7tiv.net/dyzd17" rel="nofollow sponsored noopener" target="_blank" aria-label="Buy Philips Norelco All-in-One 9000 Trimmer at Best Buy (opens in new tab)">Buy at Best Buy</a></div>
 </li>
 <li class="card"><span class="ic" aria-hidden="true"><svg class="pi" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="10" width="8" height="12" rx="3"/><rect x="7" y="3" width="10" height="7" rx="1.5"/><path d="M10 3v7M14 3v7"/></svg></span>
 <h2>Philips Norelco OneBlade Pro 360</h2>
 <p>The OneBlade Pro 360 trims, edges and shaves any length with a flexible blade and 14-length comb, and comes with a travel case. Great for stubble lovers.</p>
-<a class="btn" href="https://www.amazon.com/dp/B0DCH7W6Q9?tag=killagorillab-20" rel="nofollow sponsored noopener" target="_blank" aria-label="View Philips Norelco OneBlade Pro 360 on Amazon (opens in new tab)">View on Amazon</a>
+<div class="btns"><a class="btn" href="https://www.amazon.com/dp/B0DCH7W6Q9?tag=killagorillab-20" rel="nofollow sponsored noopener" target="_blank" aria-label="View Philips Norelco OneBlade Pro 360 on Amazon (opens in new tab)">View on Amazon</a><a class="btn bestbuy" href="https://bestbuycreators.7tiv.net/NGqaOb" rel="nofollow sponsored noopener" target="_blank" aria-label="Buy Philips Norelco OneBlade Pro 360 at Best Buy (opens in new tab)">Buy at Best Buy</a></div>
 </li>
 <li class="card"><span class="ic" aria-hidden="true"><svg class="pi" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="10" width="8" height="12" rx="3"/><rect x="7" y="3" width="10" height="7" rx="1.5"/><path d="M10 3v7M14 3v7"/></svg></span>
 <h2>The Art of Shaving Sandalwood 4-in-1 Kit</h2>
@@ -201,8 +206,8 @@ footer a{color:#fc3a27}footer a:hover{color:#f3ebe2}footer p{margin:.35rem 0}foo
 </main></div>
 <footer>
 <nav aria-label="Footer"><a href="../">Home</a><a href="../blog/">Blog</a><a href="../about/">About</a><a href="../disclosure/">Disclosure &amp; Privacy</a><button type="button" data-pk-settings>Privacy settings</button></nav>
-<p>As an Amazon Associate I earn from qualifying purchases.</p>
-<p>Product availability changes often; check Amazon for current details.</p>
+<p>As an Amazon Associate and Best Buy Creator, Pykkd earns from qualifying purchases.</p>
+<p>Product availability changes often; check Amazon or Best Buy for current details.</p>
 <p>&copy; 2026 Pykkd</p>
 </footer>
 <script src="../search.js" defer></script>
