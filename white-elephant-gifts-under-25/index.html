@@ -124,10 +124,28 @@ footer a{color:#fc3a27}footer a:hover{color:#f3ebe2}footer p{margin:.35rem 0}foo
 .grid{grid-template-columns:repeat(3,1fr)}.cats{grid-template-columns:repeat(3,1fr)}.posts{grid-template-columns:1fr 1fr}.mini{columns:2}
 .picks{grid-template-columns:1fr 1fr}.signup form{flex-direction:row}.signup input{flex:1}main.wide .grid{grid-template-columns:repeat(4,1fr)}}
 @media(min-width:960px){.cats{grid-template-columns:repeat(4,1fr)}.picks{grid-template-columns:repeat(3,1fr)}main.wide .grid{grid-template-columns:repeat(5,1fr)}}
-@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}</style>
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
+.upd{font-size:.8rem;color:#d9cfc6;margin:.5rem 0 0!important;font-weight:600}
+.sumbox,.cmp,.trust{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:1rem 1.1rem;margin:0 0 1.2rem}
+.sumbox h2,.cmp h2,.trust h2{font-size:1.2rem;margin:0 0 .6rem}
+.sumbox ul{list-style:none;padding:0;margin:0;display:grid;gap:.6rem}
+.sumbox li{display:grid;gap:.1rem;border-left:4px solid var(--gold);padding:.2rem 0 .2rem .7rem}
+.sumbox .lbl{font-size:.72rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--berry)}
+.sumbox a{font-weight:700;color:var(--ink)}.sumbox small{color:var(--muted);font-size:.85rem}
+.sumbox .fine{font-size:.78rem;color:var(--muted);margin:.7rem 0 0}
+.tw{overflow-x:auto;-webkit-overflow-scrolling:touch}
+.cmp table{width:100%;border-collapse:collapse;font-size:.88rem;min-width:520px}
+.cmp th,.cmp td{text-align:left;vertical-align:top;padding:.5rem .45rem;border-bottom:1px solid var(--line)}
+.cmp th{font-size:.75rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
+.cmp td:first-child{font-weight:700;width:32%}.cmp td a{color:var(--ink)}
+.trust{background:var(--cream);font-size:.93rem}.trust p{margin:.3rem 0}
+.card .who{font-size:.92rem;color:var(--pine2);margin:.25rem 0 0}
+.own{display:inline-block;vertical-align:middle;margin-left:.4rem;font:700 .68rem/1 var(--sans);letter-spacing:.06em;text-transform:uppercase;background:#e3f1ea;color:#1f4d3a;border:1px solid #a7dcc6;border-radius:999px;padding:.25rem .5rem}
+.more-picks>h2{font-size:1.4rem}
+@media(min-width:640px){.sumbox ul{grid-template-columns:repeat(3,1fr)}}</style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://pykkd.com/"}, {"@type": "ListItem", "position": 2, "name": "Budget", "item": "https://pykkd.com/category/budget/"}, {"@type": "ListItem", "position": 3, "name": "White Elephant Gifts Under $25", "item": "https://pykkd.com/white-elephant-gifts-under-25/"}]}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "ItemList", "name": "White Elephant Gifts Under $25", "numberOfItems": 5, "itemListElement": [{"position": 1, "@type": "ListItem", "name": "Exploding Kittens Original Edition Card Game", "url": "https://www.amazon.com/dp/B010TQY7A8?tag=killagorillab-20"}, {"position": 2, "@type": "ListItem", "name": "Throw Throw Burrito Dodgeball Card Game", "url": "https://www.amazon.com/dp/B07TS96J7Q?tag=killagorillab-20"}, {"position": 3, "@type": "ListItem", "name": "Taco Cat Goat Cheese Pizza Card Game", "url": "https://www.amazon.com/dp/B077Z1R28P?tag=killagorillab-20"}, {"position": 4, "@type": "ListItem", "name": "Chia Pet Bob Ross with Seed Pack", "url": "https://www.amazon.com/dp/B073C95WTN?tag=killagorillab-20"}, {"position": 5, "@type": "ListItem", "name": "Potty Putter Toilet Golf Game", "url": "https://www.amazon.com/dp/B000LC65QA?tag=killagorillab-20"}]}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "White Elephant Gifts Under $25", "description": "Win the gift exchange. These funny, crowd-pleasing picks get stolen every time at office parties, family swaps and Yankee swaps. 5 hand-picked gift ideas.", "image": "https://pykkd.com/img/white-elephant-gifts-under-25.png", "mainEntityOfPage": "https://pykkd.com/white-elephant-gifts-under-25/", "author": {"@type": "Organization", "name": "Pykkd", "url": "https://pykkd.com/"}, "publisher": {"@type": "Organization", "name": "Pykkd", "url": "https://pykkd.com/"}, "articleSection": "Budget"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "White Elephant Gifts Under $25", "description": "Win the gift exchange. These funny, crowd-pleasing picks get stolen every time at office parties, family swaps and Yankee swaps. 5 hand-picked gift ideas.", "image": "https://pykkd.com/img/white-elephant-gifts-under-25.png", "mainEntityOfPage": "https://pykkd.com/white-elephant-gifts-under-25/", "author": {"@type": "Organization", "name": "Pykkd", "url": "https://pykkd.com/"}, "publisher": {"@type": "Organization", "name": "Pykkd", "url": "https://pykkd.com/"}, "dateModified": "2026-11-15", "articleSection": "Budget"}</script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -138,36 +156,45 @@ footer a{color:#fc3a27}footer a:hover{color:#f3ebe2}footer p{margin:.35rem 0}foo
 <p class="disc">As an Amazon Associate and Best Buy Creator, Pykkd earns from qualifying purchases.</p>
 <div id="main"><main>
 <nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="../">Home</a></li><li><a href="../category/budget/">Budget</a></li><li aria-current="page">White Elephant Gifts Under $25</li></ol></nav>
-<header class="ghead"><span class="kicker">Budget gift guide</span><h1>White Elephant Gifts Under $25</h1><p>Win the gift exchange. These funny, crowd-pleasing picks get stolen every time at office parties, family swaps and Yankee swaps.</p><span class="ic" aria-hidden="true">🧦</span></header>
+<header class="ghead"><span class="kicker">Budget gift guide</span><h1>White Elephant Gifts Under $25</h1><p>Win the gift exchange. These funny, crowd-pleasing picks get stolen every time at office parties, family swaps and Yankee swaps.</p><p class="upd">Updated <time datetime="2026-11-15">Nov 2026</time></p><span class="ic" aria-hidden="true">🧦</span></header>
 
 
+<section class="sumbox" aria-labelledby="h-sum"><h2 id="h-sum">Quick picks</h2><ul><li><span class="lbl">Best Overall</span><a href="#pick-1">Exploding Kittens Original Edition Card Game</a><small>Game nights with friends who like silly chaos</small></li><li><span class="lbl">Best Budget</span><a href="#pick-5">Potty Putter Toilet Golf Game</a><small>Gag-gift swaps and anyone with a goofy sense of humor</small></li><li><span class="lbl">Best Premium</span><a href="#pick-4">Chia Pet Bob Ross with Seed Pack</a><small>Bob Ross fans and gag-gift exchanges</small></li></ul><p class="fine">Budget and premium are based on typical pricing, not today's price. Tap through for current details.</p></section>
+<section class="cmp" aria-labelledby="h-cmp"><h2 id="h-cmp">Compare at a glance</h2><div class="tw"><table><thead><tr><th scope="col">Product</th><th scope="col">Who it's for</th><th scope="col">Why it made the list</th></tr></thead><tbody><tr><td><a href="#pick-1">1. Exploding Kittens Original Edition Card Game</a></td><td>Game nights with friends who like silly chaos</td><td>The hilarious strategic card game that&#x27;s a guaranteed hit at parties.</td></tr><tr><td><a href="#pick-2">2. Throw Throw Burrito Dodgeball Card Game</a></td><td>Groups who don&#x27;t mind getting a little rowdy</td><td>A card game with squishy burritos you get to throw at each other.</td></tr><tr><td><a href="#pick-3">3. Taco Cat Goat Cheese Pizza Card Game</a></td><td>Families and friends who want a fast, loud game</td><td>A fast, silly slap-style card game that&#x27;s easy for all ages.</td></tr><tr><td><a href="#pick-4">4. Chia Pet Bob Ross with Seed Pack</a></td><td>Bob Ross fans and gag-gift exchanges</td><td>Grow a happy little Bob Ross afro with this Chia Pet.</td></tr><tr><td><a href="#pick-5">5. Potty Putter Toilet Golf Game</a></td><td>Gag-gift swaps and anyone with a goofy sense of humor</td><td>A mini putting green that fits around the toilet.</td></tr></tbody></table></div></section>
+<aside class="trust" aria-labelledby="h-trust"><h2 id="h-trust">Why trust Pykkd</h2><p>Pykkd is a small, independent site. I use a lot of this kind of gear myself, from my home gym to the gaming PCs I build. When I don't own something, I pick it by research: what it does, long-term owner reviews and the brand's track record. Nobody pays to be on a list, and I don't post prices because they change every day. <a href="../about/">More about Pykkd</a></p></aside>
 <ol class="list">
-<li class="card"><span class="ic" aria-hidden="true"><svg class="pi" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="6" width="11" height="15" rx="2"/><path d="M8 3h10a2 2 0 0 1 2 2v12"/><path d="M9.5 11.5l2 2-2 2-2-2z"/></svg></span>
+<li class="card" id="pick-1"><span class="ic" aria-hidden="true"><svg class="pi" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="6" width="11" height="15" rx="2"/><path d="M8 3h10a2 2 0 0 1 2 2v12"/><path d="M9.5 11.5l2 2-2 2-2-2z"/></svg></span>
 <h2>Exploding Kittens Original Edition Card Game</h2>
+<p class="who"><b>Who it's for:</b> Game nights with friends who like silly chaos</p>
 <p>The hilarious strategic card game that&#x27;s a guaranteed hit at parties. It&#x27;s quick to learn and gets everyone laughing.</p>
 <a class="btn" href="https://www.amazon.com/dp/B010TQY7A8?tag=killagorillab-20" rel="nofollow sponsored noopener" target="_blank" aria-label="View Exploding Kittens Original Edition Card Game on Amazon (opens in new tab)">View on Amazon</a>
 </li>
-<li class="card"><span class="ic" aria-hidden="true"><svg class="pi" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="6" width="11" height="15" rx="2"/><path d="M8 3h10a2 2 0 0 1 2 2v12"/><path d="M9.5 11.5l2 2-2 2-2-2z"/></svg></span>
+<li class="card" id="pick-2"><span class="ic" aria-hidden="true"><svg class="pi" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="6" width="11" height="15" rx="2"/><path d="M8 3h10a2 2 0 0 1 2 2v12"/><path d="M9.5 11.5l2 2-2 2-2-2z"/></svg></span>
 <h2>Throw Throw Burrito Dodgeball Card Game</h2>
+<p class="who"><b>Who it's for:</b> Groups who don&#x27;t mind getting a little rowdy</p>
 <p>A card game with squishy burritos you get to throw at each other. It&#x27;s chaotic fun that steals the show at any gift swap.</p>
-<div class="btns"><a class="btn" href="https://www.amazon.com/dp/B07TS96J7Q?tag=killagorillab-20" rel="nofollow sponsored noopener" target="_blank" aria-label="View Throw Throw Burrito Dodgeball Card Game on Amazon (opens in new tab)">View on Amazon</a><a class="btn bestbuy" href="https://bestbuycreators.7tiv.net/3kN1Qy" rel="nofollow sponsored noopener" target="_blank" aria-label="Buy Throw Throw Burrito Dodgeball Card Game at Best Buy (opens in new tab)">Buy at Best Buy</a></div>
+<div class="btns"><a class="btn" href="https://www.amazon.com/dp/B07TS96J7Q?tag=killagorillab-20" rel="nofollow sponsored noopener" target="_blank" aria-label="View Throw Throw Burrito Dodgeball Card Game on Amazon (opens in new tab)">View on Amazon</a><a class="btn bestbuy" href="https://bestbuycreators.7tiv.net/3kN1Qy" rel="nofollow sponsored noopener" target="_blank" aria-label="View Throw Throw Burrito Dodgeball Card Game on Best Buy (opens in new tab)">View on Best Buy</a></div>
 </li>
-<li class="card"><span class="ic" aria-hidden="true"><svg class="pi" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="6" width="11" height="15" rx="2"/><path d="M8 3h10a2 2 0 0 1 2 2v12"/><path d="M9.5 11.5l2 2-2 2-2-2z"/></svg></span>
+<li class="card" id="pick-3"><span class="ic" aria-hidden="true"><svg class="pi" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="6" width="11" height="15" rx="2"/><path d="M8 3h10a2 2 0 0 1 2 2v12"/><path d="M9.5 11.5l2 2-2 2-2-2z"/></svg></span>
 <h2>Taco Cat Goat Cheese Pizza Card Game</h2>
+<p class="who"><b>Who it's for:</b> Families and friends who want a fast, loud game</p>
 <p>A fast, silly slap-style card game that&#x27;s easy for all ages. It&#x27;s a crowd-pleaser that fits right in a stocking.</p>
 <a class="btn" href="https://www.amazon.com/dp/B077Z1R28P?tag=killagorillab-20" rel="nofollow sponsored noopener" target="_blank" aria-label="View Taco Cat Goat Cheese Pizza Card Game on Amazon (opens in new tab)">View on Amazon</a>
 </li>
-<li class="card"><span class="ic" aria-hidden="true"><svg class="pi" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="13.5" r="6.5"/><circle cx="6.5" cy="6" r="2.5"/><circle cx="17.5" cy="6" r="2.5"/><path d="M10 12h.01M14 12h.01M11 15.5h2"/></svg></span>
+<li class="card" id="pick-4"><span class="ic" aria-hidden="true"><svg class="pi" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="13.5" r="6.5"/><circle cx="6.5" cy="6" r="2.5"/><circle cx="17.5" cy="6" r="2.5"/><path d="M10 12h.01M14 12h.01M11 15.5h2"/></svg></span>
 <h2>Chia Pet Bob Ross with Seed Pack</h2>
+<p class="who"><b>Who it's for:</b> Bob Ross fans and gag-gift exchanges</p>
 <p>Grow a happy little Bob Ross afro with this Chia Pet. It&#x27;s the funny, nostalgic gift everyone will try to steal.</p>
 <a class="btn" href="https://www.amazon.com/dp/B073C95WTN?tag=killagorillab-20" rel="nofollow sponsored noopener" target="_blank" aria-label="View Chia Pet Bob Ross with Seed Pack on Amazon (opens in new tab)">View on Amazon</a>
 </li>
-<li class="card"><span class="ic" aria-hidden="true"><svg class="pi" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="6" width="11" height="15" rx="2"/><path d="M8 3h10a2 2 0 0 1 2 2v12"/><path d="M9.5 11.5l2 2-2 2-2-2z"/></svg></span>
+<li class="card" id="pick-5"><span class="ic" aria-hidden="true"><svg class="pi" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="6" width="11" height="15" rx="2"/><path d="M8 3h10a2 2 0 0 1 2 2v12"/><path d="M9.5 11.5l2 2-2 2-2-2z"/></svg></span>
 <h2>Potty Putter Toilet Golf Game</h2>
+<p class="who"><b>Who it's for:</b> Gag-gift swaps and anyone with a goofy sense of humor</p>
 <p>A mini putting green that fits around the toilet. It&#x27;s a gag gift that&#x27;s guaranteed to get the biggest laugh of the night.</p>
 <a class="btn" href="https://www.amazon.com/dp/B000LC65QA?tag=killagorillab-20" rel="nofollow sponsored noopener" target="_blank" aria-label="View Potty Putter Toilet Golf Game on Amazon (opens in new tab)">View on Amazon</a>
 </li>
 </ol>
+
 <p class="note">Tap any button to see today's price and reviews on Amazon. Filed under: <a href="../category/budget/">Budget</a></p>
 <section class="more"><h2>Related gift guides</h2><ul class="grid">
 <li><a href="../stocking-stuffer-ideas/"><span class="art budget" aria-hidden="true">🧦</span><span>Top 10 Stocking Stuffer Ideas for Adults: AirTag, Anker MagGo, Milwaukee &amp; More<small>10 gift ideas</small></span></a></li>
