@@ -10,6 +10,19 @@ GC_TAG = (
     '<script data-goatcounter="https://pykkd.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>\n'
 )
 
+GSC_TAG = '<meta name="google-site-verification" content="j10a8RQAEEGiklV-BChue3CjUwvU1DCNEzhaOia3wDs" />'
+
+
+def ensure_gsc_tag(text):
+    if 'name="google-site-verification"' in text:
+        return text
+    if '<meta charset="utf-8">' in text:
+        return text.replace('<meta charset="utf-8">', '<meta charset="utf-8">\n' + GSC_TAG, 1)
+    if '<head>' in text:
+        return text.replace('<head>', '<head>\n' + GSC_TAG, 1)
+    return text
+
+
 
 def apply_privacy(out, assets=None):
     out = Path(out)
@@ -18,10 +31,10 @@ def apply_privacy(out, assets=None):
     signup = (assets / 'signup.html').read_text()
     newsletter = out / 'newsletter' / 'index.html'
     newsletter.parent.mkdir(exist_ok=True)
-    newsletter.write_text('<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex"><title>Newsletter | Pykkd</title></head><body><main><h1>The Pykkd newsletter</h1>' + signup + '</main><footer><nav aria-label="Footer"><a href="/">Home</a> <a href="/disclosure/">Disclosure &amp; Privacy</a></nav><p>As an Amazon Associate and Best Buy Creator, Pykkd earns from qualifying purchases.</p></footer></body></html>')
+    newsletter.write_text('<!doctype html><html lang="en"><head><meta charset="utf-8">' + GSC_TAG + '<meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex"><title>Newsletter | Pykkd</title></head><body><main><h1>The Pykkd newsletter</h1>' + signup + '</main><footer><nav aria-label="Footer"><a href="/">Home</a> <a href="/disclosure/">Disclosure &amp; Privacy</a></nav><p>As an Amazon Associate and Best Buy Creator, Pykkd earns from qualifying purchases.</p></footer></body></html>')
     pages = [p for p in out.rglob('*.html') if p.parent != out / 'privacy']
     for path in pages:
-        text = path.read_text()
+        text = ensure_gsc_tag(path.read_text())
         # Strip legacy automatic third-party integrations and newsletter prompt logic.
         # Keep the cookieless GoatCounter tag so visits are counted by default.
         text = re.sub(r'<link\b[^>]*(?:fonts\.googleapis\.com|fonts\.gstatic\.com)[^>]*>', '', text)
