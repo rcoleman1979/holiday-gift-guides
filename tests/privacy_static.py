@@ -35,7 +35,7 @@ assert 'never sold' in policy
 assert 'GoatCounter counts visits automatically without cookies' in policy
 assert 'Do Not Track' in policy
 assert 'Third parties such as Amazon, Best Buy, and MailerLite may set cookies on their own sites.' in policy
-assert 'Last updated November 14, 2026' in policy
+assert 'Last updated November 15, 2026' in policy
 assert 'Privacy settings' not in policy
 assert 'unless you enable it' not in policy
 print(f'PASS: {len(pages)} pages, {count} internal asset/link targets, GoatCounter present by default, no consent toggle, no automatic vendor fonts/MailerLite')
