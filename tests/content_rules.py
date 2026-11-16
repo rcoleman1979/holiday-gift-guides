@@ -1,5 +1,5 @@
 """Content rules for the built site (stdlib only). Usage: python3 content_rules.py <public_dir>
-- no prices: no "$<digits>" in visible text, JSON-LD or the search index, except budget themes ("under $50", "over $200")
+- no prices: no "$<digits>" in visible text, JSON-LD or the search index, except budget themes ("under $50", "over $200") and non-Amazon prices on /daily-deals/
 - Amazon links are direct one-click: https://www.amazon.com/dp/<ASIN>?tag=killagorillab-20, no onclick/interstitial
 - buttons read "View on Amazon" / "View on Best Buy"
 - guide pages carry: updated date, quick picks, comparison table, trust box, a who-it's-for line per pick
@@ -22,10 +22,16 @@ def visible(html):
     return re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", html))
 
 
-def check_prices(text, where):
+def check_prices(text, where, allow_non_amazon=False):
     for m in PRICE.finditer(text):
-        if not BUDGET_OK.search(m.group(1)):
-            errors.append(f"price-like text on {where}: {m.group(0)!r}")
+        if BUDGET_OK.search(m.group(1)):
+            continue
+        if allow_non_amazon:
+            ctx = text[max(0, m.start() - 80): m.end() + 80]
+            # Amazon (and Amazon-owned Woot) prices stay banned, even on /daily-deals/.
+            if not re.search(r"(?i)amazon|amzn\.|\bwoot\b", ctx):
+                continue
+        errors.append(f"price-like text on {where}: {m.group(0)!r}")
 
 
 sitemap = (root / "sitemap.xml").read_text()
@@ -36,9 +42,10 @@ for p in sorted(root.rglob("*.html")):
     if "</body>" not in html:
         continue
     vis = visible(html)
-    check_prices(vis, rel)
+    allow_non_amazon = rel.parts[:1] == ("daily-deals",)
+    check_prices(vis, rel, allow_non_amazon=allow_non_amazon)
     for ld in re.findall(r'(?is)<script type="application/ld\+json">(.*?)</script>', html):
-        check_prices(ld, f"{rel} (JSON-LD)")
+        check_prices(ld, f"{rel} (JSON-LD)", allow_non_amazon=allow_non_amazon)
     for tag in re.findall(r"<a\b[^>]*>", html):
         m = re.search(r'href="([^"]+)"', tag)
         if not m:
@@ -103,4 +110,4 @@ if errors:
     print("\n".join(errors[:80]))
     print(f"FAIL: {len(errors)} problem(s)")
     sys.exit(1)
-print(f"PASS: content rules, {guides} guide pages, {n_amz} direct Amazon links, {n_bb} Best Buy links, no prices, redirects OK")
+print(f"PASS: content rules, {guides} guide pages, {n_amz} direct Amazon links, {n_bb} Best Buy links, no Amazon prices, redirects OK")

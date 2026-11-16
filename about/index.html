@@ -142,14 +142,24 @@ footer a{color:#fc3a27}footer a:hover{color:#f3ebe2}footer p{margin:.35rem 0}foo
 .card .who{font-size:.92rem;color:var(--pine2);margin:.25rem 0 0}
 .own{display:inline-block;vertical-align:middle;margin-left:.4rem;font:700 .68rem/1 var(--sans);letter-spacing:.06em;text-transform:uppercase;background:#e3f1ea;color:#1f4d3a;border:1px solid #a7dcc6;border-radius:999px;padding:.25rem .5rem}
 .more-picks>h2{font-size:1.4rem}
-@media(min-width:640px){.sumbox ul{grid-template-columns:repeat(3,1fr)}}</style>
+@media(min-width:640px){.sumbox ul{grid-template-columns:repeat(3,1fr)}}
+.deals{display:grid;grid-template-columns:1fr;gap:1.1rem;list-style:none;padding:0;margin:1rem 0 0}
+@media(min-width:720px){.deals{grid-template-columns:repeat(2,1fr)}}
+.deal{background:#fff;border:1px solid var(--line);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column;box-shadow:0 1px 2px rgba(0,0,0,.04)}
+.deal img{width:100%;height:220px;object-fit:contain;background:#f6f3ee;display:block}
+.deal .body{padding:1rem 1.05rem 1.15rem;display:flex;flex-direction:column;gap:.3rem;flex:1}
+.deal .src{font-size:.8rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--pine2)}
+.deal h2{font-size:1.08rem;margin:0;line-height:1.3;font-family:var(--sans);font-weight:700}
+.deal .amt{font-weight:700;font-size:1.12rem;margin:0}
+.deal .when{color:var(--muted);font-size:.85rem;margin:0}
+.deal .btn{margin-top:auto}</style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://pykkd.com/"}, {"@type": "ListItem", "position": 2, "name": "About", "item": "https://pykkd.com/about/"}]}</script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
 <header class="top"><div class="in"><a class="logo" href="../" aria-label="Pykkd home"><img src="../brand/pykkd-logo-header.png" width="107" height="40" alt="pykkd"></a>
 <form class="srch" role="search" action="../search/" method="get"><label for="srch-q" class="skip">Search Pykkd</label><input id="srch-q" name="q" type="search" placeholder="Search guides &amp; products" autocomplete="off"><ul class="srch-r" hidden></ul></form>
-<nav class="topnav" aria-label="Site"><a href="../all-guides/">All guides</a><a href="../blog/">Blog</a><a href="../about/">About</a></nav></div></header>
+<nav class="topnav" aria-label="Site"><a href="../all-guides/">All guides</a><a href="../daily-deals/">Daily deals</a><a href="../blog/">Blog</a><a href="../about/">About</a></nav></div></header>
 <nav class="catnav" aria-label="Categories"><div class="in"><a class="beauty" href="../category/beauty/">Beauty</a><a class="tech" href="../category/tech/">Tech</a><a class="home-kitchen" href="../category/home-kitchen/">Home &amp; Kitchen</a><a class="for-him" href="../category/for-him/">For Him</a><a class="for-her" href="../category/for-her/">For Her</a><a class="kids" href="../category/kids/">Kids</a><a class="budget" href="../category/budget/">Budget</a><a class="big-ticket" href="../category/big-ticket/">Big-Ticket</a></div></nav>
 <p class="disc">As an Amazon Associate and Best Buy Creator, Pykkd earns from qualifying purchases.</p>
 <div id="main"><main>
@@ -167,7 +177,7 @@ footer a{color:#fc3a27}footer a:hover{color:#f3ebe2}footer p{margin:.35rem 0}foo
 <p>Browse by category with the links at the top of every page, read the <a href="../blog/">blog</a> for shopping strategy, or start with our most popular guide, <a href="../beauty-products-you-need-now/">Top 10 Beauty Products You Need Now</a>.</p></div>
 </main></div>
 <footer>
-<nav aria-label="Footer"><a href="../">Home</a><a href="../blog/">Blog</a><a href="../about/">About</a><a href="../disclosure/">Disclosure &amp; Privacy</a></nav>
+<nav aria-label="Footer"><a href="../">Home</a><a href="../daily-deals/">Daily deals</a><a href="../blog/">Blog</a><a href="../about/">About</a><a href="../disclosure/">Disclosure &amp; Privacy</a></nav>
 <p>As an Amazon Associate and Best Buy Creator, Pykkd earns from qualifying purchases.</p>
 <p>Product availability changes often; check Amazon or Best Buy for current details.</p>
 <p>&copy; 2026 Pykkd</p>
