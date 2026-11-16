@@ -1,5 +1,5 @@
 """Content rules for the built site (stdlib only). Usage: python3 content_rules.py <public_dir>
-- no prices: no "$<digits>" in visible text, JSON-LD or the search index, except budget themes ("under $50", "over $200") and non-Amazon prices on /daily-deals/ and the homepage Daily Deals block
+- no prices: no "$<digits>" in visible text, JSON-LD or the search index, except budget themes ("under $50", "over $200") and non-Amazon prices on /daily-deals/ and in homepage daily-deal cards only
 - Amazon links are direct one-click: https://www.amazon.com/dp/<ASIN>?tag=killagorillab-20, no onclick/interstitial
 - buttons read "View on Amazon" / "View on Best Buy"
 - guide pages carry: updated date, quick picks, comparison table, trust box, a who-it's-for line per pick
@@ -42,10 +42,20 @@ for p in sorted(root.rglob("*.html")):
     if "</body>" not in html:
         continue
     vis = visible(html)
-    allow_non_amazon = rel.parts[:1] == ("daily-deals",) or rel == Path("index.html")
-    check_prices(vis, rel, allow_non_amazon=allow_non_amazon)
-    for ld in re.findall(r'(?is)<script type="application/ld\+json">(.*?)</script>', html):
-        check_prices(ld, f"{rel} (JSON-LD)", allow_non_amazon=allow_non_amazon)
+    is_dd_page = rel.parts[:1] == ("daily-deals",)
+    if rel == Path("index.html"):
+        # Non-Amazon prices are allowed only inside homepage daily-deal cards.
+        cards = re.findall(r'(?is)<li class="deal">.*?</li>', html)
+        rest = re.sub(r'(?is)<li class="deal">.*?</li>', " ", html)
+        for i, card in enumerate(cards, 1):
+            check_prices(visible(card), f"{rel} daily-deal card {i}", allow_non_amazon=True)
+        check_prices(visible(rest), rel, allow_non_amazon=False)
+        for ld in re.findall(r'(?is)<script type="application/ld\+json">(.*?)</script>', html):
+            check_prices(ld, f"{rel} (JSON-LD)", allow_non_amazon=False)
+    else:
+        check_prices(vis, rel, allow_non_amazon=is_dd_page)
+        for ld in re.findall(r'(?is)<script type="application/ld\+json">(.*?)</script>', html):
+            check_prices(ld, f"{rel} (JSON-LD)", allow_non_amazon=is_dd_page)
     for tag in re.findall(r"<a\b[^>]*>", html):
         m = re.search(r'href="([^"]+)"', tag)
         if not m:
