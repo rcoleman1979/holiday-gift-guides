@@ -31,7 +31,7 @@ def apply_privacy(out, assets=None):
     signup = (assets / 'signup.html').read_text()
     newsletter = out / 'newsletter' / 'index.html'
     newsletter.parent.mkdir(exist_ok=True)
-    newsletter.write_text('<!doctype html><html lang="en"><head><meta charset="utf-8">' + GSC_TAG + '<meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex"><title>Newsletter | Pykkd</title></head><body><main><h1>The Pykkd newsletter</h1>' + signup + '</main><footer><nav aria-label="Footer"><a href="/">Home</a> <a href="/disclosure/">Disclosure &amp; Privacy</a></nav><p>As an Amazon Associate and Best Buy Creator, Pykkd earns from qualifying purchases.</p></footer></body></html>')
+    newsletter.write_text('<!doctype html><html lang="en"><head><meta charset="utf-8">' + GSC_TAG + '<meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex"><title>Newsletter | Pykkd</title></head><body><main><h1>Get our best finds in your inbox</h1><p>One short email a week with the picks worth your time. You can also get a daily deal-of-the-day email. No spam, unsubscribe anytime.</p>' + signup + '</main><footer><nav aria-label="Footer"><a href="/">Home</a> <a href="/disclosure/">Disclosure &amp; Privacy</a></nav><p>As an Amazon Associate and Best Buy Creator, Pykkd earns from qualifying purchases.</p></footer></body></html>')
     pages = [p for p in out.rglob('*.html') if p.parent != out / 'privacy']
     for path in pages:
         text = ensure_gsc_tag(path.read_text())

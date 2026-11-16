@@ -35,6 +35,16 @@ assert 'never sold' in policy
 assert 'GoatCounter counts visits automatically without cookies' in policy
 assert 'Do Not Track' in policy
 assert 'Third parties such as Amazon, Best Buy, and MailerLite may set cookies on their own sites.' in policy
+home=(root/'index.html').read_text()
+news=(root/'newsletter/index.html').read_text()
+for label,page in (('home',home),('newsletter',news)):
+    assert 'Get our best finds in your inbox' in page, label
+    assert 'Tick the daily deals box on the next page if you want that too.' in page, label
+    assert 'Sign up free' in page, label
+    assert 'preview.mailerlite.io/forms/2744558/202421660617278565/share' in page, label
+    assert 'Continue to newsletter signup' not in page, label
+    assert 'Nothing is submitted just by opening the form' not in page, label
+    assert 'Newsletter signup is hosted by MailerLite. Continuing opens its form' not in page, label
 assert 'Last updated November 15, 2026' in policy
 assert 'Privacy settings' not in policy
 assert 'unless you enable it' not in policy

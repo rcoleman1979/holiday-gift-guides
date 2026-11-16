@@ -26,9 +26,13 @@ const BASE = process.env.BASE_URL || 'http://127.0.0.1:8765';
   await t.context.close();
  }
  let t=await setup();await t.page.goto(BASE+'/');
- await t.page.locator('[data-pk-open]').first().click();assert.equal(await t.page.locator('#pk-pop').isVisible(),true);
- assert.equal(await t.page.locator('#pk-pop a[href*="preview.mailerlite.io"]').count(),1);
- assert.deepEqual(otherVendors(t.requests),[]);await t.page.keyboard.press('Escape');checks++;
+ const signup=t.page.locator('section.signup a.pk-open[href*="preview.mailerlite.io"]');
+ assert.equal(await signup.count(),1);
+ assert.equal(await signup.innerText(),'Sign up free');
+ assert.equal(await signup.getAttribute('target'),'_blank');
+ assert.ok((await signup.getAttribute('href')).includes('preview.mailerlite.io/forms/2744558/202421660617278565/share'));
+ assert.equal(await t.page.locator('section.signup a[href="/disclosure/"]').innerText(),'Privacy');
+ assert.deepEqual(otherVendors(t.requests),[]);checks++;
  await t.context.close();
  t=await setup({gpc:true});await t.page.goto(BASE+'/');
  assert.equal(await t.page.locator('#pk-privacy').count(),0);
