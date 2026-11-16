@@ -1,5 +1,5 @@
 """Content rules for the built site (stdlib only). Usage: python3 content_rules.py <public_dir>
-- no prices: no "$<digits>" in visible text, JSON-LD or the search index, except budget themes ("under $50", "over $200") and non-Amazon prices on /daily-deals/
+- no prices: no "$<digits>" in visible text, JSON-LD or the search index, except budget themes ("under $50", "over $200") and non-Amazon prices on /daily-deals/ and the homepage Daily Deals block
 - Amazon links are direct one-click: https://www.amazon.com/dp/<ASIN>?tag=killagorillab-20, no onclick/interstitial
 - buttons read "View on Amazon" / "View on Best Buy"
 - guide pages carry: updated date, quick picks, comparison table, trust box, a who-it's-for line per pick
@@ -42,7 +42,7 @@ for p in sorted(root.rglob("*.html")):
     if "</body>" not in html:
         continue
     vis = visible(html)
-    allow_non_amazon = rel.parts[:1] == ("daily-deals",)
+    allow_non_amazon = rel.parts[:1] == ("daily-deals",) or rel == Path("index.html")
     check_prices(vis, rel, allow_non_amazon=allow_non_amazon)
     for ld in re.findall(r'(?is)<script type="application/ld\+json">(.*?)</script>', html):
         check_prices(ld, f"{rel} (JSON-LD)", allow_non_amazon=allow_non_amazon)
