@@ -37,7 +37,7 @@ const BASE = process.env.BASE_URL || 'http://127.0.0.1:8765';
  await t.context.close();
  t=await setup({js:false});await t.page.goto(BASE+'/newsletter/');assert.ok(await t.page.locator('a[href*="preview.mailerlite.io"]').count());assert.deepEqual(otherVendors(t.requests),[]);checks++;await t.context.close();
  // Inspect the actual provider form, but never fill or submit it.
- t=await setup();await t.page.goto('https://preview.mailerlite.io/preview/2744558/forms/202421660617278565');
+ t=await setup();await t.page.goto('https://preview.mailerlite.io/forms/2744558/202421660617278565/share');
  assert.equal(await t.page.locator('input[name="fields[email]"]').count(),1);assert.equal(await t.page.locator('form[action*="/subscribe"]').count(),1);checks++;await t.context.close();
  await browser.close();console.log('PASS: '+checks+' privacy/network/browser assertions; GoatCounter loads by default with no consent UI; no subscription submitted');
 })().catch(e=>{console.error(e);process.exit(1)});
