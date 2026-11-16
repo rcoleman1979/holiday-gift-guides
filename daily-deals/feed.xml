@@ -1,18 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0">
+<rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>Pykkd Daily Deals</title>
     <link>https://pykkd.com/daily-deals/</link>
     <description>Today's featured deal of the day from a few deal sites. Two picks each morning, with a link to see them all.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 15 Nov 2026 22:30:55 -0600</lastBuildDate>
+    <lastBuildDate>Sun, 15 Nov 2026 22:37:08 -0600</lastBuildDate>
     <ttl>60</ttl>
     <item>
       <title>Today's deals, Nov 15</title>
       <link>https://pykkd.com/daily-deals/</link>
       <guid isPermaLink="false">https://pykkd.com/daily-deals/#2026-11-15</guid>
       <pubDate>Sun, 15 Nov 2026 22:06:29 -0600</pubDate>
-      <description><![CDATA[<p>Today's 2 picks:</p><div><p><img src="https://pykkd.com/img/daily-deals/archive/2026-11-15/thatdailydeal.jpg" alt="" width="240"></p><p><strong>Zippo Flip Style Rechargeable Windproof Water Resistant LED Flashlight ARC Lighter</strong><br>That Daily Deal · $9.99</p></div><div><p><img src="https://pykkd.com/img/daily-deals/archive/2026-11-15/tanga.jpg" alt="" width="240"></p><p><strong>Blogilates Weighted Vest</strong><br>Tanga · $12.99</p></div><p><a href="https://pykkd.com/daily-deals/">See all today's deals</a></p>]]></description>
+      <description><![CDATA[<p>Today's 2 picks:</p><div><p><img src="https://pykkd.com/img/daily-deals/archive/2026-11-15/thatdailydeal.jpg" alt="" width="600" style="max-width:100%;height:auto"></p><p><strong>Zippo Flip Style Rechargeable Windproof Water Resistant LED Flashlight ARC Lighter</strong><br>That Daily Deal · $9.99</p></div><div><p><img src="https://pykkd.com/img/daily-deals/archive/2026-11-15/tanga.jpg" alt="" width="600" style="max-width:100%;height:auto"></p><p><strong>Blogilates Weighted Vest</strong><br>Tanga · $12.99</p></div><p><a href="https://pykkd.com/daily-deals/">See all today's deals</a></p>]]></description>
+      <enclosure url="https://pykkd.com/img/daily-deals/archive/2026-11-15/thatdailydeal.jpg" length="86376" type="image/jpeg" />
+      <media:content url="https://pykkd.com/img/daily-deals/archive/2026-11-15/thatdailydeal.jpg" medium="image" type="image/jpeg" />
+      <media:content url="https://pykkd.com/img/daily-deals/archive/2026-11-15/tanga.jpg" medium="image" type="image/jpeg" />
     </item>
   </channel>
 </rss>
