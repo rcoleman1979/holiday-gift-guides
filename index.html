@@ -15,6 +15,13 @@
 <meta property="og:image" content="https://pykkd.com/brand/og-default.png">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="canonical" href="https://pykkd.com/">
+<style>
+#pykkd-snow{position:fixed;inset:0;width:100%;height:100%;max-width:100vw;max-height:100vh;margin:0;padding:0;border:0;overflow:hidden;pointer-events:none;z-index:9999}
+#pykkd-snow i{position:absolute;top:-8px;left:var(--l);width:var(--s);height:var(--s);border-radius:50%;background:rgba(255,255,255,.8);box-shadow:0 0 3px rgba(255,255,255,.35);opacity:.8;animation:pykkd-fall var(--d) linear var(--delay) infinite}
+@keyframes pykkd-fall{0%{transform:translate3d(0,-2vh,0)}100%{transform:translate3d(var(--x),105vh,0)}}
+#pykkd-snow.out{opacity:0;transition:opacity 1s linear}
+@media (prefers-reduced-motion:reduce){#pykkd-snow{display:none!important}}
+</style>
 <meta name="theme-color" content="#1b0e17">
 <link rel="icon" type="image/png" sizes="32x32" href="./brand/favicon-32.png">
 <link rel="icon" href="./brand/favicon.ico" sizes="any">
@@ -227,6 +234,33 @@ footer a{color:#fc3a27}footer a:hover{color:#f3ebe2}footer p{margin:.35rem 0}foo
 
 <script>window.goatcounter=Object.assign(window.goatcounter||{},{no_onload:(navigator.doNotTrack==='1'||navigator.globalPrivacyControl===true)});</script>
 <script data-goatcounter="https://pykkd.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+<script>
+(function(){
+  try{
+    var d=new Date(),m=d.getMonth(),day=d.getDate();
+    if(!((m===10&&day>=15)||m===11||(m===0&&day===1))) return;
+    if(window.matchMedia&&window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    var box=document.createElement("div");
+    box.id="pykkd-snow";
+    box.setAttribute("aria-hidden","true");
+    var n=40,html="";
+    for(var i=0;i<n;i++){
+      var s=(2+Math.random()*3.5).toFixed(1);
+      var l=(Math.random()*100).toFixed(2);
+      var dur=(8+Math.random()*5).toFixed(2);
+      var delay=(Math.random()*4).toFixed(2);
+      var x=((Math.random()*30)-15).toFixed(1);
+      html+='<i style="--l:'+l+'%;--s:'+s+'px;--d:'+dur+'s;--delay:'+delay+'s;--x:'+x+'vw"></i>';
+    }
+    box.innerHTML=html;
+    document.body.appendChild(box);
+    setTimeout(function(){
+      box.className="out";
+      setTimeout(function(){ if(box.parentNode) box.parentNode.removeChild(box); }, 1100);
+    }, 10000);
+  }catch(e){}
+})();
+</script>
 <!-- Pykkd privacy -->
 <link rel="stylesheet" href="/privacy/controls.css">
 <script src="/privacy/controls.js" defer></script>
