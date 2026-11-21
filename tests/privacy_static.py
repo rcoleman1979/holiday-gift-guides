@@ -39,7 +39,7 @@ home=(root/'index.html').read_text()
 news=(root/'newsletter/index.html').read_text()
 for label,page in (('home',home),('newsletter',news)):
     assert 'Get our best finds in your inbox' in page, label
-    assert 'Tick the daily deals box on the next page if you want that too.' in page, label
+    assert 'Pick your topics and the daily deals email on the next page.' in page, label
     assert 'Sign up free' in page, label
     assert 'preview.mailerlite.io/forms/2744558/202421660617278565/share' in page, label
     assert 'Continue to newsletter signup' not in page, label

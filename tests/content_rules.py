@@ -10,7 +10,7 @@ import json, re, sys
 from pathlib import Path
 
 root = Path(sys.argv[1] if len(sys.argv) > 1 else ".").resolve()
-AMZ_OK = re.compile(r"^https://www\.amazon\.com/(dp/[A-Z0-9]{10}|prime|hz/audible/[a-z-]+)\?tag=killagorillab-20$")  # direct, no redirect hops
+AMZ_OK = re.compile(r"^https://www\.amazon\.com/(dp/[A-Z0-9]{10}|prime|hz/audible/[a-z-]+)\?tag=killagorillab-20(#customerReviews)?$")  # direct, no redirect hops (reviews link may jump to #customerReviews)
 PRICE = re.compile(r"(.{0,12})\$\s?\d")
 BUDGET_OK = re.compile(r"(?i)(under|over)[\s-]*$")
 REDIRECTS = {"korean-skincare-k-beauty": "k-beauty-skincare-favorites"}
