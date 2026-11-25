@@ -5,8 +5,18 @@
     <link>https://pykkd.com/daily-deals/</link>
     <description>Today's featured deal of the day from a few deal sites. Two picks each morning, with a link to see them all.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 24 Nov 2026 09:28:05 -0600</lastBuildDate>
+    <lastBuildDate>Wed, 25 Nov 2026 05:50:22 -0600</lastBuildDate>
     <ttl>60</ttl>
+    <item>
+      <title>Today's deals, Nov 25</title>
+      <link>https://pykkd.com/daily-deals/</link>
+      <guid isPermaLink="false">https://pykkd.com/daily-deals/#2026-11-25</guid>
+      <pubDate>Wed, 25 Nov 2026 05:49:31 -0600</pubDate>
+      <description><![CDATA[<p>Today's 2 picks:</p><div><p><img src="https://pykkd.com/img/daily-deals/archive/2026-11-25/meh.png" alt="" width="600" style="max-width:100%;height:auto"></p><p><strong>6-Pack: Kosmos BBQ Sauce, Wing Dust &amp; Dry Rub 6 for</strong><br>Meh · $19.99</p></div><div><p><img src="https://pykkd.com/img/daily-deals/archive/2026-11-25/tanga.jpg" alt="" width="600" style="max-width:100%;height:auto"></p><p><strong>Vivitar 8K Digital Camcorder Kit – WiFi, Touchscreen &amp; LED Light</strong><br>Tanga · $23.99</p></div><p><a href="https://pykkd.com/daily-deals/">See all today's deals</a></p>]]></description>
+      <enclosure url="https://pykkd.com/img/daily-deals/archive/2026-11-25/meh.png" length="413284" type="image/png" />
+      <media:content url="https://pykkd.com/img/daily-deals/archive/2026-11-25/meh.png" medium="image" type="image/png" />
+      <media:content url="https://pykkd.com/img/daily-deals/archive/2026-11-25/tanga.jpg" medium="image" type="image/jpeg" />
+    </item>
     <item>
       <title>Today's deals, Nov 24</title>
       <link>https://pykkd.com/daily-deals/</link>
@@ -66,16 +76,6 @@
       <enclosure url="https://pykkd.com/img/daily-deals/archive/2026-11-19/13deals.jpg" length="243226" type="image/jpeg" />
       <media:content url="https://pykkd.com/img/daily-deals/archive/2026-11-19/13deals.jpg" medium="image" type="image/jpeg" />
       <media:content url="https://pykkd.com/img/daily-deals/archive/2026-11-19/thatdailydeal.jpg" medium="image" type="image/jpeg" />
-    </item>
-    <item>
-      <title>Today's deals, Nov 18</title>
-      <link>https://pykkd.com/daily-deals/</link>
-      <guid isPermaLink="false">https://pykkd.com/daily-deals/#2026-11-18</guid>
-      <pubDate>Wed, 18 Nov 2026 05:53:32 -0600</pubDate>
-      <description><![CDATA[<p>Today's 2 picks:</p><div><p><img src="https://pykkd.com/img/daily-deals/archive/2026-11-18/thatdailydeal.jpg" alt="" width="600" style="max-width:100%;height:auto"></p><p><strong>Light Up LED Frisbee With 2 Light Up Wrist Bands - Great deal because you will receive a random color</strong><br>That Daily Deal · $14.99</p></div><div><p><img src="https://pykkd.com/img/daily-deals/archive/2026-11-18/13deals.jpg" alt="" width="600" style="max-width:100%;height:auto"></p><p><strong>Round Drop Hoop Earrings - SHIPS FREE!</strong><br>13 Deals · $14.99</p></div><p><a href="https://pykkd.com/daily-deals/">See all today's deals</a></p>]]></description>
-      <enclosure url="https://pykkd.com/img/daily-deals/archive/2026-11-18/thatdailydeal.jpg" length="302355" type="image/jpeg" />
-      <media:content url="https://pykkd.com/img/daily-deals/archive/2026-11-18/thatdailydeal.jpg" medium="image" type="image/jpeg" />
-      <media:content url="https://pykkd.com/img/daily-deals/archive/2026-11-18/13deals.jpg" medium="image" type="image/jpeg" />
     </item>
   </channel>
 </rss>
