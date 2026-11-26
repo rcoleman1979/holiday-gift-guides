@@ -5,8 +5,18 @@
     <link>https://pykkd.com/daily-deals/</link>
     <description>Today's featured deal of the day from a few deal sites. Two picks each morning, with a link to see them all.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 25 Nov 2026 16:55:14 -0600</lastBuildDate>
+    <lastBuildDate>Thu, 26 Nov 2026 05:51:06 -0600</lastBuildDate>
     <ttl>60</ttl>
+    <item>
+      <title>Today's deals, Nov 26</title>
+      <link>https://pykkd.com/daily-deals/</link>
+      <guid isPermaLink="false">https://pykkd.com/daily-deals/#2026-11-26</guid>
+      <pubDate>Thu, 26 Nov 2026 05:50:54 -0600</pubDate>
+      <description><![CDATA[<p>Today's 2 picks:</p><div><p><img src="https://pykkd.com/img/daily-deals/archive/2026-11-26/sidedeal.webp" alt="" width="600" style="max-width:100%;height:auto"></p><p><strong>Sunbeam ReviveSystem 3-in-1 Steamer Iron &amp; Fabric Shaver</strong><br>SideDeal · $14.99</p></div><div><p><img src="https://pykkd.com/img/daily-deals/archive/2026-11-26/tanga.jpg" alt="" width="600" style="max-width:100%;height:auto"></p><p><strong>Men&#x27;s Christmas Funny T-Shirt- Multiple Styles</strong><br>Tanga · $15.99</p></div><p><a href="https://pykkd.com/daily-deals/">See all today's deals</a></p>]]></description>
+      <enclosure url="https://pykkd.com/img/daily-deals/archive/2026-11-26/sidedeal.webp" length="132186" type="image/webp" />
+      <media:content url="https://pykkd.com/img/daily-deals/archive/2026-11-26/sidedeal.webp" medium="image" type="image/webp" />
+      <media:content url="https://pykkd.com/img/daily-deals/archive/2026-11-26/tanga.jpg" medium="image" type="image/jpeg" />
+    </item>
     <item>
       <title>Today's deals, Nov 25</title>
       <link>https://pykkd.com/daily-deals/</link>
@@ -66,16 +76,6 @@
       <enclosure url="https://pykkd.com/img/daily-deals/archive/2026-11-20/thatdailydeal.png" length="287807" type="image/png" />
       <media:content url="https://pykkd.com/img/daily-deals/archive/2026-11-20/thatdailydeal.png" medium="image" type="image/png" />
       <media:content url="https://pykkd.com/img/daily-deals/archive/2026-11-20/13deals.png" medium="image" type="image/png" />
-    </item>
-    <item>
-      <title>Today's deals, Nov 19</title>
-      <link>https://pykkd.com/daily-deals/</link>
-      <guid isPermaLink="false">https://pykkd.com/daily-deals/#2026-11-19</guid>
-      <pubDate>Thu, 19 Nov 2026 05:52:10 -0600</pubDate>
-      <description><![CDATA[<p>Today's 2 picks:</p><div><p><img src="https://pykkd.com/img/daily-deals/archive/2026-11-19/13deals.jpg" alt="" width="600" style="max-width:100%;height:auto"></p><p><strong>Light Up Squishy Reindeer Dumpling</strong><br>13 Deals · $6.49</p></div><div><p><img src="https://pykkd.com/img/daily-deals/archive/2026-11-19/thatdailydeal.jpg" alt="" width="600" style="max-width:100%;height:auto"></p><p><strong>Crunchy Mystery Grinchy Dumpling</strong><br>That Daily Deal · $6.89</p></div><p><a href="https://pykkd.com/daily-deals/">See all today's deals</a></p>]]></description>
-      <enclosure url="https://pykkd.com/img/daily-deals/archive/2026-11-19/13deals.jpg" length="243226" type="image/jpeg" />
-      <media:content url="https://pykkd.com/img/daily-deals/archive/2026-11-19/13deals.jpg" medium="image" type="image/jpeg" />
-      <media:content url="https://pykkd.com/img/daily-deals/archive/2026-11-19/thatdailydeal.jpg" medium="image" type="image/jpeg" />
     </item>
   </channel>
 </rss>
