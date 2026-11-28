@@ -5,8 +5,18 @@
     <link>https://pykkd.com/daily-deals/</link>
     <description>Today's featured deal of the day from a few deal sites. Two picks each morning, with a link to see them all.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 27 Nov 2026 09:25:01 -0600</lastBuildDate>
+    <lastBuildDate>Sat, 28 Nov 2026 05:48:30 -0600</lastBuildDate>
     <ttl>60</ttl>
+    <item>
+      <title>Today's deals, Nov 28</title>
+      <link>https://pykkd.com/daily-deals/</link>
+      <guid isPermaLink="false">https://pykkd.com/daily-deals/#2026-11-28</guid>
+      <pubDate>Sat, 28 Nov 2026 05:48:17 -0600</pubDate>
+      <description><![CDATA[<p>Today's 2 picks:</p><div><p><img src="https://pykkd.com/img/daily-deals/archive/2026-11-28/sidedeal.jpg" alt="" width="600" style="max-width:100%;height:auto"></p><p><strong>ZippySack Twin Zip-Up Kids Bedding Set</strong><br>SideDeal · $12.00</p></div><div><p><img src="https://pykkd.com/img/daily-deals/archive/2026-11-28/meh.gif" alt="" width="600" style="max-width:100%;height:auto"></p><p><strong>Pick-Your-2-Pack: Ontel Pillow Cube KidCubes 2 for</strong><br>Meh · $18.00</p></div><p><a href="https://pykkd.com/daily-deals/">See all today's deals</a></p>]]></description>
+      <enclosure url="https://pykkd.com/img/daily-deals/archive/2026-11-28/sidedeal.jpg" length="326444" type="image/jpeg" />
+      <media:content url="https://pykkd.com/img/daily-deals/archive/2026-11-28/sidedeal.jpg" medium="image" type="image/jpeg" />
+      <media:content url="https://pykkd.com/img/daily-deals/archive/2026-11-28/meh.gif" medium="image" type="image/gif" />
+    </item>
     <item>
       <title>Today's deals, Nov 27</title>
       <link>https://pykkd.com/daily-deals/</link>
@@ -66,16 +76,6 @@
       <enclosure url="https://pykkd.com/img/daily-deals/archive/2026-11-22/morningsave.webp" length="146562" type="image/webp" />
       <media:content url="https://pykkd.com/img/daily-deals/archive/2026-11-22/morningsave.webp" medium="image" type="image/webp" />
       <media:content url="https://pykkd.com/img/daily-deals/archive/2026-11-22/13deals.png" medium="image" type="image/png" />
-    </item>
-    <item>
-      <title>Today's deals, Nov 21</title>
-      <link>https://pykkd.com/daily-deals/</link>
-      <guid isPermaLink="false">https://pykkd.com/daily-deals/#2026-11-21</guid>
-      <pubDate>Sat, 21 Nov 2026 13:30:34 -0600</pubDate>
-      <description><![CDATA[<p>Today's 2 picks:</p><div><p><img src="https://pykkd.com/img/daily-deals/archive/2026-11-21/meh.png" alt="" width="600" style="max-width:100%;height:auto"></p><p><strong>6-Pack: Zesty Paws All-in-One Training Bites 6 for</strong><br>Meh · $14.99</p></div><div><p><img src="https://pykkd.com/img/daily-deals/archive/2026-11-21/13deals.png" alt="" width="600" style="max-width:100%;height:auto"></p><p><strong>Highland Cow Advent Calendar - SHIPS FREE!</strong><br>13 Deals · $14.99</p></div><p><a href="https://pykkd.com/daily-deals/">See all today's deals</a></p>]]></description>
-      <enclosure url="https://pykkd.com/img/daily-deals/archive/2026-11-21/meh.png" length="109013" type="image/png" />
-      <media:content url="https://pykkd.com/img/daily-deals/archive/2026-11-21/meh.png" medium="image" type="image/png" />
-      <media:content url="https://pykkd.com/img/daily-deals/archive/2026-11-21/13deals.png" medium="image" type="image/png" />
     </item>
   </channel>
 </rss>
